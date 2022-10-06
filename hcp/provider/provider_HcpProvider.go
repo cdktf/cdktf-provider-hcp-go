@@ -1,0 +1,435 @@
+package provider
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/provider/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://www.terraform.io/docs/providers/hcp hcp}.
+type HcpProvider interface {
+	cdktf.TerraformProvider
+	Alias() *string
+	SetAlias(val *string)
+	AliasInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ClientId() *string
+	SetClientId(val *string)
+	ClientIdInput() *string
+	ClientSecret() *string
+	SetClientSecret(val *string)
+	ClientSecretInput() *string
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	// Experimental.
+	MetaAttributes() *map[string]interface{}
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformProviderSource() *string
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetAlias()
+	ResetClientId()
+	ResetClientSecret()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for HcpProvider
+type jsiiProxy_HcpProvider struct {
+	internal.Type__cdktfTerraformProvider
+}
+
+func (j *jsiiProxy_HcpProvider) Alias() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) AliasInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"aliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) ClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) ClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) ClientSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) ClientSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientSecretInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) MetaAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"metaAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) TerraformProviderSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformProviderSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/hcp hcp} Resource.
+func NewHcpProvider(scope constructs.Construct, id *string, config *HcpProviderConfig) HcpProvider {
+	_init_.Initialize()
+
+	if err := validateNewHcpProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_HcpProvider{}
+
+	_jsii_.Create(
+		"@cdktf/provider-hcp.provider.HcpProvider",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/hcp hcp} Resource.
+func NewHcpProvider_Override(h HcpProvider, scope constructs.Construct, id *string, config *HcpProviderConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-hcp.provider.HcpProvider",
+		[]interface{}{scope, id, config},
+		h,
+	)
+}
+
+func (j *jsiiProxy_HcpProvider)SetAlias(val *string) {
+	_jsii_.Set(
+		j,
+		"alias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HcpProvider)SetClientId(val *string) {
+	_jsii_.Set(
+		j,
+		"clientId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HcpProvider)SetClientSecret(val *string) {
+	_jsii_.Set(
+		j,
+		"clientSecret",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func HcpProvider_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHcpProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.provider.HcpProvider",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func HcpProvider_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-hcp.provider.HcpProvider",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (h *jsiiProxy_HcpProvider) AddOverride(path *string, value interface{}) {
+	if err := h.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (h *jsiiProxy_HcpProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := h.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (h *jsiiProxy_HcpProvider) ResetAlias() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HcpProvider) ResetClientId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetClientId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HcpProvider) ResetClientSecret() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HcpProvider) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HcpProvider) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		h,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HcpProvider) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HcpProvider) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		h,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HcpProvider) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

@@ -1,0 +1,82 @@
+package consulcluster
+
+import (
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+type ConsulClusterConfig struct {
+	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// The ID of the HCP Consul cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#cluster_id ConsulCluster#cluster_id}
+	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
+	// The ID of the HVN this HCP Consul cluster is associated to.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#hvn_id ConsulCluster#hvn_id}
+	HvnId *string `field:"required" json:"hvnId" yaml:"hvnId"`
+	// The tier that the HCP Consul cluster will be provisioned as.
+	//
+	// Only `development`, `standard` and `plus` are available at this time. See [pricing information](https://cloud.hashicorp.com/pricing/consul).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#tier ConsulCluster#tier}
+	Tier *string `field:"required" json:"tier" yaml:"tier"`
+	// Enables automatic HVN to HVN peering when creating a secondary cluster in a federation.
+	//
+	// The alternative to using the auto-accept feature is to create an [`hcp_hvn_peering_connection`](hvn_peering_connection.md) resource that explicitly defines the HVN resources that are allowed to communicate with each other.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#auto_hvn_to_hvn_peering ConsulCluster#auto_hvn_to_hvn_peering}
+	AutoHvnToHvnPeering interface{} `field:"optional" json:"autoHvnToHvnPeering" yaml:"autoHvnToHvnPeering"`
+	// Denotes the Consul connect feature should be enabled for this cluster.  Default to true.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#connect_enabled ConsulCluster#connect_enabled}
+	ConnectEnabled interface{} `field:"optional" json:"connectEnabled" yaml:"connectEnabled"`
+	// The Consul data center name of the cluster. If not specified, it is defaulted to the value of `cluster_id`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#datacenter ConsulCluster#datacenter}
+	Datacenter *string `field:"optional" json:"datacenter" yaml:"datacenter"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#id ConsulCluster#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The minimum Consul version of the cluster.
+	//
+	// If not specified, it is defaulted to the version that is currently recommended by HCP.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#min_consul_version ConsulCluster#min_consul_version}
+	MinConsulVersion *string `field:"optional" json:"minConsulVersion" yaml:"minConsulVersion"`
+	// The `self_link` of the HCP Consul cluster which is the primary in the federation setup with this HCP Consul cluster.
+	//
+	// If not specified, it is a standalone cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#primary_link ConsulCluster#primary_link}
+	PrimaryLink *string `field:"optional" json:"primaryLink" yaml:"primaryLink"`
+	// Denotes that the cluster has a public endpoint for the Consul UI. Defaults to false.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#public_endpoint ConsulCluster#public_endpoint}
+	PublicEndpoint interface{} `field:"optional" json:"publicEndpoint" yaml:"publicEndpoint"`
+	// The t-shirt size representation of each server VM that this Consul cluster is provisioned with.
+	//
+	// Valid option for development tier - `x_small`. Valid options for other tiers - `small`, `medium`, `large`. For more details - https://cloud.hashicorp.com/pricing/consul. Upgrading the size of a cluster after creation is allowed.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#size ConsulCluster#size}
+	Size *string `field:"optional" json:"size" yaml:"size"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#timeouts ConsulCluster#timeouts}
+	Timeouts *ConsulClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+}
+
