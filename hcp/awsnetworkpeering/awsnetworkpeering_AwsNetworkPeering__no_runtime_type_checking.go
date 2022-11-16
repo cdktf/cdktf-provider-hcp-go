@@ -60,6 +60,14 @@ func validateAwsNetworkPeering_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAwsNetworkPeering_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAwsNetworkPeering_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsNetworkPeering) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

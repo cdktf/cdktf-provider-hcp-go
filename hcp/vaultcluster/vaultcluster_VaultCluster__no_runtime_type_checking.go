@@ -72,6 +72,14 @@ func validateVaultCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVaultCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVaultCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultCluster) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

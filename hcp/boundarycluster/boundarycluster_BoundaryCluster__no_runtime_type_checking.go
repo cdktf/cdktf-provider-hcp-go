@@ -60,6 +60,14 @@ func validateBoundaryCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBoundaryCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBoundaryCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BoundaryCluster) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

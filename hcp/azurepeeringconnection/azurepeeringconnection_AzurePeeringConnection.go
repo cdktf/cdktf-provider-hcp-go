@@ -2,10 +2,10 @@ package azurepeeringconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/azurepeeringconnection/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/azurepeeringconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -769,6 +769,44 @@ func AzurePeeringConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AzurePeeringConnection_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAzurePeeringConnection_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AzurePeeringConnection_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAzurePeeringConnection_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

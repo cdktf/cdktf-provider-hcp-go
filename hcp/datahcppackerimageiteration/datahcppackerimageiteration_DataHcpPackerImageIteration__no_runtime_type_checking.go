@@ -60,6 +60,14 @@ func validateDataHcpPackerImageIteration_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataHcpPackerImageIteration_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataHcpPackerImageIteration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpPackerImageIteration) validateSetBucketNameParameters(val *string) error {
 	return nil
 }

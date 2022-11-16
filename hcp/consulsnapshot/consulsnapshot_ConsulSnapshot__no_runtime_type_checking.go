@@ -60,6 +60,14 @@ func validateConsulSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConsulSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConsulSnapshot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSnapshot) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

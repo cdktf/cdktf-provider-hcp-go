@@ -2,10 +2,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/provider/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -309,6 +309,44 @@ func HcpProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-hcp.provider.HcpProvider",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HcpProvider_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHcpProvider_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.provider.HcpProvider",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HcpProvider_IsTerraformProvider(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHcpProvider_IsTerraformProviderParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.provider.HcpProvider",
+		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
 	)

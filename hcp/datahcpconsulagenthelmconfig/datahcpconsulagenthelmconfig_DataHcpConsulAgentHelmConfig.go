@@ -2,10 +2,10 @@ package datahcpconsulagenthelmconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulagenthelmconfig/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/datahcpconsulagenthelmconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -507,6 +507,44 @@ func DataHcpConsulAgentHelmConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataHcpConsulAgentHelmConfig_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataHcpConsulAgentHelmConfig_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataHcpConsulAgentHelmConfig_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataHcpConsulAgentHelmConfig_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.dataHcpConsulAgentHelmConfig.DataHcpConsulAgentHelmConfig",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

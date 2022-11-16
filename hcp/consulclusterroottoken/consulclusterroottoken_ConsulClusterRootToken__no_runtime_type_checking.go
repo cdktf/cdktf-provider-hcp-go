@@ -60,6 +60,14 @@ func validateConsulClusterRootToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConsulClusterRootToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConsulClusterRootToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulClusterRootToken) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

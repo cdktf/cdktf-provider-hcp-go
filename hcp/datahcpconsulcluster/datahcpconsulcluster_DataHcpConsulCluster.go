@@ -2,10 +2,10 @@ package datahcpconsulcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulcluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/datahcpconsulcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -680,6 +680,44 @@ func DataHcpConsulCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataHcpConsulCluster_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataHcpConsulCluster_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataHcpConsulCluster_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataHcpConsulCluster_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulCluster",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

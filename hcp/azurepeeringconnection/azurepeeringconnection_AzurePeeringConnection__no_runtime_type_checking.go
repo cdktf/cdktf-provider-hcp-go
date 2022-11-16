@@ -60,6 +60,14 @@ func validateAzurePeeringConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAzurePeeringConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAzurePeeringConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzurePeeringConnection) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

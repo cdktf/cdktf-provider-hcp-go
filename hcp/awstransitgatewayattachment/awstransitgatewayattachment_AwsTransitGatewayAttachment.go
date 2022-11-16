@@ -2,10 +2,10 @@ package awstransitgatewayattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/awstransitgatewayattachment/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/awstransitgatewayattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -656,6 +656,44 @@ func AwsTransitGatewayAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AwsTransitGatewayAttachment_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAwsTransitGatewayAttachment_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AwsTransitGatewayAttachment_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAwsTransitGatewayAttachment_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.awsTransitGatewayAttachment.AwsTransitGatewayAttachment",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

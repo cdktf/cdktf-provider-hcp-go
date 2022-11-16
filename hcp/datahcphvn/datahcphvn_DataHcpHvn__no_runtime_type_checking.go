@@ -60,6 +60,14 @@ func validateDataHcpHvn_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataHcpHvn_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataHcpHvn_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpHvn) validateSetHvnIdParameters(val *string) error {
 	return nil
 }

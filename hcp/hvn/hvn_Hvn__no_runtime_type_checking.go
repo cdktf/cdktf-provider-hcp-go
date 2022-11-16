@@ -60,6 +60,14 @@ func validateHvn_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHvn_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHvn_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Hvn) validateSetCidrBlockParameters(val *string) error {
 	return nil
 }

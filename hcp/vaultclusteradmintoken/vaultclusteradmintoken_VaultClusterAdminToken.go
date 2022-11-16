@@ -2,10 +2,10 @@ package vaultclusteradmintoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/vaultclusteradmintoken/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/vaultclusteradmintoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -499,6 +499,44 @@ func VaultClusterAdminToken_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VaultClusterAdminToken_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVaultClusterAdminToken_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VaultClusterAdminToken_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVaultClusterAdminToken_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.vaultClusterAdminToken.VaultClusterAdminToken",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

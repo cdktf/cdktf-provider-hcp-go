@@ -2,10 +2,10 @@ package hvnroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/hvnroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -612,6 +612,44 @@ func HvnRoute_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-hcp.hvnRoute.HvnRoute",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HvnRoute_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHvnRoute_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.hvnRoute.HvnRoute",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HvnRoute_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHvnRoute_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.hvnRoute.HvnRoute",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

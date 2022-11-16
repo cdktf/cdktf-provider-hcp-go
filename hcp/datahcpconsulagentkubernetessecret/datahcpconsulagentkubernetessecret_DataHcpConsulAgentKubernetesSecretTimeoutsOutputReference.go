@@ -2,9 +2,9 @@ package datahcpconsulagentkubernetessecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcpconsulagentkubernetessecret/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/datahcpconsulagentkubernetessecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

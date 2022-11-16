@@ -2,9 +2,9 @@ package hvnroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnroute/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/hvnroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

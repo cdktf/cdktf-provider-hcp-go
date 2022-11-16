@@ -68,6 +68,14 @@ func validateDataHcpVaultCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataHcpVaultCluster_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataHcpVaultCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpVaultCluster) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateHvnRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHvnRoute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHvnRoute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HvnRoute) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package hvnpeeringconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/hvnpeeringconnection/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/hvnpeeringconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -588,6 +588,44 @@ func HvnPeeringConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HvnPeeringConnection_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHvnPeeringConnection_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HvnPeeringConnection_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHvnPeeringConnection_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.hvnPeeringConnection.HvnPeeringConnection",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

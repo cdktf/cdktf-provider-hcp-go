@@ -2,10 +2,10 @@ package datahcppackerimageiteration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/datahcppackerimageiteration/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/datahcppackerimageiteration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -527,6 +527,44 @@ func DataHcpPackerImageIteration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataHcpPackerImageIteration_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataHcpPackerImageIteration_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataHcpPackerImageIteration_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataHcpPackerImageIteration_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.dataHcpPackerImageIteration.DataHcpPackerImageIteration",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

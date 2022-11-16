@@ -60,6 +60,14 @@ func validateDataHcpConsulAgentKubernetesSecret_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataHcpConsulAgentKubernetesSecret_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataHcpConsulAgentKubernetesSecret_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

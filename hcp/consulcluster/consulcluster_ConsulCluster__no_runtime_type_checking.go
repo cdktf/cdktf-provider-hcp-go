@@ -60,6 +60,14 @@ func validateConsulCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConsulCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConsulCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulCluster) validateSetAutoHvnToHvnPeeringParameters(val interface{}) error {
 	return nil
 }

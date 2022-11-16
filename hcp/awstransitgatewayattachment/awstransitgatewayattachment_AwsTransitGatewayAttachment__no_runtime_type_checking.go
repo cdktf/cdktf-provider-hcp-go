@@ -60,6 +60,14 @@ func validateAwsTransitGatewayAttachment_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateAwsTransitGatewayAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAwsTransitGatewayAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsTransitGatewayAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
