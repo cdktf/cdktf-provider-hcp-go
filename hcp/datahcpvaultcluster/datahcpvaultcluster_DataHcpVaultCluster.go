@@ -2,10 +2,10 @@ package datahcpvaultcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v2/datahcpvaultcluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/datahcpvaultcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
