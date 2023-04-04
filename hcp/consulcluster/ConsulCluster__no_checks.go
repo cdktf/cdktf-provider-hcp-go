@@ -52,6 +52,10 @@ func (c *jsiiProxy_ConsulCluster) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (c *jsiiProxy_ConsulCluster) validatePutIpAllowlistParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConsulCluster) validatePutTimeoutsParameters(value *ConsulClusterTimeouts) error {
 	return nil
 }

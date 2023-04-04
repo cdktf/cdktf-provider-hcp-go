@@ -19,7 +19,7 @@ type PackerChannelConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The slug of the HCP Packer Registry image bucket where the channel should be managed in.
+	// The slug of the HCP Packer Registry image bucket where the channel should be created in.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel#bucket_name PackerChannel#bucket_name}
 	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`

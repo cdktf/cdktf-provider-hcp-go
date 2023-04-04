@@ -65,6 +65,8 @@ type ConsulCluster interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAllowlist() ConsulClusterIpAllowlistList
+	IpAllowlistInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -135,11 +137,13 @@ type ConsulCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIpAllowlist(value interface{})
 	PutTimeouts(value *ConsulClusterTimeouts)
 	ResetAutoHvnToHvnPeering()
 	ResetConnectEnabled()
 	ResetDatacenter()
 	ResetId()
+	ResetIpAllowlist()
 	ResetMinConsulVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -468,6 +472,26 @@ func (j *jsiiProxy_ConsulCluster) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulCluster) IpAllowlist() ConsulClusterIpAllowlistList {
+	var returns ConsulClusterIpAllowlistList
+	_jsii_.Get(
+		j,
+		"ipAllowlist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulCluster) IpAllowlistInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipAllowlistInput",
 		&returns,
 	)
 	return returns
@@ -1215,6 +1239,17 @@ func (c *jsiiProxy_ConsulCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ConsulCluster) PutIpAllowlist(value interface{}) {
+	if err := c.validatePutIpAllowlistParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putIpAllowlist",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ConsulCluster) PutTimeouts(value *ConsulClusterTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1254,6 +1289,14 @@ func (c *jsiiProxy_ConsulCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulCluster) ResetIpAllowlist() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpAllowlist",
 		nil, // no parameters
 	)
 }

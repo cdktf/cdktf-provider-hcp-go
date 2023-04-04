@@ -29,7 +29,7 @@ type ConsulClusterConfig struct {
 	HvnId *string `field:"required" json:"hvnId" yaml:"hvnId"`
 	// The tier that the HCP Consul cluster will be provisioned as.
 	//
-	// Only `development`, `standard` and `plus` are available at this time. See [pricing information](https://cloud.hashicorp.com/pricing/consul).
+	// Only `development`, `standard` and `plus` are available at this time. See [pricing information](https://www.hashicorp.com/products/consul/pricing).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#tier ConsulCluster#tier}
 	Tier *string `field:"required" json:"tier" yaml:"tier"`
@@ -52,6 +52,10 @@ type ConsulClusterConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// ip_allowlist block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster#ip_allowlist ConsulCluster#ip_allowlist}
+	IpAllowlist interface{} `field:"optional" json:"ipAllowlist" yaml:"ipAllowlist"`
 	// The minimum Consul patch version of the cluster.
 	//
 	// Allows only the rightmost version component to increment (E.g: `1.13.0` will allow installation of `1.13.2` and `1.13.3` etc., but not `1.14.0`). If not specified, it is defaulted to the version that is currently recommended by HCP.

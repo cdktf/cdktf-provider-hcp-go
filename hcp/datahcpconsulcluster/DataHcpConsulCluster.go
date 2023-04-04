@@ -51,6 +51,7 @@ type DataHcpConsulCluster interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAllowlist() DataHcpConsulClusterIpAllowlistList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -362,6 +363,16 @@ func (j *jsiiProxy_DataHcpConsulCluster) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpConsulCluster) IpAllowlist() DataHcpConsulClusterIpAllowlistList {
+	var returns DataHcpConsulClusterIpAllowlistList
+	_jsii_.Get(
+		j,
+		"ipAllowlist",
 		&returns,
 	)
 	return returns
