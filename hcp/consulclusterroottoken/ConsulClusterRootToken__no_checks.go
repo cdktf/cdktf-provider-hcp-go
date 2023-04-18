@@ -76,6 +76,10 @@ func (j *jsiiProxy_ConsulClusterRootToken) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ConsulClusterRootToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulClusterRootToken) validateSetIdParameters(val *string) error {
 	return nil
 }

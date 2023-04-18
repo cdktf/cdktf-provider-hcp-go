@@ -88,6 +88,10 @@ func (j *jsiiProxy_VaultCluster) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_VaultCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultCluster) validateSetHvnIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataHcpConsulVersions_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpConsulVersions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpConsulVersions) validateSetIdParameters(val *string) error {
 	return nil
 }

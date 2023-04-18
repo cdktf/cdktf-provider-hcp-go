@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/provider/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp hcp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp}.
 type HcpProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -228,7 +228,7 @@ func (j *jsiiProxy_HcpProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp hcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp} Resource.
 func NewHcpProvider(scope constructs.Construct, id *string, config *HcpProviderConfig) HcpProvider {
 	_init_.Initialize()
 
@@ -246,7 +246,7 @@ func NewHcpProvider(scope constructs.Construct, id *string, config *HcpProviderC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp hcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp} Resource.
 func NewHcpProvider_Override(h HcpProvider, scope constructs.Construct, id *string, config *HcpProviderConfig) {
 	_init_.Initialize()
 

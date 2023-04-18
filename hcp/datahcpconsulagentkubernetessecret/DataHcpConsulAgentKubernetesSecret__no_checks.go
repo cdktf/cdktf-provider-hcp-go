@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) validateSetClusterIdParam
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) validateSetIdParameters(val *string) error {
 	return nil
 }

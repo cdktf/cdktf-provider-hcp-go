@@ -68,6 +68,10 @@ func validateDataHcpAzurePeeringConnection_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpAzurePeeringConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpAzurePeeringConnection) validateSetHvnLinkParameters(val *string) error {
 	return nil
 }

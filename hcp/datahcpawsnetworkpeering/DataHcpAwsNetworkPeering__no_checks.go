@@ -68,6 +68,10 @@ func validateDataHcpAwsNetworkPeering_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpAwsNetworkPeering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpAwsNetworkPeering) validateSetHvnIdParameters(val *string) error {
 	return nil
 }

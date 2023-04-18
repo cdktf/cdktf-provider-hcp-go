@@ -2,14 +2,14 @@ package datahcphvnroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/datahcphvnroute/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcphvnroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp/d/hvn_route hcp_hvn_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_route hcp_hvn_route}.
 type DataHcpHvnRoute interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataHcpHvnRoute interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataHcpHvnRoute) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpHvnRoute) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataHcpHvnRoute) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataHcpHvnRoute) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/hvn_route hcp_hvn_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_route hcp_hvn_route} Data Source.
 func NewDataHcpHvnRoute(scope constructs.Construct, id *string, config *DataHcpHvnRouteConfig) DataHcpHvnRoute {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataHcpHvnRoute(scope constructs.Construct, id *string, config *DataHcpH
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/hvn_route hcp_hvn_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_route hcp_hvn_route} Data Source.
 func NewDataHcpHvnRoute_Override(d DataHcpHvnRoute, scope constructs.Construct, id *string, config *DataHcpHvnRouteConfig) {
 	_init_.Initialize()
 
@@ -412,7 +412,10 @@ func NewDataHcpHvnRoute_Override(d DataHcpHvnRoute, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_DataHcpHvnRoute)SetCount(val *float64) {
+func (j *jsiiProxy_DataHcpHvnRoute)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func validateDataHcpHvn_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpHvn) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpHvn) validateSetHvnIdParameters(val *string) error {
 	return nil
 }

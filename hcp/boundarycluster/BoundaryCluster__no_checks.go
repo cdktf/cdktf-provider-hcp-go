@@ -76,6 +76,10 @@ func (j *jsiiProxy_BoundaryCluster) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_BoundaryCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BoundaryCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

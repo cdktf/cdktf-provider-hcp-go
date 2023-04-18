@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataHcpConsulCluster) validateSetClusterIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpConsulCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpConsulCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

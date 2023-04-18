@@ -2,14 +2,14 @@ package datahcpboundarycluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/datahcpboundarycluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpboundarycluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp/d/boundary_cluster hcp_boundary_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster hcp_boundary_cluster}.
 type DataHcpBoundaryCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -21,9 +21,9 @@ type DataHcpBoundaryCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataHcpBoundaryCluster) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpBoundaryCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataHcpBoundaryCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -338,7 +338,7 @@ func (j *jsiiProxy_DataHcpBoundaryCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/boundary_cluster hcp_boundary_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source.
 func NewDataHcpBoundaryCluster(scope constructs.Construct, id *string, config *DataHcpBoundaryClusterConfig) DataHcpBoundaryCluster {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataHcpBoundaryCluster(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/boundary_cluster hcp_boundary_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source.
 func NewDataHcpBoundaryCluster_Override(d DataHcpBoundaryCluster, scope constructs.Construct, id *string, config *DataHcpBoundaryClusterConfig) {
 	_init_.Initialize()
 
@@ -378,7 +378,10 @@ func (j *jsiiProxy_DataHcpBoundaryCluster)SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataHcpBoundaryCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataHcpBoundaryCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

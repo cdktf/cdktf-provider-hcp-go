@@ -72,6 +72,10 @@ func (j *jsiiProxy_AwsTransitGatewayAttachment) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AwsTransitGatewayAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsTransitGatewayAttachment) validateSetHvnIdParameters(val *string) error {
 	return nil
 }

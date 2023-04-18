@@ -68,6 +68,10 @@ func validateDataHcpAwsTransitGatewayAttachment_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpAwsTransitGatewayAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpAwsTransitGatewayAttachment) validateSetHvnIdParameters(val *string) error {
 	return nil
 }

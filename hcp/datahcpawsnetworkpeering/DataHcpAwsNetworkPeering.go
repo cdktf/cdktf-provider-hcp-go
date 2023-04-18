@@ -2,14 +2,14 @@ package datahcpawsnetworkpeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/datahcpawsnetworkpeering/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpawsnetworkpeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering hcp_aws_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering hcp_aws_network_peering}.
 type DataHcpAwsNetworkPeering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataHcpAwsNetworkPeering interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataHcpAwsNetworkPeering) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpAwsNetworkPeering) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataHcpAwsNetworkPeering) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DataHcpAwsNetworkPeering) WaitForActiveStateInput() interface
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering hcp_aws_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering hcp_aws_network_peering} Data Source.
 func NewDataHcpAwsNetworkPeering(scope constructs.Construct, id *string, config *DataHcpAwsNetworkPeeringConfig) DataHcpAwsNetworkPeering {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDataHcpAwsNetworkPeering(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/aws_network_peering hcp_aws_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/aws_network_peering hcp_aws_network_peering} Data Source.
 func NewDataHcpAwsNetworkPeering_Override(d DataHcpAwsNetworkPeering, scope constructs.Construct, id *string, config *DataHcpAwsNetworkPeeringConfig) {
 	_init_.Initialize()
 
@@ -491,7 +491,10 @@ func NewDataHcpAwsNetworkPeering_Override(d DataHcpAwsNetworkPeering, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataHcpAwsNetworkPeering)SetCount(val *float64) {
+func (j *jsiiProxy_DataHcpAwsNetworkPeering)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

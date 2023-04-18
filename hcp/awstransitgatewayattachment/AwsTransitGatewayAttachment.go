@@ -2,14 +2,14 @@ package awstransitgatewayattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/awstransitgatewayattachment/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/awstransitgatewayattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp/r/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment}.
 type AwsTransitGatewayAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type AwsTransitGatewayAttachment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -158,8 +158,8 @@ func (j *jsiiProxy_AwsTransitGatewayAttachment) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_AwsTransitGatewayAttachment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AwsTransitGatewayAttachment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -479,7 +479,7 @@ func (j *jsiiProxy_AwsTransitGatewayAttachment) TransitGatewayIdInput() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/r/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
 func NewAwsTransitGatewayAttachment(scope constructs.Construct, id *string, config *AwsTransitGatewayAttachmentConfig) AwsTransitGatewayAttachment {
 	_init_.Initialize()
 
@@ -497,7 +497,7 @@ func NewAwsTransitGatewayAttachment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/r/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
 func NewAwsTransitGatewayAttachment_Override(a AwsTransitGatewayAttachment, scope constructs.Construct, id *string, config *AwsTransitGatewayAttachmentConfig) {
 	_init_.Initialize()
 
@@ -519,7 +519,10 @@ func (j *jsiiProxy_AwsTransitGatewayAttachment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsTransitGatewayAttachment)SetCount(val *float64) {
+func (j *jsiiProxy_AwsTransitGatewayAttachment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

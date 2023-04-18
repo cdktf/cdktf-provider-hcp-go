@@ -72,6 +72,10 @@ func (j *jsiiProxy_HvnPeeringConnection) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_HvnPeeringConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HvnPeeringConnection) validateSetHvn1Parameters(val *string) error {
 	return nil
 }

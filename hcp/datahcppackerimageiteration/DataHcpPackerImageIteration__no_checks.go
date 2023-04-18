@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataHcpPackerImageIteration) validateSetChannelParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpPackerImageIteration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpPackerImageIteration) validateSetIdParameters(val *string) error {
 	return nil
 }

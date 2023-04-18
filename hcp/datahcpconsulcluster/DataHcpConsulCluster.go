@@ -2,14 +2,14 @@ package datahcpconsulcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/datahcpconsulcluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpconsulcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp/d/consul_cluster hcp_consul_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_cluster hcp_consul_cluster}.
 type DataHcpConsulCluster interface {
 	cdktf.TerraformDataSource
 	AutoHvnToHvnPeering() cdktf.IResolvable
@@ -31,9 +31,9 @@ type DataHcpConsulCluster interface {
 	ConsulSnapshotRetention() *string
 	ConsulVersion() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Datacenter() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -278,8 +278,8 @@ func (j *jsiiProxy_DataHcpConsulCluster) ConsulVersion() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpConsulCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataHcpConsulCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -569,7 +569,7 @@ func (j *jsiiProxy_DataHcpConsulCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/consul_cluster hcp_consul_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_cluster hcp_consul_cluster} Data Source.
 func NewDataHcpConsulCluster(scope constructs.Construct, id *string, config *DataHcpConsulClusterConfig) DataHcpConsulCluster {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewDataHcpConsulCluster(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/consul_cluster hcp_consul_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_cluster hcp_consul_cluster} Data Source.
 func NewDataHcpConsulCluster_Override(d DataHcpConsulCluster, scope constructs.Construct, id *string, config *DataHcpConsulClusterConfig) {
 	_init_.Initialize()
 
@@ -609,7 +609,10 @@ func (j *jsiiProxy_DataHcpConsulCluster)SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataHcpConsulCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataHcpConsulCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

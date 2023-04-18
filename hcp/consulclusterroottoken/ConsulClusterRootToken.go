@@ -2,14 +2,14 @@ package consulclusterroottoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/consulclusterroottoken/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulclusterroottoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster_root_token hcp_consul_cluster_root_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token}.
 type ConsulClusterRootToken interface {
 	cdktf.TerraformResource
 	AccessorId() *string
@@ -25,9 +25,9 @@ type ConsulClusterRootToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ConsulClusterRootToken) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterRootToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConsulClusterRootToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -366,7 +366,7 @@ func (j *jsiiProxy_ConsulClusterRootToken) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster_root_token hcp_consul_cluster_root_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token} Resource.
 func NewConsulClusterRootToken(scope constructs.Construct, id *string, config *ConsulClusterRootTokenConfig) ConsulClusterRootToken {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewConsulClusterRootToken(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster_root_token hcp_consul_cluster_root_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token} Resource.
 func NewConsulClusterRootToken_Override(c ConsulClusterRootToken, scope constructs.Construct, id *string, config *ConsulClusterRootTokenConfig) {
 	_init_.Initialize()
 
@@ -417,7 +417,10 @@ func (j *jsiiProxy_ConsulClusterRootToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterRootToken)SetCount(val *float64) {
+func (j *jsiiProxy_ConsulClusterRootToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

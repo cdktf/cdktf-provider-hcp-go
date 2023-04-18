@@ -88,6 +88,10 @@ func (j *jsiiProxy_ConsulCluster) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_ConsulCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulCluster) validateSetDatacenterParameters(val *string) error {
 	return nil
 }

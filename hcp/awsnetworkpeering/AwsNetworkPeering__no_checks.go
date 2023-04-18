@@ -72,6 +72,10 @@ func (j *jsiiProxy_AwsNetworkPeering) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_AwsNetworkPeering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsNetworkPeering) validateSetHvnIdParameters(val *string) error {
 	return nil
 }

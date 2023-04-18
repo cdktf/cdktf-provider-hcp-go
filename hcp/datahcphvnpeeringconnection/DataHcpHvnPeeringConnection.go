@@ -2,14 +2,14 @@ package datahcphvnpeeringconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/datahcphvnpeeringconnection/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcphvnpeeringconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection hcp_hvn_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection}.
 type DataHcpHvnPeeringConnection interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataHcpHvnPeeringConnection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataHcpHvnPeeringConnection) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpHvnPeeringConnection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataHcpHvnPeeringConnection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataHcpHvnPeeringConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection hcp_hvn_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source.
 func NewDataHcpHvnPeeringConnection(scope constructs.Construct, id *string, config *DataHcpHvnPeeringConnectionConfig) DataHcpHvnPeeringConnection {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewDataHcpHvnPeeringConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/hvn_peering_connection hcp_hvn_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source.
 func NewDataHcpHvnPeeringConnection_Override(d DataHcpHvnPeeringConnection, scope constructs.Construct, id *string, config *DataHcpHvnPeeringConnectionConfig) {
 	_init_.Initialize()
 
@@ -446,7 +446,10 @@ func NewDataHcpHvnPeeringConnection_Override(d DataHcpHvnPeeringConnection, scop
 	)
 }
 
-func (j *jsiiProxy_DataHcpHvnPeeringConnection)SetCount(val *float64) {
+func (j *jsiiProxy_DataHcpHvnPeeringConnection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

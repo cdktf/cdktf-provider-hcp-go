@@ -68,6 +68,10 @@ func validateDataHcpHvnPeeringConnection_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpHvnPeeringConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpHvnPeeringConnection) validateSetHvn1Parameters(val *string) error {
 	return nil
 }

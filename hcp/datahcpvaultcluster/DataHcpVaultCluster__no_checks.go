@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataHcpVaultCluster) validateSetClusterIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpVaultCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpVaultCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

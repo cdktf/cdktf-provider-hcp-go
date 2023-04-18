@@ -72,6 +72,10 @@ func (j *jsiiProxy_HvnRoute) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_HvnRoute) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HvnRoute) validateSetDestinationCidrParameters(val *string) error {
 	return nil
 }

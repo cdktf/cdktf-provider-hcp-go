@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) validateSetClusterIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) validateSetExposeGossipPortsParameters(val interface{}) error {
 	return nil
 }

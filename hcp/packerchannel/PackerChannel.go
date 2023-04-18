@@ -2,14 +2,14 @@ package packerchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/packerchannel/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/packerchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel hcp_packer_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel hcp_packer_channel}.
 type PackerChannel interface {
 	cdktf.TerraformResource
 	AuthorId() *string
@@ -25,9 +25,9 @@ type PackerChannel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -184,8 +184,8 @@ func (j *jsiiProxy_PackerChannel) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_PackerChannel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PackerChannel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -435,7 +435,7 @@ func (j *jsiiProxy_PackerChannel) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel hcp_packer_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel hcp_packer_channel} Resource.
 func NewPackerChannel(scope constructs.Construct, id *string, config *PackerChannelConfig) PackerChannel {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewPackerChannel(scope constructs.Construct, id *string, config *PackerChan
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/r/packer_channel hcp_packer_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/packer_channel hcp_packer_channel} Resource.
 func NewPackerChannel_Override(p PackerChannel, scope constructs.Construct, id *string, config *PackerChannelConfig) {
 	_init_.Initialize()
 
@@ -486,7 +486,10 @@ func (j *jsiiProxy_PackerChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PackerChannel)SetCount(val *float64) {
+func (j *jsiiProxy_PackerChannel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

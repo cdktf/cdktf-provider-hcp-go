@@ -2,14 +2,14 @@ package datahcpconsulagenthelmconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/datahcpconsulagenthelmconfig/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcpconsulagenthelmconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp/d/consul_agent_helm_config hcp_consul_agent_helm_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_helm_config hcp_consul_agent_helm_config}.
 type DataHcpConsulAgentHelmConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -21,9 +21,9 @@ type DataHcpConsulAgentHelmConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/consul_agent_helm_config hcp_consul_agent_helm_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_helm_config hcp_consul_agent_helm_config} Data Source.
 func NewDataHcpConsulAgentHelmConfig(scope constructs.Construct, id *string, config *DataHcpConsulAgentHelmConfigConfig) DataHcpConsulAgentHelmConfig {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataHcpConsulAgentHelmConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/d/consul_agent_helm_config hcp_consul_agent_helm_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_helm_config hcp_consul_agent_helm_config} Data Source.
 func NewDataHcpConsulAgentHelmConfig_Override(d DataHcpConsulAgentHelmConfig, scope constructs.Construct, id *string, config *DataHcpConsulAgentHelmConfigConfig) {
 	_init_.Initialize()
 
@@ -403,7 +403,10 @@ func (j *jsiiProxy_DataHcpConsulAgentHelmConfig)SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataHcpConsulAgentHelmConfig)SetCount(val *float64) {
+func (j *jsiiProxy_DataHcpConsulAgentHelmConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

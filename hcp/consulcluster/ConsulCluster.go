@@ -2,14 +2,14 @@ package consulcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v3/consulcluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/consulcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster hcp_consul_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster hcp_consul_cluster}.
 type ConsulCluster interface {
 	cdktf.TerraformResource
 	AutoHvnToHvnPeering() interface{}
@@ -41,9 +41,9 @@ type ConsulCluster interface {
 	ConsulSnapshotRetention() *string
 	ConsulVersion() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Datacenter() *string
 	SetDatacenter(val *string)
 	DatacenterInput() *string
@@ -367,8 +367,8 @@ func (j *jsiiProxy_ConsulCluster) ConsulVersion() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConsulCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -758,7 +758,7 @@ func (j *jsiiProxy_ConsulCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster hcp_consul_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster hcp_consul_cluster} Resource.
 func NewConsulCluster(scope constructs.Construct, id *string, config *ConsulClusterConfig) ConsulCluster {
 	_init_.Initialize()
 
@@ -776,7 +776,7 @@ func NewConsulCluster(scope constructs.Construct, id *string, config *ConsulClus
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/hcp/r/consul_cluster hcp_consul_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster hcp_consul_cluster} Resource.
 func NewConsulCluster_Override(c ConsulCluster, scope constructs.Construct, id *string, config *ConsulClusterConfig) {
 	_init_.Initialize()
 
@@ -831,7 +831,10 @@ func (j *jsiiProxy_ConsulCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConsulCluster)SetCount(val *float64) {
+func (j *jsiiProxy_ConsulCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
