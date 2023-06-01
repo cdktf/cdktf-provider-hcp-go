@@ -92,6 +92,10 @@ func (j *jsiiProxy_HvnPeeringConnection) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_HvnPeeringConnection) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_HvnPeeringConnection) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

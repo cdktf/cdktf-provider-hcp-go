@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route hcp_hvn_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route hcp_hvn_route}.
 type HvnRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -55,6 +55,9 @@ type HvnRoute interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -108,6 +111,7 @@ type HvnRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -314,6 +318,26 @@ func (j *jsiiProxy_HvnRoute) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_HvnRoute) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HvnRoute) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HvnRoute) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -435,7 +459,7 @@ func (j *jsiiProxy_HvnRoute) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route hcp_hvn_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route hcp_hvn_route} Resource.
 func NewHvnRoute(scope constructs.Construct, id *string, config *HvnRouteConfig) HvnRoute {
 	_init_.Initialize()
 
@@ -453,7 +477,7 @@ func NewHvnRoute(scope constructs.Construct, id *string, config *HvnRouteConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_route hcp_hvn_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_route hcp_hvn_route} Resource.
 func NewHvnRoute_Override(h HvnRoute, scope constructs.Construct, id *string, config *HvnRouteConfig) {
 	_init_.Initialize()
 
@@ -553,6 +577,17 @@ func (j *jsiiProxy_HvnRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HvnRoute)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -876,6 +911,14 @@ func (h *jsiiProxy_HvnRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HvnRoute) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

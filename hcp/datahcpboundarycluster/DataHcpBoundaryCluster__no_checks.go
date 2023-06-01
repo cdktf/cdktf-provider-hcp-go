@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataHcpBoundaryCluster) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpBoundaryCluster) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataHcpBoundaryClusterParameters(scope constructs.Construct, id *string, config *DataHcpBoundaryClusterConfig) error {
 	return nil
 }

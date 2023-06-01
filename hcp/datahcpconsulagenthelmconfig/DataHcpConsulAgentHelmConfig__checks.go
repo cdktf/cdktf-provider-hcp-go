@@ -255,6 +255,14 @@ func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) validateSetProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataHcpConsulAgentHelmConfigParameters(scope constructs.Construct, id *string, config *DataHcpConsulAgentHelmConfigConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

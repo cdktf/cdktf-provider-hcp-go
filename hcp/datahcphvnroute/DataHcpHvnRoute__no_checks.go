@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataHcpHvnRoute) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpHvnRoute) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataHcpHvnRouteParameters(scope constructs.Construct, id *string, config *DataHcpHvnRouteConfig) error {
 	return nil
 }

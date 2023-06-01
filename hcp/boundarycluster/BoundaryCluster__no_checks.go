@@ -52,6 +52,10 @@ func (b *jsiiProxy_BoundaryCluster) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (b *jsiiProxy_BoundaryCluster) validatePutMaintenanceWindowConfigParameters(value *BoundaryClusterMaintenanceWindowConfig) error {
+	return nil
+}
+
 func (b *jsiiProxy_BoundaryCluster) validatePutTimeoutsParameters(value *BoundaryClusterTimeouts) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_BoundaryCluster) validateSetLifecycleParameters(val *cdktf.Te
 }
 
 func (j *jsiiProxy_BoundaryCluster) validateSetPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BoundaryCluster) validateSetProjectIdParameters(val *string) error {
 	return nil
 }
 

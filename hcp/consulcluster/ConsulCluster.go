@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster hcp_consul_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster hcp_consul_cluster}.
 type ConsulCluster interface {
 	cdktf.TerraformResource
 	AutoHvnToHvnPeering() interface{}
@@ -81,6 +81,8 @@ type ConsulCluster interface {
 	SetPrimaryLink(val *string)
 	PrimaryLinkInput() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -149,6 +151,7 @@ type ConsulCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrimaryLink()
+	ResetProjectId()
 	ResetPublicEndpoint()
 	ResetSize()
 	ResetTimeouts()
@@ -577,6 +580,16 @@ func (j *jsiiProxy_ConsulCluster) ProjectId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ConsulCluster) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConsulCluster) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -758,7 +771,7 @@ func (j *jsiiProxy_ConsulCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster hcp_consul_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster hcp_consul_cluster} Resource.
 func NewConsulCluster(scope constructs.Construct, id *string, config *ConsulClusterConfig) ConsulCluster {
 	_init_.Initialize()
 
@@ -776,7 +789,7 @@ func NewConsulCluster(scope constructs.Construct, id *string, config *ConsulClus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster hcp_consul_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster hcp_consul_cluster} Resource.
 func NewConsulCluster_Override(c ConsulCluster, scope constructs.Construct, id *string, config *ConsulClusterConfig) {
 	_init_.Initialize()
 
@@ -920,6 +933,17 @@ func (j *jsiiProxy_ConsulCluster)SetPrimaryLink(val *string) {
 	_jsii_.Set(
 		j,
 		"primaryLink",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulCluster)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -1324,6 +1348,14 @@ func (c *jsiiProxy_ConsulCluster) ResetPrimaryLink() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPrimaryLink",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulCluster) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

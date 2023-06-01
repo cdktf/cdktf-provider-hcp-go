@@ -92,6 +92,10 @@ func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpConsulAgentHelmConfig) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataHcpConsulAgentHelmConfigParameters(scope constructs.Construct, id *string, config *DataHcpConsulAgentHelmConfigConfig) error {
 	return nil
 }

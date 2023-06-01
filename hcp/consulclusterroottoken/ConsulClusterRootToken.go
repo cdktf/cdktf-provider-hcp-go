@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token}.
 type ConsulClusterRootToken interface {
 	cdktf.TerraformResource
 	AccessorId() *string
@@ -50,6 +50,9 @@ type ConsulClusterRootToken interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -99,6 +102,7 @@ type ConsulClusterRootToken interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -275,6 +279,26 @@ func (j *jsiiProxy_ConsulClusterRootToken) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ConsulClusterRootToken) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulClusterRootToken) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConsulClusterRootToken) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -366,7 +390,7 @@ func (j *jsiiProxy_ConsulClusterRootToken) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token} Resource.
 func NewConsulClusterRootToken(scope constructs.Construct, id *string, config *ConsulClusterRootTokenConfig) ConsulClusterRootToken {
 	_init_.Initialize()
 
@@ -384,7 +408,7 @@ func NewConsulClusterRootToken(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_cluster_root_token hcp_consul_cluster_root_token} Resource.
 func NewConsulClusterRootToken_Override(c ConsulClusterRootToken, scope constructs.Construct, id *string, config *ConsulClusterRootTokenConfig) {
 	_init_.Initialize()
 
@@ -462,6 +486,17 @@ func (j *jsiiProxy_ConsulClusterRootToken)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulClusterRootToken)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -774,6 +809,14 @@ func (c *jsiiProxy_ConsulClusterRootToken) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulClusterRootToken) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

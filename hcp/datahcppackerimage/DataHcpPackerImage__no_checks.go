@@ -100,6 +100,10 @@ func (j *jsiiProxy_DataHcpPackerImage) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpPackerImage) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpPackerImage) validateSetRegionParameters(val *string) error {
 	return nil
 }

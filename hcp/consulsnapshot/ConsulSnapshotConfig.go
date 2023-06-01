@@ -21,20 +21,24 @@ type ConsulSnapshotConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the HCP Consul cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#cluster_id ConsulSnapshot#cluster_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#cluster_id ConsulSnapshot#cluster_id}
 	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
 	// The name of the snapshot.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#snapshot_name ConsulSnapshot#snapshot_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#snapshot_name ConsulSnapshot#snapshot_name}
 	SnapshotName *string `field:"required" json:"snapshotName" yaml:"snapshotName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#id ConsulSnapshot#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#id ConsulSnapshot#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The ID of the HCP project where the HCP Consul cluster is located.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#project_id ConsulSnapshot#project_id}
+	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot#timeouts ConsulSnapshot#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot#timeouts ConsulSnapshot#timeouts}
 	Timeouts *ConsulSnapshotTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

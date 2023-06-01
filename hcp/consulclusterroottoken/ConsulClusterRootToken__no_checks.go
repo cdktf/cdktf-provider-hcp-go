@@ -88,6 +88,10 @@ func (j *jsiiProxy_ConsulClusterRootToken) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_ConsulClusterRootToken) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulClusterRootToken) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

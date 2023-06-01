@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataHcpConsulCluster) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpConsulCluster) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataHcpConsulClusterParameters(scope constructs.Construct, id *string, config *DataHcpConsulClusterConfig) error {
 	return nil
 }

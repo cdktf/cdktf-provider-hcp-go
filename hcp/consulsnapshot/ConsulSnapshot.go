@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot hcp_consul_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot hcp_consul_snapshot}.
 type ConsulSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -51,6 +51,8 @@ type ConsulSnapshot interface {
 	Node() constructs.Node
 	OrganizationId() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -106,6 +108,7 @@ type ConsulSnapshot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -292,6 +295,16 @@ func (j *jsiiProxy_ConsulSnapshot) ProjectId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ConsulSnapshot) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConsulSnapshot) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -433,7 +446,7 @@ func (j *jsiiProxy_ConsulSnapshot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot hcp_consul_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot hcp_consul_snapshot} Resource.
 func NewConsulSnapshot(scope constructs.Construct, id *string, config *ConsulSnapshotConfig) ConsulSnapshot {
 	_init_.Initialize()
 
@@ -451,7 +464,7 @@ func NewConsulSnapshot(scope constructs.Construct, id *string, config *ConsulSna
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/consul_snapshot hcp_consul_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/consul_snapshot hcp_consul_snapshot} Resource.
 func NewConsulSnapshot_Override(c ConsulSnapshot, scope constructs.Construct, id *string, config *ConsulSnapshotConfig) {
 	_init_.Initialize()
 
@@ -529,6 +542,17 @@ func (j *jsiiProxy_ConsulSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSnapshot)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -852,6 +876,14 @@ func (c *jsiiProxy_ConsulSnapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSnapshot) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

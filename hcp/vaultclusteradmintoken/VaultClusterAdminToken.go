@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token}.
 type VaultClusterAdminToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,9 @@ type VaultClusterAdminToken interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -98,6 +101,7 @@ type VaultClusterAdminToken interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -264,6 +268,26 @@ func (j *jsiiProxy_VaultClusterAdminToken) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_VaultClusterAdminToken) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAdminToken) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VaultClusterAdminToken) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -355,7 +379,7 @@ func (j *jsiiProxy_VaultClusterAdminToken) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token} Resource.
 func NewVaultClusterAdminToken(scope constructs.Construct, id *string, config *VaultClusterAdminTokenConfig) VaultClusterAdminToken {
 	_init_.Initialize()
 
@@ -373,7 +397,7 @@ func NewVaultClusterAdminToken(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token} Resource.
 func NewVaultClusterAdminToken_Override(v VaultClusterAdminToken, scope constructs.Construct, id *string, config *VaultClusterAdminTokenConfig) {
 	_init_.Initialize()
 
@@ -451,6 +475,17 @@ func (j *jsiiProxy_VaultClusterAdminToken)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterAdminToken)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -763,6 +798,14 @@ func (v *jsiiProxy_VaultClusterAdminToken) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterAdminToken) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

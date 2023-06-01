@@ -116,6 +116,10 @@ func (j *jsiiProxy_VaultCluster) validateSetPrimaryLinkParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_VaultCluster) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultCluster) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

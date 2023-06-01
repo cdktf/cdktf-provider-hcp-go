@@ -325,6 +325,14 @@ func (j *jsiiProxy_VaultCluster) validateSetPrimaryLinkParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_VaultCluster) validateSetProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VaultCluster) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

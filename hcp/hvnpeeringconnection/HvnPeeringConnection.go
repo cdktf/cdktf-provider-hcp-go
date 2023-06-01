@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection}.
 type HvnPeeringConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,8 @@ type HvnPeeringConnection interface {
 	OrganizationId() *string
 	PeeringId() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -106,6 +108,7 @@ type HvnPeeringConnection interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -332,6 +335,16 @@ func (j *jsiiProxy_HvnPeeringConnection) ProjectId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_HvnPeeringConnection) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HvnPeeringConnection) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -433,7 +446,7 @@ func (j *jsiiProxy_HvnPeeringConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection} Resource.
 func NewHvnPeeringConnection(scope constructs.Construct, id *string, config *HvnPeeringConnectionConfig) HvnPeeringConnection {
 	_init_.Initialize()
 
@@ -451,7 +464,7 @@ func NewHvnPeeringConnection(scope constructs.Construct, id *string, config *Hvn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection} Resource.
 func NewHvnPeeringConnection_Override(h HvnPeeringConnection, scope constructs.Construct, id *string, config *HvnPeeringConnectionConfig) {
 	_init_.Initialize()
 
@@ -540,6 +553,17 @@ func (j *jsiiProxy_HvnPeeringConnection)SetLifecycle(val *cdktf.TerraformResourc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HvnPeeringConnection)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -852,6 +876,14 @@ func (h *jsiiProxy_HvnPeeringConnection) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HvnPeeringConnection) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

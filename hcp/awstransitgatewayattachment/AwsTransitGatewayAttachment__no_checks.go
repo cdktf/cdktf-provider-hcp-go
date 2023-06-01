@@ -88,6 +88,10 @@ func (j *jsiiProxy_AwsTransitGatewayAttachment) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AwsTransitGatewayAttachment) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsTransitGatewayAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

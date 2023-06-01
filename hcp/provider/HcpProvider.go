@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs hcp}.
 type HcpProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -33,6 +33,9 @@ type HcpProvider interface {
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -52,6 +55,7 @@ type HcpProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -187,6 +191,26 @@ func (j *jsiiProxy_HcpProvider) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_HcpProvider) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HcpProvider) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -228,7 +252,7 @@ func (j *jsiiProxy_HcpProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs hcp} Resource.
 func NewHcpProvider(scope constructs.Construct, id *string, config *HcpProviderConfig) HcpProvider {
 	_init_.Initialize()
 
@@ -246,7 +270,7 @@ func NewHcpProvider(scope constructs.Construct, id *string, config *HcpProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs hcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs hcp} Resource.
 func NewHcpProvider_Override(h HcpProvider, scope constructs.Construct, id *string, config *HcpProviderConfig) {
 	_init_.Initialize()
 
@@ -277,6 +301,14 @@ func (j *jsiiProxy_HcpProvider)SetClientSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"clientSecret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HcpProvider)SetProjectId(val *string) {
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -415,6 +447,14 @@ func (h *jsiiProxy_HcpProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HcpProvider) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

@@ -96,6 +96,10 @@ func (j *jsiiProxy_PackerChannel) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_PackerChannel) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PackerChannel) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_VaultClusterAdminToken) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_VaultClusterAdminToken) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultClusterAdminToken) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

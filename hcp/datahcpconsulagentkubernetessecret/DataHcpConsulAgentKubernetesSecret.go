@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret}.
 type DataHcpConsulAgentKubernetesSecret interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -44,6 +44,9 @@ type DataHcpConsulAgentKubernetesSecret interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -89,6 +92,7 @@ type DataHcpConsulAgentKubernetesSecret interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -235,6 +239,26 @@ func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -316,7 +340,7 @@ func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source.
 func NewDataHcpConsulAgentKubernetesSecret(scope constructs.Construct, id *string, config *DataHcpConsulAgentKubernetesSecretConfig) DataHcpConsulAgentKubernetesSecret {
 	_init_.Initialize()
 
@@ -334,7 +358,7 @@ func NewDataHcpConsulAgentKubernetesSecret(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source.
 func NewDataHcpConsulAgentKubernetesSecret_Override(d DataHcpConsulAgentKubernetesSecret, scope constructs.Construct, id *string, config *DataHcpConsulAgentKubernetesSecretConfig) {
 	_init_.Initialize()
 
@@ -401,6 +425,17 @@ func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret)SetLifecycle(val *cdktf.Te
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -702,6 +737,14 @@ func (d *jsiiProxy_DataHcpConsulAgentKubernetesSecret) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataHcpConsulAgentKubernetesSecret) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

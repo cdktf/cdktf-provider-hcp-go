@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/vault_cluster hcp_vault_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/vault_cluster hcp_vault_cluster}.
 type DataHcpVaultCluster interface {
 	cdktf.TerraformDataSource
 	AuditLogConfig() DataHcpVaultClusterAuditLogConfigList
@@ -58,6 +58,8 @@ type DataHcpVaultCluster interface {
 	PathsFilter() *[]*string
 	PrimaryLink() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -114,6 +116,7 @@ type DataHcpVaultCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -400,6 +403,16 @@ func (j *jsiiProxy_DataHcpVaultCluster) ProjectId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpVaultCluster) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataHcpVaultCluster) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -551,7 +564,7 @@ func (j *jsiiProxy_DataHcpVaultCluster) VaultVersion() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
 func NewDataHcpVaultCluster(scope constructs.Construct, id *string, config *DataHcpVaultClusterConfig) DataHcpVaultCluster {
 	_init_.Initialize()
 
@@ -569,7 +582,7 @@ func NewDataHcpVaultCluster(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
 func NewDataHcpVaultCluster_Override(d DataHcpVaultCluster, scope constructs.Construct, id *string, config *DataHcpVaultClusterConfig) {
 	_init_.Initialize()
 
@@ -636,6 +649,17 @@ func (j *jsiiProxy_DataHcpVaultCluster)SetLifecycle(val *cdktf.TerraformResource
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataHcpVaultCluster)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -975,6 +999,14 @@ func (d *jsiiProxy_DataHcpVaultCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataHcpVaultCluster) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

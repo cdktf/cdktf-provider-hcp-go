@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image hcp_packer_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/packer_image hcp_packer_image}.
 type DataHcpPackerImage interface {
 	cdktf.TerraformDataSource
 	BucketName() *string
@@ -63,6 +63,8 @@ type DataHcpPackerImage interface {
 	OrganizationId() *string
 	PackerRunUuid() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -114,6 +116,7 @@ type DataHcpPackerImage interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -410,6 +413,16 @@ func (j *jsiiProxy_DataHcpPackerImage) ProjectId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpPackerImage) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataHcpPackerImage) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -511,7 +524,7 @@ func (j *jsiiProxy_DataHcpPackerImage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image hcp_packer_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/packer_image hcp_packer_image} Data Source.
 func NewDataHcpPackerImage(scope constructs.Construct, id *string, config *DataHcpPackerImageConfig) DataHcpPackerImage {
 	_init_.Initialize()
 
@@ -529,7 +542,7 @@ func NewDataHcpPackerImage(scope constructs.Construct, id *string, config *DataH
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_image hcp_packer_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/packer_image hcp_packer_image} Data Source.
 func NewDataHcpPackerImage_Override(d DataHcpPackerImage, scope constructs.Construct, id *string, config *DataHcpPackerImageConfig) {
 	_init_.Initialize()
 
@@ -640,6 +653,17 @@ func (j *jsiiProxy_DataHcpPackerImage)SetLifecycle(val *cdktf.TerraformResourceL
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataHcpPackerImage)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -976,6 +1000,14 @@ func (d *jsiiProxy_DataHcpPackerImage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataHcpPackerImage) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

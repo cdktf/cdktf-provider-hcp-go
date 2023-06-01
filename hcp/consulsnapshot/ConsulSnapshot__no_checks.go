@@ -88,6 +88,10 @@ func (j *jsiiProxy_ConsulSnapshot) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
+func (j *jsiiProxy_ConsulSnapshot) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSnapshot) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

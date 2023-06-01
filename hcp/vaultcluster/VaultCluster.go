@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/vault_cluster hcp_vault_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/vault_cluster hcp_vault_cluster}.
 type VaultCluster interface {
 	cdktf.TerraformResource
 	AuditLogConfig() VaultClusterAuditLogConfigOutputReference
@@ -71,6 +71,8 @@ type VaultCluster interface {
 	SetPrimaryLink(val *string)
 	PrimaryLinkInput() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -140,6 +142,7 @@ type VaultCluster interface {
 	ResetOverrideLogicalId()
 	ResetPathsFilter()
 	ResetPrimaryLink()
+	ResetProjectId()
 	ResetPublicEndpoint()
 	ResetTier()
 	ResetTimeouts()
@@ -488,6 +491,16 @@ func (j *jsiiProxy_VaultCluster) ProjectId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VaultCluster) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VaultCluster) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -669,7 +682,7 @@ func (j *jsiiProxy_VaultCluster) VaultVersion() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
 func NewVaultCluster(scope constructs.Construct, id *string, config *VaultClusterConfig) VaultCluster {
 	_init_.Initialize()
 
@@ -687,7 +700,7 @@ func NewVaultCluster(scope constructs.Construct, id *string, config *VaultCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
 func NewVaultCluster_Override(v VaultCluster, scope constructs.Construct, id *string, config *VaultClusterConfig) {
 	_init_.Initialize()
 
@@ -809,6 +822,17 @@ func (j *jsiiProxy_VaultCluster)SetPrimaryLink(val *string) {
 	_jsii_.Set(
 		j,
 		"primaryLink",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultCluster)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -1224,6 +1248,14 @@ func (v *jsiiProxy_VaultCluster) ResetPrimaryLink() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPrimaryLink",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultCluster) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

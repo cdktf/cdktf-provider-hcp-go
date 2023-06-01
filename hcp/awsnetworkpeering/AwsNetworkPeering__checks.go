@@ -292,6 +292,14 @@ func (j *jsiiProxy_AwsNetworkPeering) validateSetPeerVpcRegionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AwsNetworkPeering) validateSetProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AwsNetworkPeering) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

@@ -96,6 +96,10 @@ func (j *jsiiProxy_Hvn) validateSetLifecycleParameters(val *cdktf.TerraformResou
 	return nil
 }
 
+func (j *jsiiProxy_Hvn) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Hvn) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

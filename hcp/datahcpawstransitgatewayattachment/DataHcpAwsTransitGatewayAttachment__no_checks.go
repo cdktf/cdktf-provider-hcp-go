@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataHcpAwsTransitGatewayAttachment) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpAwsTransitGatewayAttachment) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpAwsTransitGatewayAttachment) validateSetTransitGatewayAttachmentIdParameters(val *string) error {
 	return nil
 }

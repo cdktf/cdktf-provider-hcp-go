@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataHcpConsulAgentKubernetesSecretParameters(scope constructs.Construct, id *string, config *DataHcpConsulAgentKubernetesSecretConfig) error {
 	return nil
 }

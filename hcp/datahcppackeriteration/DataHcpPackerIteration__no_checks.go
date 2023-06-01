@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataHcpPackerIteration) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpPackerIteration) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataHcpPackerIterationParameters(scope constructs.Construct, id *string, config *DataHcpPackerIterationConfig) error {
 	return nil
 }

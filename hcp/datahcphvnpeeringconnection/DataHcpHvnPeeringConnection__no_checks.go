@@ -92,6 +92,10 @@ func (j *jsiiProxy_DataHcpHvnPeeringConnection) validateSetPeeringIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpHvnPeeringConnection) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataHcpHvnPeeringConnectionParameters(scope constructs.Construct, id *string, config *DataHcpHvnPeeringConnectionConfig) error {
 	return nil
 }

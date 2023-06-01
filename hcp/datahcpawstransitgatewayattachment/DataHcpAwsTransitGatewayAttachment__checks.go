@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataHcpAwsTransitGatewayAttachment) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpAwsTransitGatewayAttachment) validateSetProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpAwsTransitGatewayAttachment) validateSetTransitGatewayAttachmentIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

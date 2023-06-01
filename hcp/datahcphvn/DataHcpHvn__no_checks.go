@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataHcpHvn) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpHvn) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataHcpHvnParameters(scope constructs.Construct, id *string, config *DataHcpHvnConfig) error {
 	return nil
 }

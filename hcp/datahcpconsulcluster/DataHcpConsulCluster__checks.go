@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataHcpConsulCluster) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpConsulCluster) validateSetProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataHcpConsulClusterParameters(scope constructs.Construct, id *string, config *DataHcpConsulClusterConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_iteration hcp_packer_iteration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/packer_iteration hcp_packer_iteration}.
 type DataHcpPackerIteration interface {
 	cdktf.TerraformDataSource
 	AuthorId() *string
@@ -53,6 +53,8 @@ type DataHcpPackerIteration interface {
 	Node() constructs.Node
 	OrganizationId() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -100,6 +102,7 @@ type DataHcpPackerIteration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -326,6 +329,16 @@ func (j *jsiiProxy_DataHcpPackerIteration) ProjectId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpPackerIteration) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataHcpPackerIteration) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -427,7 +440,7 @@ func (j *jsiiProxy_DataHcpPackerIteration) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
 func NewDataHcpPackerIteration(scope constructs.Construct, id *string, config *DataHcpPackerIterationConfig) DataHcpPackerIteration {
 	_init_.Initialize()
 
@@ -445,7 +458,7 @@ func NewDataHcpPackerIteration(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
 func NewDataHcpPackerIteration_Override(d DataHcpPackerIteration, scope constructs.Construct, id *string, config *DataHcpPackerIterationConfig) {
 	_init_.Initialize()
 
@@ -523,6 +536,17 @@ func (j *jsiiProxy_DataHcpPackerIteration)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataHcpPackerIteration)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -824,6 +848,14 @@ func (d *jsiiProxy_DataHcpPackerIteration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataHcpPackerIteration) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

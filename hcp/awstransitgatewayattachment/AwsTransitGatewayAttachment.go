@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment}.
 type AwsTransitGatewayAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -52,6 +52,8 @@ type AwsTransitGatewayAttachment interface {
 	Node() constructs.Node
 	OrganizationId() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -112,6 +114,7 @@ type AwsTransitGatewayAttachment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -308,6 +311,16 @@ func (j *jsiiProxy_AwsTransitGatewayAttachment) ProjectId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsTransitGatewayAttachment) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsTransitGatewayAttachment) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -479,7 +492,7 @@ func (j *jsiiProxy_AwsTransitGatewayAttachment) TransitGatewayIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
 func NewAwsTransitGatewayAttachment(scope constructs.Construct, id *string, config *AwsTransitGatewayAttachmentConfig) AwsTransitGatewayAttachment {
 	_init_.Initialize()
 
@@ -497,7 +510,7 @@ func NewAwsTransitGatewayAttachment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
 func NewAwsTransitGatewayAttachment_Override(a AwsTransitGatewayAttachment, scope constructs.Construct, id *string, config *AwsTransitGatewayAttachmentConfig) {
 	_init_.Initialize()
 
@@ -575,6 +588,17 @@ func (j *jsiiProxy_AwsTransitGatewayAttachment)SetLifecycle(val *cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsTransitGatewayAttachment)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -920,6 +944,14 @@ func (a *jsiiProxy_AwsTransitGatewayAttachment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsTransitGatewayAttachment) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

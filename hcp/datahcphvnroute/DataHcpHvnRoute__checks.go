@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataHcpHvnRoute) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpHvnRoute) validateSetProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataHcpHvnRouteParameters(scope constructs.Construct, id *string, config *DataHcpHvnRouteConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

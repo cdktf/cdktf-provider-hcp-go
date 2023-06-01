@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataHcpAwsNetworkPeering) validateSetPeeringIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpAwsNetworkPeering) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpAwsNetworkPeering) validateSetWaitForActiveStateParameters(val interface{}) error {
 	return nil
 }

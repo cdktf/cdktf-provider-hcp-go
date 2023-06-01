@@ -104,6 +104,10 @@ func (j *jsiiProxy_AwsNetworkPeering) validateSetPeerVpcRegionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AwsNetworkPeering) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsNetworkPeering) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
 type BoundaryCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,11 +48,16 @@ type BoundaryCluster interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintenanceWindowConfig() BoundaryClusterMaintenanceWindowConfigOutputReference
+	MaintenanceWindowConfigInput() *BoundaryClusterMaintenanceWindowConfig
 	// The tree node.
 	Node() constructs.Node
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -100,11 +105,14 @@ type BoundaryCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutMaintenanceWindowConfig(value *BoundaryClusterMaintenanceWindowConfig)
 	PutTimeouts(value *BoundaryClusterTimeouts)
 	ResetId()
+	ResetMaintenanceWindowConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -271,6 +279,26 @@ func (j *jsiiProxy_BoundaryCluster) Lifecycle() *cdktf.TerraformResourceLifecycl
 	return returns
 }
 
+func (j *jsiiProxy_BoundaryCluster) MaintenanceWindowConfig() BoundaryClusterMaintenanceWindowConfigOutputReference {
+	var returns BoundaryClusterMaintenanceWindowConfigOutputReference
+	_jsii_.Get(
+		j,
+		"maintenanceWindowConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryCluster) MaintenanceWindowConfigInput() *BoundaryClusterMaintenanceWindowConfig {
+	var returns *BoundaryClusterMaintenanceWindowConfig
+	_jsii_.Get(
+		j,
+		"maintenanceWindowConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BoundaryCluster) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -296,6 +324,26 @@ func (j *jsiiProxy_BoundaryCluster) PasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryCluster) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryCluster) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
 		&returns,
 	)
 	return returns
@@ -412,7 +460,7 @@ func (j *jsiiProxy_BoundaryCluster) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
 func NewBoundaryCluster(scope constructs.Construct, id *string, config *BoundaryClusterConfig) BoundaryCluster {
 	_init_.Initialize()
 
@@ -430,7 +478,7 @@ func NewBoundaryCluster(scope constructs.Construct, id *string, config *Boundary
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
 func NewBoundaryCluster_Override(b BoundaryCluster, scope constructs.Construct, id *string, config *BoundaryClusterConfig) {
 	_init_.Initialize()
 
@@ -519,6 +567,17 @@ func (j *jsiiProxy_BoundaryCluster)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BoundaryCluster)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -819,6 +878,17 @@ func (b *jsiiProxy_BoundaryCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (b *jsiiProxy_BoundaryCluster) PutMaintenanceWindowConfig(value *BoundaryClusterMaintenanceWindowConfig) {
+	if err := b.validatePutMaintenanceWindowConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putMaintenanceWindowConfig",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BoundaryCluster) PutTimeouts(value *BoundaryClusterTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -838,10 +908,26 @@ func (b *jsiiProxy_BoundaryCluster) ResetId() {
 	)
 }
 
+func (b *jsiiProxy_BoundaryCluster) ResetMaintenanceWindowConfig() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMaintenanceWindowConfig",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BoundaryCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BoundaryCluster) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

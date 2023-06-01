@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster hcp_boundary_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster hcp_boundary_cluster}.
 type DataHcpBoundaryCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -44,8 +44,12 @@ type DataHcpBoundaryCluster interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintenanceWindowConfig() DataHcpBoundaryClusterMaintenanceWindowConfigList
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -91,6 +95,7 @@ type DataHcpBoundaryCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -247,11 +252,41 @@ func (j *jsiiProxy_DataHcpBoundaryCluster) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpBoundaryCluster) MaintenanceWindowConfig() DataHcpBoundaryClusterMaintenanceWindowConfigList {
+	var returns DataHcpBoundaryClusterMaintenanceWindowConfigList
+	_jsii_.Get(
+		j,
+		"maintenanceWindowConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataHcpBoundaryCluster) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpBoundaryCluster) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpBoundaryCluster) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
 		&returns,
 	)
 	return returns
@@ -338,7 +373,7 @@ func (j *jsiiProxy_DataHcpBoundaryCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source.
 func NewDataHcpBoundaryCluster(scope constructs.Construct, id *string, config *DataHcpBoundaryClusterConfig) DataHcpBoundaryCluster {
 	_init_.Initialize()
 
@@ -356,7 +391,7 @@ func NewDataHcpBoundaryCluster(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/boundary_cluster hcp_boundary_cluster} Data Source.
 func NewDataHcpBoundaryCluster_Override(d DataHcpBoundaryCluster, scope constructs.Construct, id *string, config *DataHcpBoundaryClusterConfig) {
 	_init_.Initialize()
 
@@ -423,6 +458,17 @@ func (j *jsiiProxy_DataHcpBoundaryCluster)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataHcpBoundaryCluster)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -724,6 +770,14 @@ func (d *jsiiProxy_DataHcpBoundaryCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataHcpBoundaryCluster) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering hcp_aws_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering hcp_aws_network_peering}.
 type AwsNetworkPeering interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,8 @@ type AwsNetworkPeering interface {
 	SetPeerVpcRegion(val *string)
 	PeerVpcRegionInput() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -115,6 +117,7 @@ type AwsNetworkPeering interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -391,6 +394,16 @@ func (j *jsiiProxy_AwsNetworkPeering) ProjectId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsNetworkPeering) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsNetworkPeering) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -502,7 +515,7 @@ func (j *jsiiProxy_AwsNetworkPeering) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource.
 func NewAwsNetworkPeering(scope constructs.Construct, id *string, config *AwsNetworkPeeringConfig) AwsNetworkPeering {
 	_init_.Initialize()
 
@@ -520,7 +533,7 @@ func NewAwsNetworkPeering(scope constructs.Construct, id *string, config *AwsNet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.56.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource.
 func NewAwsNetworkPeering_Override(a AwsNetworkPeering, scope constructs.Construct, id *string, config *AwsNetworkPeeringConfig) {
 	_init_.Initialize()
 
@@ -642,6 +655,17 @@ func (j *jsiiProxy_AwsNetworkPeering)SetPeerVpcRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"peerVpcRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsNetworkPeering)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -954,6 +978,14 @@ func (a *jsiiProxy_AwsNetworkPeering) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsNetworkPeering) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }
