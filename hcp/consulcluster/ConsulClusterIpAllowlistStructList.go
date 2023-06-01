@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type ConsulClusterIpAllowlistList interface {
+type ConsulClusterIpAllowlistStructList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -30,7 +30,7 @@ type ConsulClusterIpAllowlistList interface {
 	SetWrapsSet(val *bool)
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) ConsulClusterIpAllowlistOutputReference
+	Get(index *float64) ConsulClusterIpAllowlistStructOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -41,12 +41,12 @@ type ConsulClusterIpAllowlistList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for ConsulClusterIpAllowlistList
-type jsiiProxy_ConsulClusterIpAllowlistList struct {
+// The jsii proxy struct for ConsulClusterIpAllowlistStructList
+type jsiiProxy_ConsulClusterIpAllowlistStructList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList) CreationStack() *[]*string {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -56,7 +56,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList) Fqn() *string {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -66,7 +66,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList) InternalValue() interface{} {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList) InternalValue() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList) TerraformAttribute() *string {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -86,7 +86,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -96,7 +96,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList) TerraformResource() cdktf.IInte
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList) WrapsSet() *bool {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -107,16 +107,16 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList) WrapsSet() *bool {
 }
 
 
-func NewConsulClusterIpAllowlistList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConsulClusterIpAllowlistList {
+func NewConsulClusterIpAllowlistStructList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConsulClusterIpAllowlistStructList {
 	_init_.Initialize()
 
-	if err := validateNewConsulClusterIpAllowlistListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewConsulClusterIpAllowlistStructListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_ConsulClusterIpAllowlistList{}
+	j := jsiiProxy_ConsulClusterIpAllowlistStructList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList",
+		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -124,17 +124,17 @@ func NewConsulClusterIpAllowlistList(terraformResource cdktf.IInterpolatingParen
 	return &j
 }
 
-func NewConsulClusterIpAllowlistList_Override(c ConsulClusterIpAllowlistList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewConsulClusterIpAllowlistStructList_Override(c ConsulClusterIpAllowlistStructList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList",
+		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList)SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -156,7 +156,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -178,7 +178,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistList) ComputeFqn() *string {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -191,11 +191,11 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistList) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistList) Get(index *float64) ConsulClusterIpAllowlistOutputReference {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructList) Get(index *float64) ConsulClusterIpAllowlistStructOutputReference {
 	if err := c.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns ConsulClusterIpAllowlistOutputReference
+	var returns ConsulClusterIpAllowlistStructOutputReference
 
 	_jsii_.Invoke(
 		c,
@@ -207,7 +207,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistList) Get(index *float64) ConsulClust
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructList) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -223,7 +223,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistList) Resolve(_context cdktf.IResolve
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistList) ToString() *string {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

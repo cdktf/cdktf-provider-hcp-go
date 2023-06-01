@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataHcpConsulClusterIpAllowlistList) validateGetParameters(index *float64) error {
+func (d *jsiiProxy_DataHcpConsulClusterIpAllowlistStructList) validateGetParameters(index *float64) error {
 	if index == nil {
 		return fmt.Errorf("parameter index is required, but nil was provided")
 	}
@@ -16,7 +16,7 @@ func (d *jsiiProxy_DataHcpConsulClusterIpAllowlistList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpConsulClusterIpAllowlistList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataHcpConsulClusterIpAllowlistStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -24,7 +24,7 @@ func (d *jsiiProxy_DataHcpConsulClusterIpAllowlistList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataHcpConsulClusterIpAllowlistList) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataHcpConsulClusterIpAllowlistStructList) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataHcpConsulClusterIpAllowlistList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_DataHcpConsulClusterIpAllowlistList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataHcpConsulClusterIpAllowlistStructList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -40,7 +40,7 @@ func (j *jsiiProxy_DataHcpConsulClusterIpAllowlistList) validateSetTerraformReso
 	return nil
 }
 
-func (j *jsiiProxy_DataHcpConsulClusterIpAllowlistList) validateSetWrapsSetParameters(val *bool) error {
+func (j *jsiiProxy_DataHcpConsulClusterIpAllowlistStructList) validateSetWrapsSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -48,7 +48,7 @@ func (j *jsiiProxy_DataHcpConsulClusterIpAllowlistList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewDataHcpConsulClusterIpAllowlistListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataHcpConsulClusterIpAllowlistStructListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetAnyMapAtt
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetBooleanAt
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetBooleanMa
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetListAttri
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetNumberAtt
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetNumberLis
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetNumberMap
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetStringAtt
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateInterpolatio
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetAddressParameters(val *string) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateSetAddressParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -106,7 +106,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetAddressPa
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetDescriptionParameters(val *string) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,15 +179,15 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetDescripti
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case *ConsulClusterIpAllowlist:
-		val := val.(*ConsulClusterIpAllowlist)
+	case *ConsulClusterIpAllowlistStruct:
+		val := val.(*ConsulClusterIpAllowlistStruct)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case ConsulClusterIpAllowlist:
-		val_ := val.(ConsulClusterIpAllowlist)
+	case ConsulClusterIpAllowlistStruct:
+		val_ := val.(ConsulClusterIpAllowlistStruct)
 		val := &val_
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
@@ -196,14 +196,14 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetInternalV
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ConsulClusterIpAllowlist, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *ConsulClusterIpAllowlistStruct, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) validateSetTerraform
 	return nil
 }
 
-func validateNewConsulClusterIpAllowlistOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewConsulClusterIpAllowlistStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

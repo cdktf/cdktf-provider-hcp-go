@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type ConsulClusterIpAllowlistOutputReference interface {
+type ConsulClusterIpAllowlistStructOutputReference interface {
 	cdktf.ComplexObject
 	Address() *string
 	SetAddress(val *string)
@@ -78,12 +78,12 @@ type ConsulClusterIpAllowlistOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for ConsulClusterIpAllowlistOutputReference
-type jsiiProxy_ConsulClusterIpAllowlistOutputReference struct {
+// The jsii proxy struct for ConsulClusterIpAllowlistStructOutputReference
+type jsiiProxy_ConsulClusterIpAllowlistStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) Address() *string {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) Address() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -93,7 +93,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) Address() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) AddressInput() *string {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) AddressInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -103,7 +103,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) AddressInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -113,7 +113,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) ComplexObjectIndex()
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -123,7 +123,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) ComplexObjectIsFromS
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -133,7 +133,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) CreationStack() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) Description() *string {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) Description() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -143,7 +143,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) Description() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) DescriptionInput() *string {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) DescriptionInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -153,7 +153,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) DescriptionInput() *
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) Fqn() *string {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) InternalValue() interface{} {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -173,7 +173,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) InternalValue() inte
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -194,16 +194,16 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference) TerraformResource() 
 }
 
 
-func NewConsulClusterIpAllowlistOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ConsulClusterIpAllowlistOutputReference {
+func NewConsulClusterIpAllowlistStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ConsulClusterIpAllowlistStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewConsulClusterIpAllowlistOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewConsulClusterIpAllowlistStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_ConsulClusterIpAllowlistOutputReference{}
+	j := jsiiProxy_ConsulClusterIpAllowlistStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference",
+		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,17 +211,17 @@ func NewConsulClusterIpAllowlistOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewConsulClusterIpAllowlistOutputReference_Override(c ConsulClusterIpAllowlistOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewConsulClusterIpAllowlistStructOutputReference_Override(c ConsulClusterIpAllowlistStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference",
+		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetAddress(val *string) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference)SetAddress(val *string) {
 	if err := j.validateSetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +232,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetAddress(val *strin
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +254,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference)SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +265,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetDescription(val *s
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +276,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +287,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +298,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistOutputReference)SetTerraformResource(
 	)
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) ComputeFqn() *string {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -311,7 +311,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -327,7 +327,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -343,7 +343,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetBooleanAttribute(
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -359,7 +359,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetBooleanMapAttribu
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -375,7 +375,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetListAttribute(ter
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -391,7 +391,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetNumberAttribute(t
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -407,7 +407,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetNumberListAttribu
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -423,7 +423,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetNumberMapAttribut
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -439,7 +439,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetStringAttribute(t
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -455,7 +455,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -468,7 +468,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -484,7 +484,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) InterpolationForAttr
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) ResetDescription() {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
@@ -492,7 +492,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) ResetDescription() {
 	)
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -508,7 +508,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) Resolve(_context cdk
 	return returns
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistOutputReference) ToString() *string {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

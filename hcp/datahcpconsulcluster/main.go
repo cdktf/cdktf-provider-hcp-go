@@ -89,12 +89,12 @@ func init() {
 		reflect.TypeOf((*DataHcpConsulClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlist",
-		reflect.TypeOf((*DataHcpConsulClusterIpAllowlist)(nil)).Elem(),
+		"@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStruct",
+		reflect.TypeOf((*DataHcpConsulClusterIpAllowlistStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistList",
-		reflect.TypeOf((*DataHcpConsulClusterIpAllowlistList)(nil)).Elem(),
+		"@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructList",
+		reflect.TypeOf((*DataHcpConsulClusterIpAllowlistStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -107,14 +107,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataHcpConsulClusterIpAllowlistList{}
+			j := jsiiProxy_DataHcpConsulClusterIpAllowlistStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistOutputReference",
-		reflect.TypeOf((*DataHcpConsulClusterIpAllowlistOutputReference)(nil)).Elem(),
+		"@cdktf/provider-hcp.dataHcpConsulCluster.DataHcpConsulClusterIpAllowlistStructOutputReference",
+		reflect.TypeOf((*DataHcpConsulClusterIpAllowlistStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -141,7 +141,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataHcpConsulClusterIpAllowlistOutputReference{}
+			j := jsiiProxy_DataHcpConsulClusterIpAllowlistStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

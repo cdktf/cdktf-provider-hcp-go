@@ -65,7 +65,7 @@ type ConsulCluster interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IpAllowlist() ConsulClusterIpAllowlistList
+	IpAllowlist() ConsulClusterIpAllowlistStructList
 	IpAllowlistInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -480,8 +480,8 @@ func (j *jsiiProxy_ConsulCluster) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulCluster) IpAllowlist() ConsulClusterIpAllowlistList {
-	var returns ConsulClusterIpAllowlistList
+func (j *jsiiProxy_ConsulCluster) IpAllowlist() ConsulClusterIpAllowlistStructList {
+	var returns ConsulClusterIpAllowlistStructList
 	_jsii_.Get(
 		j,
 		"ipAllowlist",

@@ -113,12 +113,12 @@ func init() {
 		reflect.TypeOf((*ConsulClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlist",
-		reflect.TypeOf((*ConsulClusterIpAllowlist)(nil)).Elem(),
+		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStruct",
+		reflect.TypeOf((*ConsulClusterIpAllowlistStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistList",
-		reflect.TypeOf((*ConsulClusterIpAllowlistList)(nil)).Elem(),
+		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructList",
+		reflect.TypeOf((*ConsulClusterIpAllowlistStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -132,14 +132,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ConsulClusterIpAllowlistList{}
+			j := jsiiProxy_ConsulClusterIpAllowlistStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistOutputReference",
-		reflect.TypeOf((*ConsulClusterIpAllowlistOutputReference)(nil)).Elem(),
+		"@cdktf/provider-hcp.consulCluster.ConsulClusterIpAllowlistStructOutputReference",
+		reflect.TypeOf((*ConsulClusterIpAllowlistStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_ConsulClusterIpAllowlistOutputReference{}
+			j := jsiiProxy_ConsulClusterIpAllowlistStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistList) validateGetParameters(index *float64) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructList) validateGetParameters(index *float64) error {
 	if index == nil {
 		return fmt.Errorf("parameter index is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistList) validateGetParameters(index *fl
 	return nil
 }
 
-func (c *jsiiProxy_ConsulClusterIpAllowlistList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConsulClusterIpAllowlistStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -26,19 +26,19 @@ func (c *jsiiProxy_ConsulClusterIpAllowlistList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*ConsulClusterIpAllowlist:
-		val := val.(*[]*ConsulClusterIpAllowlist)
+	case *[]*ConsulClusterIpAllowlistStruct:
+		val := val.(*[]*ConsulClusterIpAllowlistStruct)
 		for idx_97dfc6, v := range *val {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
 				return err
 			}
 		}
-	case []*ConsulClusterIpAllowlist:
-		val_ := val.([]*ConsulClusterIpAllowlist)
+	case []*ConsulClusterIpAllowlistStruct:
+		val_ := val.([]*ConsulClusterIpAllowlistStruct)
 		val := &val_
 		for idx_97dfc6, v := range *val {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
@@ -47,14 +47,14 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList) validateSetInternalValueParamet
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*ConsulClusterIpAllowlist; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*ConsulClusterIpAllowlistStruct; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -62,7 +62,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -70,7 +70,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList) validateSetTerraformResourcePar
 	return nil
 }
 
-func (j *jsiiProxy_ConsulClusterIpAllowlistList) validateSetWrapsSetParameters(val *bool) error {
+func (j *jsiiProxy_ConsulClusterIpAllowlistStructList) validateSetWrapsSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -78,7 +78,7 @@ func (j *jsiiProxy_ConsulClusterIpAllowlistList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewConsulClusterIpAllowlistListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewConsulClusterIpAllowlistStructListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

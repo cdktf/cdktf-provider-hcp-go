@@ -118,15 +118,15 @@ func (c *jsiiProxy_ConsulCluster) validatePutIpAllowlistParameters(value interfa
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*ConsulClusterIpAllowlist:
-		value := value.(*[]*ConsulClusterIpAllowlist)
+	case *[]*ConsulClusterIpAllowlistStruct:
+		value := value.(*[]*ConsulClusterIpAllowlistStruct)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*ConsulClusterIpAllowlist:
-		value_ := value.([]*ConsulClusterIpAllowlist)
+	case []*ConsulClusterIpAllowlistStruct:
+		value_ := value.([]*ConsulClusterIpAllowlistStruct)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -135,7 +135,7 @@ func (c *jsiiProxy_ConsulCluster) validatePutIpAllowlistParameters(value interfa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ConsulClusterIpAllowlist; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ConsulClusterIpAllowlistStruct; received %#v (a %T)", value, value)
 		}
 	}
 
