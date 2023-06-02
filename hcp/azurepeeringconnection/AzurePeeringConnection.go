@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/azure_peering_connection hcp_azure_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/azure_peering_connection hcp_azure_peering_connection}.
 type AzurePeeringConnection interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -559,7 +559,7 @@ func (j *jsiiProxy_AzurePeeringConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/azure_peering_connection hcp_azure_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/azure_peering_connection hcp_azure_peering_connection} Resource.
 func NewAzurePeeringConnection(scope constructs.Construct, id *string, config *AzurePeeringConnectionConfig) AzurePeeringConnection {
 	_init_.Initialize()
 
@@ -577,7 +577,7 @@ func NewAzurePeeringConnection(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/resources/azure_peering_connection hcp_azure_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/azure_peering_connection hcp_azure_peering_connection} Resource.
 func NewAzurePeeringConnection_Override(a AzurePeeringConnection, scope constructs.Construct, id *string, config *AzurePeeringConnectionConfig) {
 	_init_.Initialize()
 

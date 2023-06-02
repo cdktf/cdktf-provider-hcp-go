@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/aws_network_peering hcp_aws_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/aws_network_peering hcp_aws_network_peering}.
 type DataHcpAwsNetworkPeering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_DataHcpAwsNetworkPeering) WaitForActiveStateInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/aws_network_peering hcp_aws_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/aws_network_peering hcp_aws_network_peering} Data Source.
 func NewDataHcpAwsNetworkPeering(scope constructs.Construct, id *string, config *DataHcpAwsNetworkPeeringConfig) DataHcpAwsNetworkPeering {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewDataHcpAwsNetworkPeering(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/aws_network_peering hcp_aws_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/aws_network_peering hcp_aws_network_peering} Data Source.
 func NewDataHcpAwsNetworkPeering_Override(d DataHcpAwsNetworkPeering, scope constructs.Construct, id *string, config *DataHcpAwsNetworkPeeringConfig) {
 	_init_.Initialize()
 

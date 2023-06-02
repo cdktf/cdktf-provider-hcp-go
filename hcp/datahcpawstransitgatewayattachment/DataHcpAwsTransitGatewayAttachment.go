@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment}.
 type DataHcpAwsTransitGatewayAttachment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DataHcpAwsTransitGatewayAttachment) WaitForActiveStateInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Data Source.
 func NewDataHcpAwsTransitGatewayAttachment(scope constructs.Construct, id *string, config *DataHcpAwsTransitGatewayAttachmentConfig) DataHcpAwsTransitGatewayAttachment {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewDataHcpAwsTransitGatewayAttachment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Data Source.
 func NewDataHcpAwsTransitGatewayAttachment_Override(d DataHcpAwsTransitGatewayAttachment, scope constructs.Construct, id *string, config *DataHcpAwsTransitGatewayAttachmentConfig) {
 	_init_.Initialize()
 

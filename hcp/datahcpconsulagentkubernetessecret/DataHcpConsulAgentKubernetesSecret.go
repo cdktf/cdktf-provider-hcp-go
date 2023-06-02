@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret}.
 type DataHcpConsulAgentKubernetesSecret interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataHcpConsulAgentKubernetesSecret) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source.
 func NewDataHcpConsulAgentKubernetesSecret(scope constructs.Construct, id *string, config *DataHcpConsulAgentKubernetesSecretConfig) DataHcpConsulAgentKubernetesSecret {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataHcpConsulAgentKubernetesSecret(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.58.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/consul_agent_kubernetes_secret hcp_consul_agent_kubernetes_secret} Data Source.
 func NewDataHcpConsulAgentKubernetesSecret_Override(d DataHcpConsulAgentKubernetesSecret, scope constructs.Construct, id *string, config *DataHcpConsulAgentKubernetesSecretConfig) {
 	_init_.Initialize()
 
