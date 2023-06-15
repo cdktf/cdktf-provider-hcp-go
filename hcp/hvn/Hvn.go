@@ -2,14 +2,14 @@ package hvn
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/hvn/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/hvn/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn hcp_hvn}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn hcp_hvn}.
 type Hvn interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -482,7 +482,7 @@ func (j *jsiiProxy_Hvn) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn hcp_hvn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn hcp_hvn} Resource.
 func NewHvn(scope constructs.Construct, id *string, config *HvnConfig) Hvn {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewHvn(scope constructs.Construct, id *string, config *HvnConfig) Hvn {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/hvn hcp_hvn} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/hvn hcp_hvn} Resource.
 func NewHvn_Override(h Hvn, scope constructs.Construct, id *string, config *HvnConfig) {
 	_init_.Initialize()
 

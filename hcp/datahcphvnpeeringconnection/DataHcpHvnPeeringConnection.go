@@ -2,14 +2,14 @@ package datahcphvnpeeringconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/datahcphvnpeeringconnection/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/datahcphvnpeeringconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection}.
 type DataHcpHvnPeeringConnection interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -98,6 +98,7 @@ type DataHcpHvnPeeringConnection interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataHcpHvnPeeringConnectionTimeouts)
+	ResetHvn2()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -430,7 +431,7 @@ func (j *jsiiProxy_DataHcpHvnPeeringConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source.
 func NewDataHcpHvnPeeringConnection(scope constructs.Construct, id *string, config *DataHcpHvnPeeringConnectionConfig) DataHcpHvnPeeringConnection {
 	_init_.Initialize()
 
@@ -448,7 +449,7 @@ func NewDataHcpHvnPeeringConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/hvn_peering_connection hcp_hvn_peering_connection} Data Source.
 func NewDataHcpHvnPeeringConnection_Override(d DataHcpHvnPeeringConnection, scope constructs.Construct, id *string, config *DataHcpHvnPeeringConnectionConfig) {
 	_init_.Initialize()
 
@@ -834,6 +835,14 @@ func (d *jsiiProxy_DataHcpHvnPeeringConnection) PutTimeouts(value *DataHcpHvnPee
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataHcpHvnPeeringConnection) ResetHvn2() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHvn2",
+		nil, // no parameters
 	)
 }
 

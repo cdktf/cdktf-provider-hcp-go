@@ -2,14 +2,14 @@ package vaultcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/vaultcluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/vault_cluster hcp_vault_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/vault_cluster hcp_vault_cluster}.
 type VaultCluster interface {
 	cdktf.TerraformResource
 	AuditLogConfig() VaultClusterAuditLogConfigOutputReference
@@ -682,7 +682,7 @@ func (j *jsiiProxy_VaultCluster) VaultVersion() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
 func NewVaultCluster(scope constructs.Construct, id *string, config *VaultClusterConfig) VaultCluster {
 	_init_.Initialize()
 
@@ -700,7 +700,7 @@ func NewVaultCluster(scope constructs.Construct, id *string, config *VaultCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
 func NewVaultCluster_Override(v VaultCluster, scope constructs.Construct, id *string, config *VaultClusterConfig) {
 	_init_.Initialize()
 

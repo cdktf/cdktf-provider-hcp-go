@@ -2,14 +2,14 @@ package vaultclusteradmintoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v4/vaultclusteradmintoken/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/vaultclusteradmintoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token}.
 type VaultClusterAdminToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_VaultClusterAdminToken) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token} Resource.
 func NewVaultClusterAdminToken(scope constructs.Construct, id *string, config *VaultClusterAdminTokenConfig) VaultClusterAdminToken {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewVaultClusterAdminToken(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.59.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/vault_cluster_admin_token hcp_vault_cluster_admin_token} Resource.
 func NewVaultClusterAdminToken_Override(v VaultClusterAdminToken, scope constructs.Construct, id *string, config *VaultClusterAdminTokenConfig) {
 	_init_.Initialize()
 
