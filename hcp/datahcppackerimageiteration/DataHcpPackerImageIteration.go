@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/data-sources/packer_image_iteration hcp_packer_image_iteration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/packer_image_iteration hcp_packer_image_iteration}.
 type DataHcpPackerImageIteration interface {
 	cdktf.TerraformDataSource
 	BucketName() *string
@@ -407,7 +407,7 @@ func (j *jsiiProxy_DataHcpPackerImageIteration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/data-sources/packer_image_iteration hcp_packer_image_iteration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/packer_image_iteration hcp_packer_image_iteration} Data Source.
 func NewDataHcpPackerImageIteration(scope constructs.Construct, id *string, config *DataHcpPackerImageIterationConfig) DataHcpPackerImageIteration {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewDataHcpPackerImageIteration(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/data-sources/packer_image_iteration hcp_packer_image_iteration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/packer_image_iteration hcp_packer_image_iteration} Data Source.
 func NewDataHcpPackerImageIteration_Override(d DataHcpPackerImageIteration, scope constructs.Construct, id *string, config *DataHcpPackerImageIterationConfig) {
 	_init_.Initialize()
 

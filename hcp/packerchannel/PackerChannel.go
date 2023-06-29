@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/packer_channel hcp_packer_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/packer_channel hcp_packer_channel}.
 type PackerChannel interface {
 	cdktf.TerraformResource
 	AuthorId() *string
@@ -69,6 +69,7 @@ type PackerChannel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Restricted() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -387,6 +388,16 @@ func (j *jsiiProxy_PackerChannel) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PackerChannel) Restricted() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"restricted",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PackerChannel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -448,7 +459,7 @@ func (j *jsiiProxy_PackerChannel) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/packer_channel hcp_packer_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/packer_channel hcp_packer_channel} Resource.
 func NewPackerChannel(scope constructs.Construct, id *string, config *PackerChannelConfig) PackerChannel {
 	_init_.Initialize()
 
@@ -466,7 +477,7 @@ func NewPackerChannel(scope constructs.Construct, id *string, config *PackerChan
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/packer_channel hcp_packer_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/packer_channel hcp_packer_channel} Resource.
 func NewPackerChannel_Override(p PackerChannel, scope constructs.Construct, id *string, config *PackerChannelConfig) {
 	_init_.Initialize()
 
