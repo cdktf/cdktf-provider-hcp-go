@@ -173,6 +173,8 @@ func (j *jsiiProxy_DataHcpConsulVersionsTimeoutsOutputReference) validateSetDefa
 
 func (j *jsiiProxy_DataHcpConsulVersionsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataHcpConsulVersionsTimeouts:
 		val := val.(*DataHcpConsulVersionsTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_DataHcpConsulVersionsTimeoutsOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataHcpConsulVersionsTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataHcpConsulVersionsTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

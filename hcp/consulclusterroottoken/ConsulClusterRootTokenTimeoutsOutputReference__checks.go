@@ -173,6 +173,8 @@ func (j *jsiiProxy_ConsulClusterRootTokenTimeoutsOutputReference) validateSetDef
 
 func (j *jsiiProxy_ConsulClusterRootTokenTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ConsulClusterRootTokenTimeouts:
 		val := val.(*ConsulClusterRootTokenTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_ConsulClusterRootTokenTimeoutsOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ConsulClusterRootTokenTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ConsulClusterRootTokenTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

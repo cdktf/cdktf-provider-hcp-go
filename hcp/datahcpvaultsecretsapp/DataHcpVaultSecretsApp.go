@@ -2,14 +2,14 @@ package datahcpvaultsecretsapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/datahcpvaultsecretsapp/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/datahcpvaultsecretsapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app}.
 type DataHcpVaultSecretsApp interface {
 	cdktf.TerraformDataSource
 	AppName() *string
@@ -314,7 +314,7 @@ func (j *jsiiProxy_DataHcpVaultSecretsApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app} Data Source.
 func NewDataHcpVaultSecretsApp(scope constructs.Construct, id *string, config *DataHcpVaultSecretsAppConfig) DataHcpVaultSecretsApp {
 	_init_.Initialize()
 
@@ -332,7 +332,7 @@ func NewDataHcpVaultSecretsApp(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/data-sources/vault_secrets_app hcp_vault_secrets_app} Data Source.
 func NewDataHcpVaultSecretsApp_Override(d DataHcpVaultSecretsApp, scope constructs.Construct, id *string, config *DataHcpVaultSecretsAppConfig) {
 	_init_.Initialize()
 

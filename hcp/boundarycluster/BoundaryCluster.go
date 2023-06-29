@@ -2,14 +2,14 @@ package boundarycluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/boundarycluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/boundarycluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
 type BoundaryCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_BoundaryCluster) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
 func NewBoundaryCluster(scope constructs.Construct, id *string, config *BoundaryClusterConfig) BoundaryCluster {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewBoundaryCluster(scope constructs.Construct, id *string, config *Boundary
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
 func NewBoundaryCluster_Override(b BoundaryCluster, scope constructs.Construct, id *string, config *BoundaryClusterConfig) {
 	_init_.Initialize()
 

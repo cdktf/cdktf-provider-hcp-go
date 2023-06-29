@@ -2,14 +2,14 @@ package consulcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/consulcluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/consulcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/consul_cluster hcp_consul_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/consul_cluster hcp_consul_cluster}.
 type ConsulCluster interface {
 	cdktf.TerraformResource
 	AutoHvnToHvnPeering() interface{}
@@ -771,7 +771,7 @@ func (j *jsiiProxy_ConsulCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/consul_cluster hcp_consul_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/consul_cluster hcp_consul_cluster} Resource.
 func NewConsulCluster(scope constructs.Construct, id *string, config *ConsulClusterConfig) ConsulCluster {
 	_init_.Initialize()
 
@@ -789,7 +789,7 @@ func NewConsulCluster(scope constructs.Construct, id *string, config *ConsulClus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/consul_cluster hcp_consul_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/consul_cluster hcp_consul_cluster} Resource.
 func NewConsulCluster_Override(c ConsulCluster, scope constructs.Construct, id *string, config *ConsulClusterConfig) {
 	_init_.Initialize()
 

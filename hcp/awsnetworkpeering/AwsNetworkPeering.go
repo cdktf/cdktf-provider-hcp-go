@@ -2,14 +2,14 @@ package awsnetworkpeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v5/awsnetworkpeering/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/awsnetworkpeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/aws_network_peering hcp_aws_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering hcp_aws_network_peering}.
 type AwsNetworkPeering interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -515,7 +515,7 @@ func (j *jsiiProxy_AwsNetworkPeering) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource.
 func NewAwsNetworkPeering(scope constructs.Construct, id *string, config *AwsNetworkPeeringConfig) AwsNetworkPeering {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewAwsNetworkPeering(scope constructs.Construct, id *string, config *AwsNet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.61.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.62.0/docs/resources/aws_network_peering hcp_aws_network_peering} Resource.
 func NewAwsNetworkPeering_Override(a AwsNetworkPeering, scope constructs.Construct, id *string, config *AwsNetworkPeeringConfig) {
 	_init_.Initialize()
 

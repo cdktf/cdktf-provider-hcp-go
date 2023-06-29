@@ -189,6 +189,8 @@ func (j *jsiiProxy_AzurePeeringConnectionTimeoutsOutputReference) validateSetDel
 
 func (j *jsiiProxy_AzurePeeringConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AzurePeeringConnectionTimeouts:
 		val := val.(*AzurePeeringConnectionTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_AzurePeeringConnectionTimeoutsOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AzurePeeringConnectionTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AzurePeeringConnectionTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 
