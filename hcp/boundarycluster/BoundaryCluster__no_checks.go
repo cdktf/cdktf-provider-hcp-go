@@ -104,6 +104,10 @@ func (j *jsiiProxy_BoundaryCluster) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_BoundaryCluster) validateSetTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BoundaryCluster) validateSetUsernameParameters(val *string) error {
 	return nil
 }

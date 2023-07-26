@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
 type BoundaryCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -75,6 +75,9 @@ type BoundaryCluster interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Tier() *string
+	SetTier(val *string)
+	TierInput() *string
 	Timeouts() BoundaryClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Username() *string
@@ -419,6 +422,26 @@ func (j *jsiiProxy_BoundaryCluster) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BoundaryCluster) Tier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryCluster) TierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BoundaryCluster) Timeouts() BoundaryClusterTimeoutsOutputReference {
 	var returns BoundaryClusterTimeoutsOutputReference
 	_jsii_.Get(
@@ -460,7 +483,7 @@ func (j *jsiiProxy_BoundaryCluster) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
 func NewBoundaryCluster(scope constructs.Construct, id *string, config *BoundaryClusterConfig) BoundaryCluster {
 	_init_.Initialize()
 
@@ -478,7 +501,7 @@ func NewBoundaryCluster(scope constructs.Construct, id *string, config *Boundary
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
 func NewBoundaryCluster_Override(b BoundaryCluster, scope constructs.Construct, id *string, config *BoundaryClusterConfig) {
 	_init_.Initialize()
 
@@ -597,6 +620,17 @@ func (j *jsiiProxy_BoundaryCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BoundaryCluster)SetTier(val *string) {
+	if err := j.validateSetTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tier",
 		val,
 	)
 }

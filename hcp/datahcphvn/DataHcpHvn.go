@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/hvn hcp_hvn}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/hvn hcp_hvn}.
 type DataHcpHvn interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataHcpHvn) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/hvn hcp_hvn} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/hvn hcp_hvn} Data Source.
 func NewDataHcpHvn(scope constructs.Construct, id *string, config *DataHcpHvnConfig) DataHcpHvn {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewDataHcpHvn(scope constructs.Construct, id *string, config *DataHcpHvnCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.63.0/docs/data-sources/hvn hcp_hvn} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/hvn hcp_hvn} Data Source.
 func NewDataHcpHvn_Override(d DataHcpHvn, scope constructs.Construct, id *string, config *DataHcpHvnConfig) {
 	_init_.Initialize()
 
