@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package packerchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/packerchannel/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel hcp_packer_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel hcp_packer_channel}.
 type PackerChannel interface {
 	cdktf.TerraformResource
 	AuthorId() *string
@@ -44,12 +47,11 @@ type PackerChannel interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Iteration() PackerChannelIterationOutputReference
-	IterationInput() *PackerChannelIteration
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Managed() cdktf.IResolvable
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -69,7 +71,9 @@ type PackerChannel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Restricted() cdktf.IResolvable
+	Restricted() interface{}
+	SetRestricted(val interface{})
+	RestrictedInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -104,14 +108,13 @@ type PackerChannel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutIteration(value *PackerChannelIteration)
 	PutTimeouts(value *PackerChannelTimeouts)
 	ResetId()
-	ResetIteration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectId()
+	ResetRestricted()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -268,31 +271,21 @@ func (j *jsiiProxy_PackerChannel) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PackerChannel) Iteration() PackerChannelIterationOutputReference {
-	var returns PackerChannelIterationOutputReference
-	_jsii_.Get(
-		j,
-		"iteration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PackerChannel) IterationInput() *PackerChannelIteration {
-	var returns *PackerChannelIteration
-	_jsii_.Get(
-		j,
-		"iterationInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PackerChannel) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PackerChannel) Managed() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"managed",
 		&returns,
 	)
 	return returns
@@ -388,11 +381,21 @@ func (j *jsiiProxy_PackerChannel) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PackerChannel) Restricted() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_PackerChannel) Restricted() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"restricted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PackerChannel) RestrictedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictedInput",
 		&returns,
 	)
 	return returns
@@ -459,7 +462,7 @@ func (j *jsiiProxy_PackerChannel) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel hcp_packer_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel hcp_packer_channel} Resource.
 func NewPackerChannel(scope constructs.Construct, id *string, config *PackerChannelConfig) PackerChannel {
 	_init_.Initialize()
 
@@ -477,7 +480,7 @@ func NewPackerChannel(scope constructs.Construct, id *string, config *PackerChan
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel hcp_packer_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel hcp_packer_channel} Resource.
 func NewPackerChannel_Override(p PackerChannel, scope constructs.Construct, id *string, config *PackerChannelConfig) {
 	_init_.Initialize()
 
@@ -596,6 +599,17 @@ func (j *jsiiProxy_PackerChannel)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PackerChannel)SetRestricted(val interface{}) {
+	if err := j.validateSetRestrictedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restricted",
 		val,
 	)
 }
@@ -866,17 +880,6 @@ func (p *jsiiProxy_PackerChannel) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (p *jsiiProxy_PackerChannel) PutIteration(value *PackerChannelIteration) {
-	if err := p.validatePutIterationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		p,
-		"putIteration",
-		[]interface{}{value},
-	)
-}
-
 func (p *jsiiProxy_PackerChannel) PutTimeouts(value *PackerChannelTimeouts) {
 	if err := p.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -896,14 +899,6 @@ func (p *jsiiProxy_PackerChannel) ResetId() {
 	)
 }
 
-func (p *jsiiProxy_PackerChannel) ResetIteration() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetIteration",
-		nil, // no parameters
-	)
-}
-
 func (p *jsiiProxy_PackerChannel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -916,6 +911,14 @@ func (p *jsiiProxy_PackerChannel) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PackerChannel) ResetRestricted() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRestricted",
 		nil, // no parameters
 	)
 }

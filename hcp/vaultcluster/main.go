@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package vaultcluster
 
 import (
@@ -59,6 +62,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyEndpoint", GoGetter: "ProxyEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyEndpointInput", GoGetter: "ProxyEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "publicEndpoint", GoGetter: "PublicEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "publicEndpointInput", GoGetter: "PublicEndpointInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAuditLogConfig", GoMethod: "PutAuditLogConfig"},
@@ -76,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPathsFilter", GoMethod: "ResetPathsFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryLink", GoMethod: "ResetPrimaryLink"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProjectId", GoMethod: "ResetProjectId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProxyEndpoint", GoMethod: "ResetProxyEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublicEndpoint", GoMethod: "ResetPublicEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTier", GoMethod: "ResetTier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
@@ -93,6 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vaultPrivateEndpointUrl", GoGetter: "VaultPrivateEndpointUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "vaultProxyEndpointUrl", GoGetter: "VaultProxyEndpointUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "vaultPublicEndpointUrl", GoGetter: "VaultPublicEndpointUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "vaultVersion", GoGetter: "VaultVersion"},
 		},

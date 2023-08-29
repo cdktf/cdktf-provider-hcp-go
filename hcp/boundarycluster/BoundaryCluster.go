@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package boundarycluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/boundarycluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/boundarycluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
 type BoundaryCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -483,7 +486,7 @@ func (j *jsiiProxy_BoundaryCluster) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
 func NewBoundaryCluster(scope constructs.Construct, id *string, config *BoundaryClusterConfig) BoundaryCluster {
 	_init_.Initialize()
 
@@ -501,7 +504,7 @@ func NewBoundaryCluster(scope constructs.Construct, id *string, config *Boundary
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
 func NewBoundaryCluster_Override(b BoundaryCluster, scope constructs.Construct, id *string, config *BoundaryClusterConfig) {
 	_init_.Initialize()
 

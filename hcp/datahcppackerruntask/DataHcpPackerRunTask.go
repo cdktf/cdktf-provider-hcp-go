@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datahcppackerruntask
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/datahcppackerruntask/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/datahcppackerruntask/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/packer_run_task hcp_packer_run_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_run_task hcp_packer_run_task}.
 type DataHcpPackerRunTask interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -339,7 +342,7 @@ func (j *jsiiProxy_DataHcpPackerRunTask) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/packer_run_task hcp_packer_run_task} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_run_task hcp_packer_run_task} Data Source.
 func NewDataHcpPackerRunTask(scope constructs.Construct, id *string, config *DataHcpPackerRunTaskConfig) DataHcpPackerRunTask {
 	_init_.Initialize()
 
@@ -357,7 +360,7 @@ func NewDataHcpPackerRunTask(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/packer_run_task hcp_packer_run_task} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_run_task hcp_packer_run_task} Data Source.
 func NewDataHcpPackerRunTask_Override(d DataHcpPackerRunTask, scope constructs.Construct, id *string, config *DataHcpPackerRunTaskConfig) {
 	_init_.Initialize()
 

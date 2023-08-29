@@ -1,8 +1,11 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package consulclusterroottoken
 
 
 type ConsulClusterRootTokenTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/consul_cluster_root_token#default ConsulClusterRootToken#default}.
 	Default *string `field:"optional" json:"default" yaml:"default"`
 }
 

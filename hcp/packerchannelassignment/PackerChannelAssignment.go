@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package packerchannelassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/packerchannelassignment/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerchannelassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}.
 type PackerChannelAssignment interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -463,7 +466,7 @@ func (j *jsiiProxy_PackerChannelAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
 func NewPackerChannelAssignment(scope constructs.Construct, id *string, config *PackerChannelAssignmentConfig) PackerChannelAssignment {
 	_init_.Initialize()
 
@@ -481,7 +484,7 @@ func NewPackerChannelAssignment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
 func NewPackerChannelAssignment_Override(p PackerChannelAssignment, scope constructs.Construct, id *string, config *PackerChannelAssignmentConfig) {
 	_init_.Initialize()
 

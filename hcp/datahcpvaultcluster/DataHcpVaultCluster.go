@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datahcpvaultcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/datahcpvaultcluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/datahcpvaultcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster hcp_vault_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster hcp_vault_cluster}.
 type DataHcpVaultCluster interface {
 	cdktf.TerraformDataSource
 	AuditLogConfig() DataHcpVaultClusterAuditLogConfigList
@@ -64,6 +67,7 @@ type DataHcpVaultCluster interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProxyEndpoint() *string
 	PublicEndpoint() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
@@ -80,6 +84,7 @@ type DataHcpVaultCluster interface {
 	Timeouts() DataHcpVaultClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	VaultPrivateEndpointUrl() *string
+	VaultProxyEndpointUrl() *string
 	VaultPublicEndpointUrl() *string
 	VaultVersion() *string
 	// Experimental.
@@ -423,6 +428,16 @@ func (j *jsiiProxy_DataHcpVaultCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpVaultCluster) ProxyEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyEndpoint",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataHcpVaultCluster) PublicEndpoint() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -543,6 +558,16 @@ func (j *jsiiProxy_DataHcpVaultCluster) VaultPrivateEndpointUrl() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpVaultCluster) VaultProxyEndpointUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vaultProxyEndpointUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataHcpVaultCluster) VaultPublicEndpointUrl() *string {
 	var returns *string
 	_jsii_.Get(
@@ -564,7 +589,7 @@ func (j *jsiiProxy_DataHcpVaultCluster) VaultVersion() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
 func NewDataHcpVaultCluster(scope constructs.Construct, id *string, config *DataHcpVaultClusterConfig) DataHcpVaultCluster {
 	_init_.Initialize()
 
@@ -582,7 +607,7 @@ func NewDataHcpVaultCluster(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
 func NewDataHcpVaultCluster_Override(d DataHcpVaultCluster, scope constructs.Construct, id *string, config *DataHcpVaultClusterConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package packerruntask
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/packerruntask/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerruntask/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_run_task hcp_packer_run_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_run_task hcp_packer_run_task}.
 type PackerRunTask interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +394,7 @@ func (j *jsiiProxy_PackerRunTask) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_run_task hcp_packer_run_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_run_task hcp_packer_run_task} Resource.
 func NewPackerRunTask(scope constructs.Construct, id *string, config *PackerRunTaskConfig) PackerRunTask {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewPackerRunTask(scope constructs.Construct, id *string, config *PackerRunT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/packer_run_task hcp_packer_run_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/packer_run_task hcp_packer_run_task} Resource.
 func NewPackerRunTask_Override(p PackerRunTask, scope constructs.Construct, id *string, config *PackerRunTaskConfig) {
 	_init_.Initialize()
 

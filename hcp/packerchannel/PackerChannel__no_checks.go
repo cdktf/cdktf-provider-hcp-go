@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package packerchannel
@@ -52,10 +55,6 @@ func (p *jsiiProxy_PackerChannel) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (p *jsiiProxy_PackerChannel) validatePutIterationParameters(value *PackerChannelIteration) error {
-	return nil
-}
-
 func (p *jsiiProxy_PackerChannel) validatePutTimeoutsParameters(value *PackerChannelTimeouts) error {
 	return nil
 }
@@ -101,6 +100,10 @@ func (j *jsiiProxy_PackerChannel) validateSetProjectIdParameters(val *string) er
 }
 
 func (j *jsiiProxy_PackerChannel) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PackerChannel) validateSetRestrictedParameters(val interface{}) error {
 	return nil
 }
 

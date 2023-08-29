@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package vaultcluster
@@ -121,6 +124,10 @@ func (j *jsiiProxy_VaultCluster) validateSetProjectIdParameters(val *string) err
 }
 
 func (j *jsiiProxy_VaultCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultCluster) validateSetProxyEndpointParameters(val *string) error {
 	return nil
 }
 

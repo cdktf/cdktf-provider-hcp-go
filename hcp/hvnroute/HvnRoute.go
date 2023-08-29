@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package hvnroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/hvnroute/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/hvnroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/hvn_route hcp_hvn_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/hvn_route hcp_hvn_route}.
 type HvnRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +462,7 @@ func (j *jsiiProxy_HvnRoute) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/hvn_route hcp_hvn_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/hvn_route hcp_hvn_route} Resource.
 func NewHvnRoute(scope constructs.Construct, id *string, config *HvnRouteConfig) HvnRoute {
 	_init_.Initialize()
 
@@ -477,7 +480,7 @@ func NewHvnRoute(scope constructs.Construct, id *string, config *HvnRouteConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/hvn_route hcp_hvn_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/hvn_route hcp_hvn_route} Resource.
 func NewHvnRoute_Override(h HvnRoute, scope constructs.Construct, id *string, config *HvnRouteConfig) {
 	_init_.Initialize()
 

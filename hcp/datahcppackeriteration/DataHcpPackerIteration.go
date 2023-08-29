@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datahcppackeriteration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/datahcppackeriteration/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/datahcppackeriteration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/packer_iteration hcp_packer_iteration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration hcp_packer_iteration}.
 type DataHcpPackerIteration interface {
 	cdktf.TerraformDataSource
 	AuthorId() *string
@@ -440,7 +443,7 @@ func (j *jsiiProxy_DataHcpPackerIteration) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
 func NewDataHcpPackerIteration(scope constructs.Construct, id *string, config *DataHcpPackerIterationConfig) DataHcpPackerIteration {
 	_init_.Initialize()
 
@@ -458,7 +461,7 @@ func NewDataHcpPackerIteration(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
 func NewDataHcpPackerIteration_Override(d DataHcpPackerIteration, scope constructs.Construct, id *string, config *DataHcpPackerIterationConfig) {
 	_init_.Initialize()
 

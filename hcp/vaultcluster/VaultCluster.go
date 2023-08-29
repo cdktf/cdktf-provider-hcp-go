@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package vaultcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/vaultcluster/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/vaultcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/vault_cluster hcp_vault_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster hcp_vault_cluster}.
 type VaultCluster interface {
 	cdktf.TerraformResource
 	AuditLogConfig() VaultClusterAuditLogConfigOutputReference
@@ -81,6 +84,9 @@ type VaultCluster interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	ProxyEndpoint() *string
+	SetProxyEndpoint(val *string)
+	ProxyEndpointInput() *string
 	PublicEndpoint() interface{}
 	SetPublicEndpoint(val interface{})
 	PublicEndpointInput() interface{}
@@ -101,6 +107,7 @@ type VaultCluster interface {
 	Timeouts() VaultClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	VaultPrivateEndpointUrl() *string
+	VaultProxyEndpointUrl() *string
 	VaultPublicEndpointUrl() *string
 	VaultVersion() *string
 	// Experimental.
@@ -143,6 +150,7 @@ type VaultCluster interface {
 	ResetPathsFilter()
 	ResetPrimaryLink()
 	ResetProjectId()
+	ResetProxyEndpoint()
 	ResetPublicEndpoint()
 	ResetTier()
 	ResetTimeouts()
@@ -521,6 +529,26 @@ func (j *jsiiProxy_VaultCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VaultCluster) ProxyEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultCluster) ProxyEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VaultCluster) PublicEndpoint() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -661,6 +689,16 @@ func (j *jsiiProxy_VaultCluster) VaultPrivateEndpointUrl() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VaultCluster) VaultProxyEndpointUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vaultProxyEndpointUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VaultCluster) VaultPublicEndpointUrl() *string {
 	var returns *string
 	_jsii_.Get(
@@ -682,7 +720,7 @@ func (j *jsiiProxy_VaultCluster) VaultVersion() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
 func NewVaultCluster(scope constructs.Construct, id *string, config *VaultClusterConfig) VaultCluster {
 	_init_.Initialize()
 
@@ -700,7 +738,7 @@ func NewVaultCluster(scope constructs.Construct, id *string, config *VaultCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
 func NewVaultCluster_Override(v VaultCluster, scope constructs.Construct, id *string, config *VaultClusterConfig) {
 	_init_.Initialize()
 
@@ -852,6 +890,17 @@ func (j *jsiiProxy_VaultCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultCluster)SetProxyEndpoint(val *string) {
+	if err := j.validateSetProxyEndpointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"proxyEndpoint",
 		val,
 	)
 }
@@ -1256,6 +1305,14 @@ func (v *jsiiProxy_VaultCluster) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultCluster) ResetProxyEndpoint() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetProxyEndpoint",
 		nil, // no parameters
 	)
 }

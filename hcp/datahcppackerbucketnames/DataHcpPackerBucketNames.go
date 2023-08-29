@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datahcppackerbucketnames
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v6/datahcppackerbucketnames/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/datahcppackerbucketnames/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/packer_bucket_names hcp_packer_bucket_names}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_bucket_names hcp_packer_bucket_names}.
 type DataHcpPackerBucketNames interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -328,7 +331,7 @@ func (j *jsiiProxy_DataHcpPackerBucketNames) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/packer_bucket_names hcp_packer_bucket_names} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_bucket_names hcp_packer_bucket_names} Data Source.
 func NewDataHcpPackerBucketNames(scope constructs.Construct, id *string, config *DataHcpPackerBucketNamesConfig) DataHcpPackerBucketNames {
 	_init_.Initialize()
 
@@ -346,7 +349,7 @@ func NewDataHcpPackerBucketNames(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.67.0/docs/data-sources/packer_bucket_names hcp_packer_bucket_names} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.69.0/docs/data-sources/packer_bucket_names hcp_packer_bucket_names} Data Source.
 func NewDataHcpPackerBucketNames_Override(d DataHcpPackerBucketNames, scope constructs.Construct, id *string, config *DataHcpPackerBucketNamesConfig) {
 	_init_.Initialize()
 
