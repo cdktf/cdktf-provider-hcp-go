@@ -120,6 +120,11 @@ func init() {
 		"@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterAuditLogConfigOutputReference",
 		reflect.TypeOf((*DataHcpVaultClusterAuditLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchAccessKeyId", GoGetter: "CloudwatchAccessKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchGroupName", GoGetter: "CloudwatchGroupName"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchRegion", GoGetter: "CloudwatchRegion"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchSecretAccessKey", GoGetter: "CloudwatchSecretAccessKey"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchStreamName", GoGetter: "CloudwatchStreamName"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -244,6 +249,10 @@ func init() {
 		"@cdktf/provider-hcp.dataHcpVaultCluster.DataHcpVaultClusterMetricsConfigOutputReference",
 		reflect.TypeOf((*DataHcpVaultClusterMetricsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchAccessKeyId", GoGetter: "CloudwatchAccessKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchNamespace", GoGetter: "CloudwatchNamespace"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchRegion", GoGetter: "CloudwatchRegion"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchSecretAccessKey", GoGetter: "CloudwatchSecretAccessKey"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

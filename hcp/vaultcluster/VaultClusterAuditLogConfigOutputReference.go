@@ -13,6 +13,17 @@ import (
 
 type VaultClusterAuditLogConfigOutputReference interface {
 	cdktf.ComplexObject
+	CloudwatchAccessKeyId() *string
+	SetCloudwatchAccessKeyId(val *string)
+	CloudwatchAccessKeyIdInput() *string
+	CloudwatchGroupName() *string
+	CloudwatchRegion() *string
+	SetCloudwatchRegion(val *string)
+	CloudwatchRegionInput() *string
+	CloudwatchSecretAccessKey() *string
+	SetCloudwatchSecretAccessKey(val *string)
+	CloudwatchSecretAccessKeyInput() *string
+	CloudwatchStreamName() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -85,6 +96,9 @@ type VaultClusterAuditLogConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCloudwatchAccessKeyId()
+	ResetCloudwatchRegion()
+	ResetCloudwatchSecretAccessKey()
 	ResetDatadogApiKey()
 	ResetDatadogRegion()
 	ResetGrafanaEndpoint()
@@ -105,6 +119,86 @@ type VaultClusterAuditLogConfigOutputReference interface {
 // The jsii proxy struct for VaultClusterAuditLogConfigOutputReference
 type jsiiProxy_VaultClusterAuditLogConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) CloudwatchAccessKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchAccessKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) CloudwatchAccessKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchAccessKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) CloudwatchGroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchGroupName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) CloudwatchRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) CloudwatchRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) CloudwatchSecretAccessKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchSecretAccessKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) CloudwatchSecretAccessKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchSecretAccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) CloudwatchStreamName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchStreamName",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -342,6 +436,39 @@ func NewVaultClusterAuditLogConfigOutputReference_Override(v VaultClusterAuditLo
 		"@cdktf/provider-hcp.vaultCluster.VaultClusterAuditLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference)SetCloudwatchAccessKeyId(val *string) {
+	if err := j.validateSetCloudwatchAccessKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudwatchAccessKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference)SetCloudwatchRegion(val *string) {
+	if err := j.validateSetCloudwatchRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudwatchRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference)SetCloudwatchSecretAccessKey(val *string) {
+	if err := j.validateSetCloudwatchSecretAccessKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudwatchSecretAccessKey",
+		val,
 	)
 }
 
@@ -661,6 +788,30 @@ func (v *jsiiProxy_VaultClusterAuditLogConfigOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VaultClusterAuditLogConfigOutputReference) ResetCloudwatchAccessKeyId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetCloudwatchAccessKeyId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterAuditLogConfigOutputReference) ResetCloudwatchRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetCloudwatchRegion",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterAuditLogConfigOutputReference) ResetCloudwatchSecretAccessKey() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetCloudwatchSecretAccessKey",
+		nil, // no parameters
+	)
 }
 
 func (v *jsiiProxy_VaultClusterAuditLogConfigOutputReference) ResetDatadogApiKey() {

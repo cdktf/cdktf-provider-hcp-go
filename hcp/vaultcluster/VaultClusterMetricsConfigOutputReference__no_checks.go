@@ -51,6 +51,18 @@ func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetCloudwatchAccessKeyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetCloudwatchRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetCloudwatchSecretAccessKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

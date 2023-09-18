@@ -13,6 +13,10 @@ import (
 
 type DataHcpVaultClusterMetricsConfigOutputReference interface {
 	cdktf.ComplexObject
+	CloudwatchAccessKeyId() *string
+	CloudwatchNamespace() *string
+	CloudwatchRegion() *string
+	CloudwatchSecretAccessKey() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -81,6 +85,46 @@ type DataHcpVaultClusterMetricsConfigOutputReference interface {
 // The jsii proxy struct for DataHcpVaultClusterMetricsConfigOutputReference
 type jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) CloudwatchAccessKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchAccessKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) CloudwatchNamespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchNamespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) CloudwatchRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) CloudwatchSecretAccessKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudwatchSecretAccessKey",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) ComplexObjectIndex() interface{} {
