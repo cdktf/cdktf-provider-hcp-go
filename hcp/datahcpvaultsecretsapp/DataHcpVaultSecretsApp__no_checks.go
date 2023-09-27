@@ -75,10 +75,6 @@ func (j *jsiiProxy_DataHcpVaultSecretsApp) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_DataHcpVaultSecretsApp) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataHcpVaultSecretsApp) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

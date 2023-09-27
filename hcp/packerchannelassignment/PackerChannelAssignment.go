@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}.
 type PackerChannelAssignment interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -466,7 +466,7 @@ func (j *jsiiProxy_PackerChannelAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
 func NewPackerChannelAssignment(scope constructs.Construct, id *string, config *PackerChannelAssignmentConfig) PackerChannelAssignment {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewPackerChannelAssignment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
 func NewPackerChannelAssignment_Override(p PackerChannelAssignment, scope constructs.Construct, id *string, config *PackerChannelAssignmentConfig) {
 	_init_.Initialize()
 

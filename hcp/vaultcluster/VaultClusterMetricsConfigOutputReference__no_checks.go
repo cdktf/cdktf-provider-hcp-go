@@ -79,6 +79,18 @@ func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetDatadogR
 	return nil
 }
 
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetElasticsearchEndpointParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetElasticsearchPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetElasticsearchUserParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetGrafanaEndpointParameters(val *string) error {
 	return nil
 }

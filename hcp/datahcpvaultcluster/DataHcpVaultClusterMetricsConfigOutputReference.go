@@ -33,6 +33,10 @@ type DataHcpVaultClusterMetricsConfigOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DatadogRegion() *string
+	ElasticsearchDataset() *string
+	ElasticsearchEndpoint() *string
+	ElasticsearchPassword() *string
+	ElasticsearchUser() *string
 	// Experimental.
 	Fqn() *string
 	GrafanaEndpoint() *string
@@ -162,6 +166,46 @@ func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) DatadogRegio
 	_jsii_.Get(
 		j,
 		"datadogRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) ElasticsearchDataset() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchDataset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) ElasticsearchEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) ElasticsearchPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) ElasticsearchUser() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchUser",
 		&returns,
 	)
 	return returns

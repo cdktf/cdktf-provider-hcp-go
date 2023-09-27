@@ -44,6 +44,16 @@ type VaultClusterMetricsConfigOutputReference interface {
 	DatadogRegion() *string
 	SetDatadogRegion(val *string)
 	DatadogRegionInput() *string
+	ElasticsearchDataset() *string
+	ElasticsearchEndpoint() *string
+	SetElasticsearchEndpoint(val *string)
+	ElasticsearchEndpointInput() *string
+	ElasticsearchPassword() *string
+	SetElasticsearchPassword(val *string)
+	ElasticsearchPasswordInput() *string
+	ElasticsearchUser() *string
+	SetElasticsearchUser(val *string)
+	ElasticsearchUserInput() *string
 	// Experimental.
 	Fqn() *string
 	GrafanaEndpoint() *string
@@ -100,6 +110,9 @@ type VaultClusterMetricsConfigOutputReference interface {
 	ResetCloudwatchSecretAccessKey()
 	ResetDatadogApiKey()
 	ResetDatadogRegion()
+	ResetElasticsearchEndpoint()
+	ResetElasticsearchPassword()
+	ResetElasticsearchUser()
 	ResetGrafanaEndpoint()
 	ResetGrafanaPassword()
 	ResetGrafanaUser()
@@ -255,6 +268,76 @@ func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) DatadogRegionInput(
 	_jsii_.Get(
 		j,
 		"datadogRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) ElasticsearchDataset() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchDataset",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) ElasticsearchEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) ElasticsearchEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) ElasticsearchPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) ElasticsearchPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) ElasticsearchUser() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) ElasticsearchUserInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"elasticsearchUserInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +584,39 @@ func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetDatadogRegion(val
 	_jsii_.Set(
 		j,
 		"datadogRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetElasticsearchEndpoint(val *string) {
+	if err := j.validateSetElasticsearchEndpointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"elasticsearchEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetElasticsearchPassword(val *string) {
+	if err := j.validateSetElasticsearchPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"elasticsearchPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetElasticsearchUser(val *string) {
+	if err := j.validateSetElasticsearchUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"elasticsearchUser",
 		val,
 	)
 }
@@ -815,6 +931,30 @@ func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetDatadogRegion(
 	_jsii_.InvokeVoid(
 		v,
 		"resetDatadogRegion",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetElasticsearchEndpoint() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetElasticsearchEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetElasticsearchPassword() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetElasticsearchPassword",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetElasticsearchUser() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetElasticsearchUser",
 		nil, // no parameters
 	)
 }

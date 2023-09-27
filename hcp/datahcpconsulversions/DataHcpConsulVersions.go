@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/consul_versions hcp_consul_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/consul_versions hcp_consul_versions}.
 type DataHcpConsulVersions interface {
 	cdktf.TerraformDataSource
 	Available() *[]*string
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DataHcpConsulVersions) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/consul_versions hcp_consul_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/consul_versions hcp_consul_versions} Data Source.
 func NewDataHcpConsulVersions(scope constructs.Construct, id *string, config *DataHcpConsulVersionsConfig) DataHcpConsulVersions {
 	_init_.Initialize()
 
@@ -336,7 +336,7 @@ func NewDataHcpConsulVersions(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.70.0/docs/data-sources/consul_versions hcp_consul_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.71.1/docs/data-sources/consul_versions hcp_consul_versions} Data Source.
 func NewDataHcpConsulVersions_Override(d DataHcpConsulVersions, scope constructs.Construct, id *string, config *DataHcpConsulVersionsConfig) {
 	_init_.Initialize()
 
