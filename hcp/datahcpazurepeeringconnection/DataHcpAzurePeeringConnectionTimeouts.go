@@ -5,7 +5,7 @@ package datahcpazurepeeringconnection
 
 
 type DataHcpAzurePeeringConnectionTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.72.2/docs/data-sources/azure_peering_connection#read DataHcpAzurePeeringConnection#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.73.0/docs/data-sources/azure_peering_connection#read DataHcpAzurePeeringConnection#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
