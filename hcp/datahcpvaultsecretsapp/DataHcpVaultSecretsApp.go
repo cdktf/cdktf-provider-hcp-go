@@ -5,10 +5,10 @@ package datahcpvaultsecretsapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/datahcpvaultsecretsapp/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpvaultsecretsapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -388,6 +388,25 @@ func (j *jsiiProxy_DataHcpVaultSecretsApp)SetProvider(val cdktf.TerraformProvide
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataHcpVaultSecretsApp resource upon running "cdktf plan <stack-name>".
+func DataHcpVaultSecretsApp_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataHcpVaultSecretsApp_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.dataHcpVaultSecretsApp.DataHcpVaultSecretsApp",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

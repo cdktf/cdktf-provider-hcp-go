@@ -7,6 +7,10 @@ package vaultplugin
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VaultPlugin) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultPlugin) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VaultPlugin) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (v *jsiiProxy_VaultPlugin) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultPlugin) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VaultPlugin) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VaultPlugin) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (v *jsiiProxy_VaultPlugin) validatePutTimeoutsParameters(value *VaultPluginTimeouts) error {
+	return nil
+}
+
+func validateVaultPlugin_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

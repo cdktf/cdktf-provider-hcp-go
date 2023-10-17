@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataHcpVaultPlugin) validatePutTimeoutsParameters(value *Data
 	return nil
 }
 
+func validateDataHcpVaultPlugin_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataHcpVaultPlugin_IsConstructParameters(x interface{}) error {
 	return nil
 }

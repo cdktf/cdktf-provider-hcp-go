@@ -7,6 +7,10 @@ package packerchannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PackerChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PackerChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PackerChannel) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (p *jsiiProxy_PackerChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PackerChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PackerChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PackerChannel) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (p *jsiiProxy_PackerChannel) validatePutTimeoutsParameters(value *PackerChannelTimeouts) error {
+	return nil
+}
+
+func validatePackerChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

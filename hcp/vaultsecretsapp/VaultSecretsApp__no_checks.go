@@ -7,6 +7,10 @@ package vaultsecretsapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VaultSecretsApp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultSecretsApp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (v *jsiiProxy_VaultSecretsApp) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (v *jsiiProxy_VaultSecretsApp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultSecretsApp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VaultSecretsApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultSecretsApp) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVaultSecretsApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

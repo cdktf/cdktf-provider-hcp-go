@@ -7,6 +7,10 @@ package awsnetworkpeering
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AwsNetworkPeering) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsNetworkPeering) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AwsNetworkPeering) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_AwsNetworkPeering) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsNetworkPeering) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AwsNetworkPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AwsNetworkPeering) validateOverrideLogicalIdParameters(newLog
 }
 
 func (a *jsiiProxy_AwsNetworkPeering) validatePutTimeoutsParameters(value *AwsNetworkPeeringTimeouts) error {
+	return nil
+}
+
+func validateAwsNetworkPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

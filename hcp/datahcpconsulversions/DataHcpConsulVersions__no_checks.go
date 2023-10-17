@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataHcpConsulVersions) validatePutTimeoutsParameters(value *D
 	return nil
 }
 
+func validateDataHcpConsulVersions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataHcpConsulVersions_IsConstructParameters(x interface{}) error {
 	return nil
 }

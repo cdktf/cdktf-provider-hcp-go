@@ -7,6 +7,10 @@ package vaultcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VaultCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VaultCluster) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (v *jsiiProxy_VaultCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VaultCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (v *jsiiProxy_VaultCluster) validatePutMetricsConfigParameters(value *Vault
 }
 
 func (v *jsiiProxy_VaultCluster) validatePutTimeoutsParameters(value *VaultClusterTimeouts) error {
+	return nil
+}
+
+func validateVaultCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataHcpAwsNetworkPeering) validatePutTimeoutsParameters(value
 	return nil
 }
 
+func validateDataHcpAwsNetworkPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataHcpAwsNetworkPeering_IsConstructParameters(x interface{}) error {
 	return nil
 }

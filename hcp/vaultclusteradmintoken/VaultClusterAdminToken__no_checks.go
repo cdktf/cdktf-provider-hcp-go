@@ -7,6 +7,10 @@ package vaultclusteradmintoken
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VaultClusterAdminToken) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultClusterAdminToken) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VaultClusterAdminToken) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (v *jsiiProxy_VaultClusterAdminToken) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultClusterAdminToken) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VaultClusterAdminToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VaultClusterAdminToken) validateOverrideLogicalIdParameters(n
 }
 
 func (v *jsiiProxy_VaultClusterAdminToken) validatePutTimeoutsParameters(value *VaultClusterAdminTokenTimeouts) error {
+	return nil
+}
+
+func validateVaultClusterAdminToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataHcpConsulCluster) validatePutTimeoutsParameters(value *Da
 	return nil
 }
 
+func validateDataHcpConsulCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataHcpConsulCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }

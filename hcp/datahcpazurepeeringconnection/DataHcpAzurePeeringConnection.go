@@ -5,10 +5,10 @@ package datahcpazurepeeringconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/datahcpazurepeeringconnection/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/datahcpazurepeeringconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -615,6 +615,25 @@ func (j *jsiiProxy_DataHcpAzurePeeringConnection)SetWaitForActiveState(val inter
 		"waitForActiveState",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataHcpAzurePeeringConnection resource upon running "cdktf plan <stack-name>".
+func DataHcpAzurePeeringConnection_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataHcpAzurePeeringConnection_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.dataHcpAzurePeeringConnection.DataHcpAzurePeeringConnection",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

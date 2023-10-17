@@ -7,6 +7,10 @@ package boundarycluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BoundaryCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BoundaryCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BoundaryCluster) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (b *jsiiProxy_BoundaryCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BoundaryCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BoundaryCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BoundaryCluster) validatePutMaintenanceWindowConfigParameters
 }
 
 func (b *jsiiProxy_BoundaryCluster) validatePutTimeoutsParameters(value *BoundaryClusterTimeouts) error {
+	return nil
+}
+
+func validateBoundaryCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

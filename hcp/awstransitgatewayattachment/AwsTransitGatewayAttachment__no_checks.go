@@ -7,6 +7,10 @@ package awstransitgatewayattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AwsTransitGatewayAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsTransitGatewayAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AwsTransitGatewayAttachment) validateGetStringMapAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_AwsTransitGatewayAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsTransitGatewayAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AwsTransitGatewayAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AwsTransitGatewayAttachment) validateOverrideLogicalIdParamet
 }
 
 func (a *jsiiProxy_AwsTransitGatewayAttachment) validatePutTimeoutsParameters(value *AwsTransitGatewayAttachmentTimeouts) error {
+	return nil
+}
+
+func validateAwsTransitGatewayAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

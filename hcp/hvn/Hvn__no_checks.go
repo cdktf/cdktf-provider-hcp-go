@@ -7,6 +7,10 @@ package hvn
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_Hvn) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_Hvn) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_Hvn) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (h *jsiiProxy_Hvn) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_Hvn) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_Hvn) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (h *jsiiProxy_Hvn) validateOverrideLogicalIdParameters(newLogicalId *string
 }
 
 func (h *jsiiProxy_Hvn) validatePutTimeoutsParameters(value *HvnTimeouts) error {
+	return nil
+}
+
+func validateHvn_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

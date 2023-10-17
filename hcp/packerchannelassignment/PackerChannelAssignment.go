@@ -5,10 +5,10 @@ package packerchannelassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v7/packerchannelassignment/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/packerchannelassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -85,6 +85,9 @@ type PackerChannelAssignment interface {
 	TerraformResourceType() *string
 	Timeouts() PackerChannelAssignmentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -106,7 +109,12 @@ type PackerChannelAssignment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -640,6 +648,25 @@ func (j *jsiiProxy_PackerChannelAssignment)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a PackerChannelAssignment resource upon running "cdktf plan <stack-name>".
+func PackerChannelAssignment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validatePackerChannelAssignment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-hcp.packerChannelAssignment.PackerChannelAssignment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -722,6 +749,17 @@ func PackerChannelAssignment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (p *jsiiProxy_PackerChannelAssignment) AddMoveTarget(moveTarget *string) {
+	if err := p.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (p *jsiiProxy_PackerChannelAssignment) AddOverride(path *string, value interface{}) {
@@ -879,6 +917,17 @@ func (p *jsiiProxy_PackerChannelAssignment) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (p *jsiiProxy_PackerChannelAssignment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := p.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (p *jsiiProxy_PackerChannelAssignment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -893,6 +942,17 @@ func (p *jsiiProxy_PackerChannelAssignment) InterpolationForAttribute(terraformA
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PackerChannelAssignment) MoveTo(moveTarget *string, index interface{}) {
+	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (p *jsiiProxy_PackerChannelAssignment) OverrideLogicalId(newLogicalId *string) {

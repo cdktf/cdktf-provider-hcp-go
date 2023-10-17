@@ -7,6 +7,10 @@ package hvnpeeringconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HvnPeeringConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HvnPeeringConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HvnPeeringConnection) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (h *jsiiProxy_HvnPeeringConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HvnPeeringConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HvnPeeringConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (h *jsiiProxy_HvnPeeringConnection) validateOverrideLogicalIdParameters(new
 }
 
 func (h *jsiiProxy_HvnPeeringConnection) validatePutTimeoutsParameters(value *HvnPeeringConnectionTimeouts) error {
+	return nil
+}
+
+func validateHvnPeeringConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

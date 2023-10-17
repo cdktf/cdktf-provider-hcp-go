@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-hcp.vaultCluster.VaultCluster",
 		reflect.TypeOf((*VaultCluster)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "auditLogConfig", GoGetter: "AuditLogConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "auditLogConfigInput", GoGetter: "AuditLogConfigInput"},
@@ -42,6 +43,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hvnIdInput", GoGetter: "HvnIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "majorVersionUpgradeConfig", GoGetter: "MajorVersionUpgradeConfig"},
@@ -50,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "metricsConfigInput", GoGetter: "MetricsConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minVaultVersion", GoGetter: "MinVaultVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "minVaultVersionInput", GoGetter: "MinVaultVersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "organizationId", GoGetter: "OrganizationId"},
