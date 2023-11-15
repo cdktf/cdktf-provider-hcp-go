@@ -107,6 +107,18 @@ func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetInternal
 	return nil
 }
 
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetNewrelicAccountIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetNewrelicLicenseKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetNewrelicRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetSplunkHecendpointParameters(val *string) error {
 	return nil
 }

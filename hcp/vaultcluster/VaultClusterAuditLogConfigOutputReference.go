@@ -68,6 +68,15 @@ type VaultClusterAuditLogConfigOutputReference interface {
 	GrafanaUserInput() *string
 	InternalValue() *VaultClusterAuditLogConfig
 	SetInternalValue(val *VaultClusterAuditLogConfig)
+	NewrelicAccountId() *string
+	SetNewrelicAccountId(val *string)
+	NewrelicAccountIdInput() *string
+	NewrelicLicenseKey() *string
+	SetNewrelicLicenseKey(val *string)
+	NewrelicLicenseKeyInput() *string
+	NewrelicRegion() *string
+	SetNewrelicRegion(val *string)
+	NewrelicRegionInput() *string
 	SplunkHecendpoint() *string
 	SetSplunkHecendpoint(val *string)
 	SplunkHecendpointInput() *string
@@ -117,6 +126,9 @@ type VaultClusterAuditLogConfigOutputReference interface {
 	ResetGrafanaEndpoint()
 	ResetGrafanaPassword()
 	ResetGrafanaUser()
+	ResetNewrelicAccountId()
+	ResetNewrelicLicenseKey()
+	ResetNewrelicRegion()
 	ResetSplunkHecendpoint()
 	ResetSplunkToken()
 	// Produce the Token's value at resolution time.
@@ -434,6 +446,66 @@ func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) InternalValue() *V
 	return returns
 }
 
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) NewrelicAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newrelicAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) NewrelicAccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newrelicAccountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) NewrelicLicenseKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newrelicLicenseKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) NewrelicLicenseKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newrelicLicenseKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) NewrelicRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newrelicRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) NewrelicRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newrelicRegionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) SplunkHecendpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -672,6 +744,39 @@ func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference)SetInternalValue(va
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference)SetNewrelicAccountId(val *string) {
+	if err := j.validateSetNewrelicAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"newrelicAccountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference)SetNewrelicLicenseKey(val *string) {
+	if err := j.validateSetNewrelicLicenseKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"newrelicLicenseKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference)SetNewrelicRegion(val *string) {
+	if err := j.validateSetNewrelicRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"newrelicRegion",
 		val,
 	)
 }
@@ -990,6 +1095,30 @@ func (v *jsiiProxy_VaultClusterAuditLogConfigOutputReference) ResetGrafanaUser()
 	_jsii_.InvokeVoid(
 		v,
 		"resetGrafanaUser",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterAuditLogConfigOutputReference) ResetNewrelicAccountId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetNewrelicAccountId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterAuditLogConfigOutputReference) ResetNewrelicLicenseKey() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetNewrelicLicenseKey",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterAuditLogConfigOutputReference) ResetNewrelicRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetNewrelicRegion",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/hvn_route hcp_hvn_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/hvn_route hcp_hvn_route}.
 type HvnRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -470,7 +470,7 @@ func (j *jsiiProxy_HvnRoute) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/hvn_route hcp_hvn_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/hvn_route hcp_hvn_route} Resource.
 func NewHvnRoute(scope constructs.Construct, id *string, config *HvnRouteConfig) HvnRoute {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewHvnRoute(scope constructs.Construct, id *string, config *HvnRouteConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/hvn_route hcp_hvn_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/hvn_route hcp_hvn_route} Resource.
 func NewHvnRoute_Override(h HvnRoute, scope constructs.Construct, id *string, config *HvnRouteConfig) {
 	_init_.Initialize()
 

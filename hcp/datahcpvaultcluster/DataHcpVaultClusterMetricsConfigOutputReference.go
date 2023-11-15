@@ -43,6 +43,9 @@ type DataHcpVaultClusterMetricsConfigOutputReference interface {
 	GrafanaUser() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	NewrelicAccountId() *string
+	NewrelicLicenseKey() *string
+	NewrelicRegion() *string
 	SplunkHecendpoint() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -246,6 +249,36 @@ func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) NewrelicAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newrelicAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) NewrelicLicenseKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newrelicLicenseKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterMetricsConfigOutputReference) NewrelicRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"newrelicRegion",
 		&returns,
 	)
 	return returns

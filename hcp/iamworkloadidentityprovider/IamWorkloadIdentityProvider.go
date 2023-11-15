@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider}.
 type IamWorkloadIdentityProvider interface {
 	cdktf.TerraformResource
 	Aws() IamWorkloadIdentityProviderAwsOutputReference
@@ -436,7 +436,7 @@ func (j *jsiiProxy_IamWorkloadIdentityProvider) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider} Resource.
 func NewIamWorkloadIdentityProvider(scope constructs.Construct, id *string, config *IamWorkloadIdentityProviderConfig) IamWorkloadIdentityProvider {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewIamWorkloadIdentityProvider(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.76.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/iam_workload_identity_provider hcp_iam_workload_identity_provider} Resource.
 func NewIamWorkloadIdentityProvider_Override(i IamWorkloadIdentityProvider, scope constructs.Construct, id *string, config *IamWorkloadIdentityProviderConfig) {
 	_init_.Initialize()
 

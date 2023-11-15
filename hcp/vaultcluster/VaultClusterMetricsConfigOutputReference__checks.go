@@ -262,6 +262,30 @@ func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetInternal
 	return nil
 }
 
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetNewrelicAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetNewrelicLicenseKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetNewrelicRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) validateSetSplunkHecendpointParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
