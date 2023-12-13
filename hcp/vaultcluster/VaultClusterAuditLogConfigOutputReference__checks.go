@@ -254,6 +254,98 @@ func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetGrafana
 	return nil
 }
 
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpBasicPasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpBasicUserParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpBearerTokenParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpCodecParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpCompressionParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpHeadersParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpMethodParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpPayloadPrefixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpPayloadSuffixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpUriParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetInternalValueParameters(val *VaultClusterAuditLogConfig) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

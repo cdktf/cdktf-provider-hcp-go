@@ -65,6 +65,36 @@ type VaultClusterMetricsConfigOutputReference interface {
 	GrafanaUser() *string
 	SetGrafanaUser(val *string)
 	GrafanaUserInput() *string
+	HttpBasicPassword() *string
+	SetHttpBasicPassword(val *string)
+	HttpBasicPasswordInput() *string
+	HttpBasicUser() *string
+	SetHttpBasicUser(val *string)
+	HttpBasicUserInput() *string
+	HttpBearerToken() *string
+	SetHttpBearerToken(val *string)
+	HttpBearerTokenInput() *string
+	HttpCodec() *string
+	SetHttpCodec(val *string)
+	HttpCodecInput() *string
+	HttpCompression() interface{}
+	SetHttpCompression(val interface{})
+	HttpCompressionInput() interface{}
+	HttpHeaders() *map[string]*string
+	SetHttpHeaders(val *map[string]*string)
+	HttpHeadersInput() *map[string]*string
+	HttpMethod() *string
+	SetHttpMethod(val *string)
+	HttpMethodInput() *string
+	HttpPayloadPrefix() *string
+	SetHttpPayloadPrefix(val *string)
+	HttpPayloadPrefixInput() *string
+	HttpPayloadSuffix() *string
+	SetHttpPayloadSuffix(val *string)
+	HttpPayloadSuffixInput() *string
+	HttpUri() *string
+	SetHttpUri(val *string)
+	HttpUriInput() *string
 	InternalValue() *VaultClusterMetricsConfig
 	SetInternalValue(val *VaultClusterMetricsConfig)
 	NewrelicAccountId() *string
@@ -125,6 +155,16 @@ type VaultClusterMetricsConfigOutputReference interface {
 	ResetGrafanaEndpoint()
 	ResetGrafanaPassword()
 	ResetGrafanaUser()
+	ResetHttpBasicPassword()
+	ResetHttpBasicUser()
+	ResetHttpBearerToken()
+	ResetHttpCodec()
+	ResetHttpCompression()
+	ResetHttpHeaders()
+	ResetHttpMethod()
+	ResetHttpPayloadPrefix()
+	ResetHttpPayloadSuffix()
+	ResetHttpUri()
 	ResetNewrelicAccountId()
 	ResetNewrelicLicenseKey()
 	ResetNewrelicRegion()
@@ -420,6 +460,206 @@ func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) GrafanaUserInput() 
 	_jsii_.Get(
 		j,
 		"grafanaUserInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpBasicPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpBasicPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpBasicPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpBasicPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpBasicUser() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpBasicUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpBasicUserInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpBasicUserInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpBearerToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpBearerToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpBearerTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpBearerTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpCodec() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpCodec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpCodecInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpCodecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpCompression() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpCompression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpCompressionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpCompressionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpHeaders() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"httpHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpHeadersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"httpHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpMethodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpPayloadPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpPayloadPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpPayloadPrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpPayloadPrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpPayloadSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpPayloadSuffix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpPayloadSuffixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpPayloadSuffixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference) HttpUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpUriInput",
 		&returns,
 	)
 	return returns
@@ -722,6 +962,116 @@ func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetGrafanaUser(val *
 	_jsii_.Set(
 		j,
 		"grafanaUser",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetHttpBasicPassword(val *string) {
+	if err := j.validateSetHttpBasicPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpBasicPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetHttpBasicUser(val *string) {
+	if err := j.validateSetHttpBasicUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpBasicUser",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetHttpBearerToken(val *string) {
+	if err := j.validateSetHttpBearerTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpBearerToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetHttpCodec(val *string) {
+	if err := j.validateSetHttpCodecParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpCodec",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetHttpCompression(val interface{}) {
+	if err := j.validateSetHttpCompressionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpCompression",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetHttpHeaders(val *map[string]*string) {
+	if err := j.validateSetHttpHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetHttpMethod(val *string) {
+	if err := j.validateSetHttpMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpMethod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetHttpPayloadPrefix(val *string) {
+	if err := j.validateSetHttpPayloadPrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpPayloadPrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetHttpPayloadSuffix(val *string) {
+	if err := j.validateSetHttpPayloadSuffixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpPayloadSuffix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultClusterMetricsConfigOutputReference)SetHttpUri(val *string) {
+	if err := j.validateSetHttpUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpUri",
 		val,
 	)
 }
@@ -1084,6 +1434,86 @@ func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetGrafanaUser() 
 	_jsii_.InvokeVoid(
 		v,
 		"resetGrafanaUser",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetHttpBasicPassword() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHttpBasicPassword",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetHttpBasicUser() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHttpBasicUser",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetHttpBearerToken() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHttpBearerToken",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetHttpCodec() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHttpCodec",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetHttpCompression() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHttpCompression",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetHttpHeaders() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHttpHeaders",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetHttpMethod() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHttpMethod",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetHttpPayloadPrefix() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHttpPayloadPrefix",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetHttpPayloadSuffix() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHttpPayloadSuffix",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultClusterMetricsConfigOutputReference) ResetHttpUri() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHttpUri",
 		nil, // no parameters
 	)
 }

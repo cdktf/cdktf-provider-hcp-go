@@ -122,6 +122,14 @@ func (a *jsiiProxy_AzurePeeringConnection) validateInterpolationForAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AzurePeeringConnection) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AzurePeeringConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -183,6 +191,14 @@ func (a *jsiiProxy_AzurePeeringConnection) validateMoveToParameters(moveTarget *
 	return nil
 }
 
+func (a *jsiiProxy_AzurePeeringConnection) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AzurePeeringConnection) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
@@ -237,6 +253,26 @@ func validateAzurePeeringConnection_IsTerraformElementParameters(x interface{}) 
 func validateAzurePeeringConnection_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzurePeeringConnection) validateSetAllowForwardedTrafficParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -444,6 +480,26 @@ func (j *jsiiProxy_AzurePeeringConnection) validateSetProvisionersParameters(val
 			if !_jsii_.IsAnonymousProxy(v) {
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzurePeeringConnection) validateSetUseRemoteGatewaysParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

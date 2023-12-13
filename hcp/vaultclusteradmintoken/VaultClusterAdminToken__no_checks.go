@@ -59,7 +59,15 @@ func (v *jsiiProxy_VaultClusterAdminToken) validateInterpolationForAttributePara
 	return nil
 }
 
+func (v *jsiiProxy_VaultClusterAdminToken) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultClusterAdminToken) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VaultClusterAdminToken) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

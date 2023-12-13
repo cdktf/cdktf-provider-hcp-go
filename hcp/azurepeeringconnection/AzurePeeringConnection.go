@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/azure_peering_connection hcp_azure_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/azure_peering_connection hcp_azure_peering_connection}.
 type AzurePeeringConnection interface {
 	cdktf.TerraformResource
+	AllowForwardedTraffic() interface{}
+	SetAllowForwardedTraffic(val interface{})
+	AllowForwardedTrafficInput() interface{}
 	ApplicationId() *string
 	AzurePeeringId() *string
 	// Experimental.
@@ -95,6 +98,9 @@ type AzurePeeringConnection interface {
 	TerraformResourceType() *string
 	Timeouts() AzurePeeringConnectionTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UseRemoteGateways() interface{}
+	SetUseRemoteGateways(val interface{})
+	UseRemoteGatewaysInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -119,21 +125,33 @@ type AzurePeeringConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *AzurePeeringConnectionTimeouts)
+	ResetAllowForwardedTraffic()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetUseRemoteGateways()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -147,6 +165,26 @@ type AzurePeeringConnection interface {
 // The jsii proxy struct for AzurePeeringConnection
 type jsiiProxy_AzurePeeringConnection struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AzurePeeringConnection) AllowForwardedTraffic() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowForwardedTraffic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzurePeeringConnection) AllowForwardedTrafficInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowForwardedTrafficInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AzurePeeringConnection) ApplicationId() *string {
@@ -569,8 +607,28 @@ func (j *jsiiProxy_AzurePeeringConnection) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AzurePeeringConnection) UseRemoteGateways() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useRemoteGateways",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/azure_peering_connection hcp_azure_peering_connection} Resource.
+func (j *jsiiProxy_AzurePeeringConnection) UseRemoteGatewaysInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useRemoteGatewaysInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/azure_peering_connection hcp_azure_peering_connection} Resource.
 func NewAzurePeeringConnection(scope constructs.Construct, id *string, config *AzurePeeringConnectionConfig) AzurePeeringConnection {
 	_init_.Initialize()
 
@@ -588,7 +646,7 @@ func NewAzurePeeringConnection(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/azure_peering_connection hcp_azure_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/azure_peering_connection hcp_azure_peering_connection} Resource.
 func NewAzurePeeringConnection_Override(a AzurePeeringConnection, scope constructs.Construct, id *string, config *AzurePeeringConnectionConfig) {
 	_init_.Initialize()
 
@@ -596,6 +654,17 @@ func NewAzurePeeringConnection_Override(a AzurePeeringConnection, scope construc
 		"@cdktf/provider-hcp.azurePeeringConnection.AzurePeeringConnection",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AzurePeeringConnection)SetAllowForwardedTraffic(val interface{}) {
+	if err := j.validateSetAllowForwardedTrafficParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowForwardedTraffic",
+		val,
 	)
 }
 
@@ -751,6 +820,17 @@ func (j *jsiiProxy_AzurePeeringConnection)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzurePeeringConnection)SetUseRemoteGateways(val interface{}) {
+	if err := j.validateSetUseRemoteGatewaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useRemoteGateways",
 		val,
 	)
 }
@@ -1024,6 +1104,19 @@ func (a *jsiiProxy_AzurePeeringConnection) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (a *jsiiProxy_AzurePeeringConnection) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AzurePeeringConnection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1051,6 +1144,17 @@ func (a *jsiiProxy_AzurePeeringConnection) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (a *jsiiProxy_AzurePeeringConnection) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AzurePeeringConnection) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1059,6 +1163,17 @@ func (a *jsiiProxy_AzurePeeringConnection) MoveTo(moveTarget *string, index inte
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AzurePeeringConnection) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1084,6 +1199,14 @@ func (a *jsiiProxy_AzurePeeringConnection) PutTimeouts(value *AzurePeeringConnec
 	)
 }
 
+func (a *jsiiProxy_AzurePeeringConnection) ResetAllowForwardedTraffic() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowForwardedTraffic",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzurePeeringConnection) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1104,6 +1227,14 @@ func (a *jsiiProxy_AzurePeeringConnection) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzurePeeringConnection) ResetUseRemoteGateways() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUseRemoteGateways",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection}.
 type HvnPeeringConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -105,12 +105,22 @@ type HvnPeeringConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -457,7 +467,7 @@ func (j *jsiiProxy_HvnPeeringConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection} Resource.
 func NewHvnPeeringConnection(scope constructs.Construct, id *string, config *HvnPeeringConnectionConfig) HvnPeeringConnection {
 	_init_.Initialize()
 
@@ -475,7 +485,7 @@ func NewHvnPeeringConnection(scope constructs.Construct, id *string, config *Hvn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/hvn_peering_connection hcp_hvn_peering_connection} Resource.
 func NewHvnPeeringConnection_Override(h HvnPeeringConnection, scope constructs.Construct, id *string, config *HvnPeeringConnectionConfig) {
 	_init_.Initialize()
 
@@ -867,6 +877,19 @@ func (h *jsiiProxy_HvnPeeringConnection) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (h *jsiiProxy_HvnPeeringConnection) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (h *jsiiProxy_HvnPeeringConnection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := h.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -894,6 +917,17 @@ func (h *jsiiProxy_HvnPeeringConnection) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (h *jsiiProxy_HvnPeeringConnection) MoveFromId(id *string) {
+	if err := h.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (h *jsiiProxy_HvnPeeringConnection) MoveTo(moveTarget *string, index interface{}) {
 	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -902,6 +936,17 @@ func (h *jsiiProxy_HvnPeeringConnection) MoveTo(moveTarget *string, index interf
 		h,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (h *jsiiProxy_HvnPeeringConnection) MoveToId(id *string) {
+	if err := h.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

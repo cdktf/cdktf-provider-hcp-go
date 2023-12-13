@@ -42,6 +42,16 @@ type DataHcpVaultClusterAuditLogConfigOutputReference interface {
 	Fqn() *string
 	GrafanaEndpoint() *string
 	GrafanaUser() *string
+	HttpBasicPassword() *string
+	HttpBasicUser() *string
+	HttpBearerToken() *string
+	HttpCodec() *string
+	HttpCompression() cdktf.IResolvable
+	HttpHeaders() cdktf.StringMap
+	HttpMethod() *string
+	HttpPayloadPrefix() *string
+	HttpPayloadSuffix() *string
+	HttpUri() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	NewrelicAccountId() *string
@@ -250,6 +260,106 @@ func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) GrafanaUser
 	_jsii_.Get(
 		j,
 		"grafanaUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) HttpBasicPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpBasicPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) HttpBasicUser() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpBasicUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) HttpBearerToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpBearerToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) HttpCodec() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpCodec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) HttpCompression() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"httpCompression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) HttpHeaders() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"httpHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) HttpMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) HttpPayloadPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpPayloadPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) HttpPayloadSuffix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpPayloadSuffix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultClusterAuditLogConfigOutputReference) HttpUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpUri",
 		&returns,
 	)
 	return returns

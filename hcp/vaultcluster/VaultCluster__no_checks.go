@@ -59,7 +59,15 @@ func (v *jsiiProxy_VaultCluster) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (v *jsiiProxy_VaultCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VaultCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

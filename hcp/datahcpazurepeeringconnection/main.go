@@ -15,6 +15,7 @@ func init() {
 		reflect.TypeOf((*DataHcpAzurePeeringConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowForwardedTraffic", GoGetter: "AllowForwardedTraffic"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationId", GoGetter: "ApplicationId"},
 			_jsii_.MemberProperty{JsiiProperty: "azurePeeringId", GoGetter: "AzurePeeringId"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -70,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "useRemoteGateways", GoGetter: "UseRemoteGateways"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForActiveState", GoGetter: "WaitForActiveState"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForActiveStateInput", GoGetter: "WaitForActiveStateInput"},
 		},

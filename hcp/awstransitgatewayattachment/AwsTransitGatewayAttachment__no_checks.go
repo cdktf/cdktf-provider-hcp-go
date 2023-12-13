@@ -59,7 +59,15 @@ func (a *jsiiProxy_AwsTransitGatewayAttachment) validateInterpolationForAttribut
 	return nil
 }
 
+func (a *jsiiProxy_AwsTransitGatewayAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsTransitGatewayAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AwsTransitGatewayAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

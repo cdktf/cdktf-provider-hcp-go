@@ -59,11 +59,23 @@ func (h *jsiiProxy_HvnRoute) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (h *jsiiProxy_HvnRoute) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HvnRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
+func (h *jsiiProxy_HvnRoute) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HvnRoute) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HvnRoute) validatePutAzureConfigParameters(value *HvnRouteAzureConfig) error {
 	return nil
 }
 

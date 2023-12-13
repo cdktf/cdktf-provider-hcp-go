@@ -59,7 +59,15 @@ func (a *jsiiProxy_AwsNetworkPeering) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AwsNetworkPeering) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsNetworkPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AwsNetworkPeering) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

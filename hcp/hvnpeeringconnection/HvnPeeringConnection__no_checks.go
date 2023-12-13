@@ -59,7 +59,15 @@ func (h *jsiiProxy_HvnPeeringConnection) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (h *jsiiProxy_HvnPeeringConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HvnPeeringConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HvnPeeringConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

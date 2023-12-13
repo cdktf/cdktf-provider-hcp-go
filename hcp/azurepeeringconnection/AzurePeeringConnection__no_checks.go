@@ -59,7 +59,15 @@ func (a *jsiiProxy_AzurePeeringConnection) validateInterpolationForAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AzurePeeringConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzurePeeringConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AzurePeeringConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -84,6 +92,10 @@ func validateAzurePeeringConnection_IsTerraformElementParameters(x interface{}) 
 }
 
 func validateAzurePeeringConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzurePeeringConnection) validateSetAllowForwardedTrafficParameters(val interface{}) error {
 	return nil
 }
 
@@ -132,6 +144,10 @@ func (j *jsiiProxy_AzurePeeringConnection) validateSetPeerVnetRegionParameters(v
 }
 
 func (j *jsiiProxy_AzurePeeringConnection) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzurePeeringConnection) validateSetUseRemoteGatewaysParameters(val interface{}) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (p *jsiiProxy_PackerChannelAssignment) validateInterpolationForAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_PackerChannelAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PackerChannelAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PackerChannelAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment}.
 type AwsTransitGatewayAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -111,12 +111,22 @@ type AwsTransitGatewayAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -503,7 +513,7 @@ func (j *jsiiProxy_AwsTransitGatewayAttachment) TransitGatewayIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
 func NewAwsTransitGatewayAttachment(scope constructs.Construct, id *string, config *AwsTransitGatewayAttachmentConfig) AwsTransitGatewayAttachment {
 	_init_.Initialize()
 
@@ -521,7 +531,7 @@ func NewAwsTransitGatewayAttachment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.77.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/resources/aws_transit_gateway_attachment hcp_aws_transit_gateway_attachment} Resource.
 func NewAwsTransitGatewayAttachment_Override(a AwsTransitGatewayAttachment, scope constructs.Construct, id *string, config *AwsTransitGatewayAttachmentConfig) {
 	_init_.Initialize()
 
@@ -935,6 +945,19 @@ func (a *jsiiProxy_AwsTransitGatewayAttachment) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (a *jsiiProxy_AwsTransitGatewayAttachment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AwsTransitGatewayAttachment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -962,6 +985,17 @@ func (a *jsiiProxy_AwsTransitGatewayAttachment) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (a *jsiiProxy_AwsTransitGatewayAttachment) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AwsTransitGatewayAttachment) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -970,6 +1004,17 @@ func (a *jsiiProxy_AwsTransitGatewayAttachment) MoveTo(moveTarget *string, index
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AwsTransitGatewayAttachment) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

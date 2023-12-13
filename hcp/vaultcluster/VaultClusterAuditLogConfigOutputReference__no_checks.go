@@ -103,6 +103,46 @@ func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetGrafana
 	return nil
 }
 
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpBasicPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpBasicUserParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpBearerTokenParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpCodecParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpCompressionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpHeadersParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpMethodParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpPayloadPrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpPayloadSuffixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetHttpUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultClusterAuditLogConfigOutputReference) validateSetInternalValueParameters(val *VaultClusterAuditLogConfig) error {
 	return nil
 }
