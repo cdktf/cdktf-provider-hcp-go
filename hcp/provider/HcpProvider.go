@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs hcp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs hcp}.
 type HcpProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -50,6 +50,9 @@ type HcpProvider interface {
 	TerraformProviderSource() *string
 	// Experimental.
 	TerraformResourceType() *string
+	WorkloadIdentity() interface{}
+	SetWorkloadIdentity(val interface{})
+	WorkloadIdentityInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -63,6 +66,7 @@ type HcpProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectId()
+	ResetWorkloadIdentity()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -278,8 +282,28 @@ func (j *jsiiProxy_HcpProvider) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_HcpProvider) WorkloadIdentity() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workloadIdentity",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs hcp} Resource.
+func (j *jsiiProxy_HcpProvider) WorkloadIdentityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workloadIdentityInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs hcp} Resource.
 func NewHcpProvider(scope constructs.Construct, id *string, config *HcpProviderConfig) HcpProvider {
 	_init_.Initialize()
 
@@ -297,7 +321,7 @@ func NewHcpProvider(scope constructs.Construct, id *string, config *HcpProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs hcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs hcp} Resource.
 func NewHcpProvider_Override(h HcpProvider, scope constructs.Construct, id *string, config *HcpProviderConfig) {
 	_init_.Initialize()
 
@@ -344,6 +368,17 @@ func (j *jsiiProxy_HcpProvider)SetProjectId(val *string) {
 	_jsii_.Set(
 		j,
 		"projectId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HcpProvider)SetWorkloadIdentity(val interface{}) {
+	if err := j.validateSetWorkloadIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workloadIdentity",
 		val,
 	)
 }
@@ -517,6 +552,14 @@ func (h *jsiiProxy_HcpProvider) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HcpProvider) ResetWorkloadIdentity() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetWorkloadIdentity",
 		nil, // no parameters
 	)
 }

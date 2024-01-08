@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCredentialFile", GoMethod: "ResetCredentialFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProjectId", GoMethod: "ResetProjectId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadIdentity", GoMethod: "ResetWorkloadIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformProviderSource", GoGetter: "TerraformProviderSource"},
@@ -46,6 +47,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadIdentity", GoGetter: "WorkloadIdentity"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityInput", GoGetter: "WorkloadIdentityInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_HcpProvider{}
@@ -56,5 +59,9 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-hcp.provider.HcpProviderConfig",
 		reflect.TypeOf((*HcpProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-hcp.provider.HcpProviderWorkloadIdentity",
+		reflect.TypeOf((*HcpProviderWorkloadIdentity)(nil)).Elem(),
 	)
 }

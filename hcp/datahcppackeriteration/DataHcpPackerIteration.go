@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/packer_iteration hcp_packer_iteration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/data-sources/packer_iteration hcp_packer_iteration}.
 type DataHcpPackerIteration interface {
 	cdktf.TerraformDataSource
 	AuthorId() *string
@@ -443,7 +443,7 @@ func (j *jsiiProxy_DataHcpPackerIteration) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
 func NewDataHcpPackerIteration(scope constructs.Construct, id *string, config *DataHcpPackerIterationConfig) DataHcpPackerIteration {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewDataHcpPackerIteration(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.78.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.79.0/docs/data-sources/packer_iteration hcp_packer_iteration} Data Source.
 func NewDataHcpPackerIteration_Override(d DataHcpPackerIteration, scope constructs.Construct, id *string, config *DataHcpPackerIterationConfig) {
 	_init_.Initialize()
 
