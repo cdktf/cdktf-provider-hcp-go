@@ -5,9 +5,9 @@ package vaultclusteradmintoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v8/vaultclusteradmintoken/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultclusteradmintoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

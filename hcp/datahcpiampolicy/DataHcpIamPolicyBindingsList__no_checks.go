@@ -7,6 +7,10 @@ package datahcpiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataHcpIamPolicyBindingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataHcpIamPolicyBindingsList) validateGetParameters(index *float64) error {
 	return nil
 }

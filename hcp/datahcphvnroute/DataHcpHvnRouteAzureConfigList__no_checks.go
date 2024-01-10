@@ -7,6 +7,10 @@ package datahcphvnroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataHcpHvnRouteAzureConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataHcpHvnRouteAzureConfigList) validateGetParameters(index *float64) error {
 	return nil
 }
