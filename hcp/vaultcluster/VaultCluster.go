@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/vault_cluster hcp_vault_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/vault_cluster hcp_vault_cluster}.
 type VaultCluster interface {
 	cdktf.TerraformResource
 	AuditLogConfig() VaultClusterAuditLogConfigOutputReference
@@ -52,6 +52,8 @@ type VaultCluster interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAllowlist() VaultClusterIpAllowlistStructList
+	IpAllowlistInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -154,11 +156,13 @@ type VaultCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuditLogConfig(value *VaultClusterAuditLogConfig)
+	PutIpAllowlist(value interface{})
 	PutMajorVersionUpgradeConfig(value *VaultClusterMajorVersionUpgradeConfig)
 	PutMetricsConfig(value *VaultClusterMetricsConfig)
 	PutTimeouts(value *VaultClusterTimeouts)
 	ResetAuditLogConfig()
 	ResetId()
+	ResetIpAllowlist()
 	ResetMajorVersionUpgradeConfig()
 	ResetMetricsConfig()
 	ResetMinVaultVersion()
@@ -365,6 +369,26 @@ func (j *jsiiProxy_VaultCluster) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultCluster) IpAllowlist() VaultClusterIpAllowlistStructList {
+	var returns VaultClusterIpAllowlistStructList
+	_jsii_.Get(
+		j,
+		"ipAllowlist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultCluster) IpAllowlistInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipAllowlistInput",
 		&returns,
 	)
 	return returns
@@ -741,7 +765,7 @@ func (j *jsiiProxy_VaultCluster) VaultVersion() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
 func NewVaultCluster(scope constructs.Construct, id *string, config *VaultClusterConfig) VaultCluster {
 	_init_.Initialize()
 
@@ -759,7 +783,7 @@ func NewVaultCluster(scope constructs.Construct, id *string, config *VaultCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/resources/vault_cluster hcp_vault_cluster} Resource.
 func NewVaultCluster_Override(v VaultCluster, scope constructs.Construct, id *string, config *VaultClusterConfig) {
 	_init_.Initialize()
 
@@ -1312,6 +1336,17 @@ func (v *jsiiProxy_VaultCluster) PutAuditLogConfig(value *VaultClusterAuditLogCo
 	)
 }
 
+func (v *jsiiProxy_VaultCluster) PutIpAllowlist(value interface{}) {
+	if err := v.validatePutIpAllowlistParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putIpAllowlist",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VaultCluster) PutMajorVersionUpgradeConfig(value *VaultClusterMajorVersionUpgradeConfig) {
 	if err := v.validatePutMajorVersionUpgradeConfigParameters(value); err != nil {
 		panic(err)
@@ -1357,6 +1392,14 @@ func (v *jsiiProxy_VaultCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultCluster) ResetIpAllowlist() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIpAllowlist",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster hcp_vault_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster hcp_vault_cluster}.
 type DataHcpVaultCluster interface {
 	cdktf.TerraformDataSource
 	AuditLogConfig() DataHcpVaultClusterAuditLogConfigList
@@ -46,6 +46,7 @@ type DataHcpVaultCluster interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAllowlist() DataHcpVaultClusterIpAllowlistStructList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -297,6 +298,16 @@ func (j *jsiiProxy_DataHcpVaultCluster) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpVaultCluster) IpAllowlist() DataHcpVaultClusterIpAllowlistStructList {
+	var returns DataHcpVaultClusterIpAllowlistStructList
+	_jsii_.Get(
+		j,
+		"ipAllowlist",
 		&returns,
 	)
 	return returns
@@ -593,7 +604,7 @@ func (j *jsiiProxy_DataHcpVaultCluster) VaultVersion() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
 func NewDataHcpVaultCluster(scope constructs.Construct, id *string, config *DataHcpVaultClusterConfig) DataHcpVaultCluster {
 	_init_.Initialize()
 
@@ -611,7 +622,7 @@ func NewDataHcpVaultCluster(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.80.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.81.0/docs/data-sources/vault_cluster hcp_vault_cluster} Data Source.
 func NewDataHcpVaultCluster_Override(d DataHcpVaultCluster, scope constructs.Construct, id *string, config *DataHcpVaultClusterConfig) {
 	_init_.Initialize()
 

@@ -79,6 +79,10 @@ func (v *jsiiProxy_VaultCluster) validatePutAuditLogConfigParameters(value *Vaul
 	return nil
 }
 
+func (v *jsiiProxy_VaultCluster) validatePutIpAllowlistParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultCluster) validatePutMajorVersionUpgradeConfigParameters(value *VaultClusterMajorVersionUpgradeConfig) error {
 	return nil
 }
