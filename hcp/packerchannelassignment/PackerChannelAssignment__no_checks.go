@@ -119,14 +119,6 @@ func (j *jsiiProxy_PackerChannelAssignment) validateSetIterationFingerprintParam
 	return nil
 }
 
-func (j *jsiiProxy_PackerChannelAssignment) validateSetIterationIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_PackerChannelAssignment) validateSetIterationVersionParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_PackerChannelAssignment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -136,6 +128,10 @@ func (j *jsiiProxy_PackerChannelAssignment) validateSetProjectIdParameters(val *
 }
 
 func (j *jsiiProxy_PackerChannelAssignment) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PackerChannelAssignment) validateSetVersionFingerprintParameters(val *string) error {
 	return nil
 }
 
