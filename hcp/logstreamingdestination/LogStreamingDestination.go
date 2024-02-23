@@ -12,11 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}.
 type LogStreamingDestination interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Cloudwatch() LogStreamingDestinationCloudwatchOutputReference
+	CloudwatchInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -110,10 +112,13 @@ type LogStreamingDestination interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCloudwatch(value *LogStreamingDestinationCloudwatch)
 	PutSplunkCloud(value *LogStreamingDestinationSplunkCloud)
+	ResetCloudwatch()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSplunkCloud()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -137,6 +142,26 @@ func (j *jsiiProxy_LogStreamingDestination) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogStreamingDestination) Cloudwatch() LogStreamingDestinationCloudwatchOutputReference {
+	var returns LogStreamingDestinationCloudwatchOutputReference
+	_jsii_.Get(
+		j,
+		"cloudwatch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogStreamingDestination) CloudwatchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cloudwatchInput",
 		&returns,
 	)
 	return returns
@@ -343,7 +368,7 @@ func (j *jsiiProxy_LogStreamingDestination) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource.
 func NewLogStreamingDestination(scope constructs.Construct, id *string, config *LogStreamingDestinationConfig) LogStreamingDestination {
 	_init_.Initialize()
 
@@ -361,7 +386,7 @@ func NewLogStreamingDestination(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource.
 func NewLogStreamingDestination_Override(l LogStreamingDestination, scope constructs.Construct, id *string, config *LogStreamingDestinationConfig) {
 	_init_.Initialize()
 
@@ -804,6 +829,17 @@ func (l *jsiiProxy_LogStreamingDestination) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (l *jsiiProxy_LogStreamingDestination) PutCloudwatch(value *LogStreamingDestinationCloudwatch) {
+	if err := l.validatePutCloudwatchParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putCloudwatch",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogStreamingDestination) PutSplunkCloud(value *LogStreamingDestinationSplunkCloud) {
 	if err := l.validatePutSplunkCloudParameters(value); err != nil {
 		panic(err)
@@ -815,10 +851,26 @@ func (l *jsiiProxy_LogStreamingDestination) PutSplunkCloud(value *LogStreamingDe
 	)
 }
 
+func (l *jsiiProxy_LogStreamingDestination) ResetCloudwatch() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCloudwatch",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LogStreamingDestination) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogStreamingDestination) ResetSplunkCloud() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSplunkCloud",
 		nil, // no parameters
 	)
 }

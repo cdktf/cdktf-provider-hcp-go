@@ -75,6 +75,10 @@ func (l *jsiiProxy_LogStreamingDestination) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (l *jsiiProxy_LogStreamingDestination) validatePutCloudwatchParameters(value *LogStreamingDestinationCloudwatch) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogStreamingDestination) validatePutSplunkCloudParameters(value *LogStreamingDestinationSplunkCloud) error {
 	return nil
 }

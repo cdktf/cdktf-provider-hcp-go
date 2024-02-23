@@ -24,11 +24,11 @@ type VaultSecretsAppConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Vault Secrets App name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/vault_secrets_app#app_name VaultSecretsApp#app_name}
 	AppName *string `field:"required" json:"appName" yaml:"appName"`
 	// The Vault Secrets app description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.82.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/vault_secrets_app#description VaultSecretsApp#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 
