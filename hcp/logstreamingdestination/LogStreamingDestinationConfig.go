@@ -24,11 +24,11 @@ type LogStreamingDestinationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The HCP Log Streaming Destination’s name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#name LogStreamingDestination#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/log_streaming_destination#name LogStreamingDestination#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#cloudwatch LogStreamingDestination#cloudwatch}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/log_streaming_destination#cloudwatch LogStreamingDestination#cloudwatch}.
 	Cloudwatch *LogStreamingDestinationCloudwatch `field:"optional" json:"cloudwatch" yaml:"cloudwatch"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/log_streaming_destination#splunk_cloud LogStreamingDestination#splunk_cloud}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/log_streaming_destination#splunk_cloud LogStreamingDestination#splunk_cloud}.
 	SplunkCloud *LogStreamingDestinationSplunkCloud `field:"optional" json:"splunkCloud" yaml:"splunkCloud"`
 }
 

@@ -5,7 +5,7 @@ package datahcpawsnetworkpeering
 
 
 type DataHcpAwsNetworkPeeringTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/aws_network_peering#read DataHcpAwsNetworkPeering#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/aws_network_peering#read DataHcpAwsNetworkPeering#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

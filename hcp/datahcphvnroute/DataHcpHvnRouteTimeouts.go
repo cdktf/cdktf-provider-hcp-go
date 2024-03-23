@@ -5,7 +5,7 @@ package datahcphvnroute
 
 
 type DataHcpHvnRouteTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/data-sources/hvn_route#default DataHcpHvnRoute#default}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/data-sources/hvn_route#default DataHcpHvnRoute#default}.
 	Default *string `field:"optional" json:"default" yaml:"default"`
 }
 

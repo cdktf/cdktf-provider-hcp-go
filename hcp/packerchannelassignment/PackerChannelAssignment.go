@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment hcp_packer_channel_assignment}.
 type PackerChannelAssignment interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -48,9 +48,6 @@ type PackerChannelAssignment interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IterationFingerprint() *string
-	SetIterationFingerprint(val *string)
-	IterationFingerprintInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -127,7 +124,6 @@ type PackerChannelAssignment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *PackerChannelAssignmentTimeouts)
 	ResetId()
-	ResetIterationFingerprint()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -292,26 +288,6 @@ func (j *jsiiProxy_PackerChannelAssignment) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PackerChannelAssignment) IterationFingerprint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"iterationFingerprint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PackerChannelAssignment) IterationFingerprintInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"iterationFingerprintInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PackerChannelAssignment) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -463,7 +439,7 @@ func (j *jsiiProxy_PackerChannelAssignment) VersionFingerprintInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
 func NewPackerChannelAssignment(scope constructs.Construct, id *string, config *PackerChannelAssignmentConfig) PackerChannelAssignment {
 	_init_.Initialize()
 
@@ -481,7 +457,7 @@ func NewPackerChannelAssignment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.83.0/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.84.1/docs/resources/packer_channel_assignment hcp_packer_channel_assignment} Resource.
 func NewPackerChannelAssignment_Override(p PackerChannelAssignment, scope constructs.Construct, id *string, config *PackerChannelAssignmentConfig) {
 	_init_.Initialize()
 
@@ -559,17 +535,6 @@ func (j *jsiiProxy_PackerChannelAssignment)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PackerChannelAssignment)SetIterationFingerprint(val *string) {
-	if err := j.validateSetIterationFingerprintParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"iterationFingerprint",
 		val,
 	)
 }
@@ -994,14 +959,6 @@ func (p *jsiiProxy_PackerChannelAssignment) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PackerChannelAssignment) ResetIterationFingerprint() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetIterationFingerprint",
 		nil, // no parameters
 	)
 }
