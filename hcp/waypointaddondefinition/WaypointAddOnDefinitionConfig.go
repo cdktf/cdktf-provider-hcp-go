@@ -24,35 +24,35 @@ type WaypointAddOnDefinitionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A longer description of the Add-on Definition.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#description WaypointAddOnDefinition#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#description WaypointAddOnDefinition#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// The name of the Add-on Definition.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#name WaypointAddOnDefinition#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A short summary of the Add-on Definition.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#summary WaypointAddOnDefinition#summary}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#summary WaypointAddOnDefinition#summary}
 	Summary *string `field:"required" json:"summary" yaml:"summary"`
 	// Terraform Cloud Workspace details.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#terraform_cloud_workspace_details WaypointAddOnDefinition#terraform_cloud_workspace_details}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#terraform_cloud_workspace_details WaypointAddOnDefinition#terraform_cloud_workspace_details}
 	TerraformCloudWorkspaceDetails *WaypointAddOnDefinitionTerraformCloudWorkspaceDetails `field:"required" json:"terraformCloudWorkspaceDetails" yaml:"terraformCloudWorkspaceDetails"`
 	// Terraform Cloud no-code Module details.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#terraform_no_code_module WaypointAddOnDefinition#terraform_no_code_module}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#terraform_no_code_module WaypointAddOnDefinition#terraform_no_code_module}
 	TerraformNoCodeModule *WaypointAddOnDefinitionTerraformNoCodeModule `field:"required" json:"terraformNoCodeModule" yaml:"terraformNoCodeModule"`
 	// List of labels attached to this Add-on Definition.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#labels WaypointAddOnDefinition#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#labels WaypointAddOnDefinition#labels}
 	Labels *[]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The ID of the HCP project where the Waypoint Add-on Definition is located.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#project_id WaypointAddOnDefinition#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#project_id WaypointAddOnDefinition#project_id}
 	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 	// The markdown template for the Add-on Definition README.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/waypoint_add_on_definition#readme_markdown_template WaypointAddOnDefinition#readme_markdown_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_add_on_definition#readme_markdown_template WaypointAddOnDefinition#readme_markdown_template}
 	ReadmeMarkdownTemplate *string `field:"optional" json:"readmeMarkdownTemplate" yaml:"readmeMarkdownTemplate"`
 }
 

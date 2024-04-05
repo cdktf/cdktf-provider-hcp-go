@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/log_streaming_destination hcp_log_streaming_destination}.
 type LogStreamingDestination interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -29,6 +29,8 @@ type LogStreamingDestination interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Datadog() LogStreamingDestinationDatadogOutputReference
+	DatadogInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -113,8 +115,10 @@ type LogStreamingDestination interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatch(value *LogStreamingDestinationCloudwatch)
+	PutDatadog(value *LogStreamingDestinationDatadog)
 	PutSplunkCloud(value *LogStreamingDestinationSplunkCloud)
 	ResetCloudwatch()
+	ResetDatadog()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_LogStreamingDestination) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogStreamingDestination) Datadog() LogStreamingDestinationDatadogOutputReference {
+	var returns LogStreamingDestinationDatadogOutputReference
+	_jsii_.Get(
+		j,
+		"datadog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogStreamingDestination) DatadogInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"datadogInput",
 		&returns,
 	)
 	return returns
@@ -368,7 +392,7 @@ func (j *jsiiProxy_LogStreamingDestination) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource.
 func NewLogStreamingDestination(scope constructs.Construct, id *string, config *LogStreamingDestinationConfig) LogStreamingDestination {
 	_init_.Initialize()
 
@@ -386,7 +410,7 @@ func NewLogStreamingDestination(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.85.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/log_streaming_destination hcp_log_streaming_destination} Resource.
 func NewLogStreamingDestination_Override(l LogStreamingDestination, scope constructs.Construct, id *string, config *LogStreamingDestinationConfig) {
 	_init_.Initialize()
 
@@ -840,6 +864,17 @@ func (l *jsiiProxy_LogStreamingDestination) PutCloudwatch(value *LogStreamingDes
 	)
 }
 
+func (l *jsiiProxy_LogStreamingDestination) PutDatadog(value *LogStreamingDestinationDatadog) {
+	if err := l.validatePutDatadogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putDatadog",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LogStreamingDestination) PutSplunkCloud(value *LogStreamingDestinationSplunkCloud) {
 	if err := l.validatePutSplunkCloudParameters(value); err != nil {
 		panic(err)
@@ -855,6 +890,14 @@ func (l *jsiiProxy_LogStreamingDestination) ResetCloudwatch() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetCloudwatch",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogStreamingDestination) ResetDatadog() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDatadog",
 		nil, // no parameters
 	)
 }

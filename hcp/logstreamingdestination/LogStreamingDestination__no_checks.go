@@ -79,6 +79,10 @@ func (l *jsiiProxy_LogStreamingDestination) validatePutCloudwatchParameters(valu
 	return nil
 }
 
+func (l *jsiiProxy_LogStreamingDestination) validatePutDatadogParameters(value *LogStreamingDestinationDatadog) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogStreamingDestination) validatePutSplunkCloudParameters(value *LogStreamingDestinationSplunkCloud) error {
 	return nil
 }
