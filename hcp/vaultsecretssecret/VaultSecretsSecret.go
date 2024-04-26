@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_secret hcp_vault_secrets_secret}.
 type VaultSecretsSecret interface {
 	cdktf.TerraformResource
 	AppName() *string
@@ -51,6 +51,8 @@ type VaultSecretsSecret interface {
 	Node() constructs.Node
 	OrganizationId() *string
 	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -119,6 +121,7 @@ type VaultSecretsSecret interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -287,6 +290,16 @@ func (j *jsiiProxy_VaultSecretsSecret) ProjectId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VaultSecretsSecret) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VaultSecretsSecret) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -388,7 +401,7 @@ func (j *jsiiProxy_VaultSecretsSecret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_secret hcp_vault_secrets_secret} Resource.
 func NewVaultSecretsSecret(scope constructs.Construct, id *string, config *VaultSecretsSecretConfig) VaultSecretsSecret {
 	_init_.Initialize()
 
@@ -406,7 +419,7 @@ func NewVaultSecretsSecret(scope constructs.Construct, id *string, config *Vault
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/vault_secrets_secret hcp_vault_secrets_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/vault_secrets_secret hcp_vault_secrets_secret} Resource.
 func NewVaultSecretsSecret_Override(v VaultSecretsSecret, scope constructs.Construct, id *string, config *VaultSecretsSecretConfig) {
 	_init_.Initialize()
 
@@ -473,6 +486,17 @@ func (j *jsiiProxy_VaultSecretsSecret)SetLifecycle(val *cdktf.TerraformResourceL
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultSecretsSecret)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -875,6 +899,14 @@ func (v *jsiiProxy_VaultSecretsSecret) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultSecretsSecret) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

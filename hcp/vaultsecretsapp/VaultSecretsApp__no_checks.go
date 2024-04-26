@@ -111,6 +111,10 @@ func (j *jsiiProxy_VaultSecretsApp) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_VaultSecretsApp) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultSecretsApp) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

@@ -7,11 +7,11 @@ package waypointapplicationtemplate
 type WaypointApplicationTemplateTerraformCloudWorkspaceDetails struct {
 	// Name of the Terraform Cloud Workspace.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_application_template#name WaypointApplicationTemplate#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Terraform Cloud Project ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.86.0/docs/resources/waypoint_application_template#terraform_project_id WaypointApplicationTemplate#terraform_project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_application_template#terraform_project_id WaypointApplicationTemplate#terraform_project_id}
 	TerraformProjectId *string `field:"required" json:"terraformProjectId" yaml:"terraformProjectId"`
 }
 
