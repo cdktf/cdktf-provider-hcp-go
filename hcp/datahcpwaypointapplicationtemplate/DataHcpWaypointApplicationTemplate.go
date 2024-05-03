@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/waypoint_application_template hcp_waypoint_application_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/waypoint_application_template hcp_waypoint_application_template}.
 type DataHcpWaypointApplicationTemplate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -69,6 +69,7 @@ type DataHcpWaypointApplicationTemplate interface {
 	TerraformNoCodeModule() DataHcpWaypointApplicationTemplateTerraformNoCodeModuleOutputReference
 	// Experimental.
 	TerraformResourceType() *string
+	VariableOptions() DataHcpWaypointApplicationTemplateVariableOptionsList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -389,8 +390,18 @@ func (j *jsiiProxy_DataHcpWaypointApplicationTemplate) TerraformResourceType() *
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpWaypointApplicationTemplate) VariableOptions() DataHcpWaypointApplicationTemplateVariableOptionsList {
+	var returns DataHcpWaypointApplicationTemplateVariableOptionsList
+	_jsii_.Get(
+		j,
+		"variableOptions",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/waypoint_application_template hcp_waypoint_application_template} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/waypoint_application_template hcp_waypoint_application_template} Data Source.
 func NewDataHcpWaypointApplicationTemplate(scope constructs.Construct, id *string, config *DataHcpWaypointApplicationTemplateConfig) DataHcpWaypointApplicationTemplate {
 	_init_.Initialize()
 
@@ -408,7 +419,7 @@ func NewDataHcpWaypointApplicationTemplate(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/data-sources/waypoint_application_template hcp_waypoint_application_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/waypoint_application_template hcp_waypoint_application_template} Data Source.
 func NewDataHcpWaypointApplicationTemplate_Override(d DataHcpWaypointApplicationTemplate, scope constructs.Construct, id *string, config *DataHcpWaypointApplicationTemplateConfig) {
 	_init_.Initialize()
 

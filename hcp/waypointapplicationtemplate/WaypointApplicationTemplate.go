@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_application_template hcp_waypoint_application_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template hcp_waypoint_application_template}.
 type WaypointApplicationTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -85,6 +85,8 @@ type WaypointApplicationTemplate interface {
 	TerraformNoCodeModuleInput() interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VariableOptions() WaypointApplicationTemplateVariableOptionsList
+	VariableOptionsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -130,6 +132,7 @@ type WaypointApplicationTemplate interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTerraformCloudWorkspaceDetails(value *WaypointApplicationTemplateTerraformCloudWorkspaceDetails)
 	PutTerraformNoCodeModule(value *WaypointApplicationTemplateTerraformNoCodeModule)
+	PutVariableOptions(value interface{})
 	ResetDescription()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -137,6 +140,7 @@ type WaypointApplicationTemplate interface {
 	ResetOverrideLogicalId()
 	ResetProjectId()
 	ResetReadmeMarkdownTemplate()
+	ResetVariableOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -495,8 +499,28 @@ func (j *jsiiProxy_WaypointApplicationTemplate) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_WaypointApplicationTemplate) VariableOptions() WaypointApplicationTemplateVariableOptionsList {
+	var returns WaypointApplicationTemplateVariableOptionsList
+	_jsii_.Get(
+		j,
+		"variableOptions",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_application_template hcp_waypoint_application_template} Resource.
+func (j *jsiiProxy_WaypointApplicationTemplate) VariableOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"variableOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template hcp_waypoint_application_template} Resource.
 func NewWaypointApplicationTemplate(scope constructs.Construct, id *string, config *WaypointApplicationTemplateConfig) WaypointApplicationTemplate {
 	_init_.Initialize()
 
@@ -514,7 +538,7 @@ func NewWaypointApplicationTemplate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.87.1/docs/resources/waypoint_application_template hcp_waypoint_application_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_application_template hcp_waypoint_application_template} Resource.
 func NewWaypointApplicationTemplate_Override(w WaypointApplicationTemplate, scope constructs.Construct, id *string, config *WaypointApplicationTemplateConfig) {
 	_init_.Initialize()
 
@@ -1034,6 +1058,17 @@ func (w *jsiiProxy_WaypointApplicationTemplate) PutTerraformNoCodeModule(value *
 	)
 }
 
+func (w *jsiiProxy_WaypointApplicationTemplate) PutVariableOptions(value interface{}) {
+	if err := w.validatePutVariableOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putVariableOptions",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WaypointApplicationTemplate) ResetDescription() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1070,6 +1105,14 @@ func (w *jsiiProxy_WaypointApplicationTemplate) ResetReadmeMarkdownTemplate() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetReadmeMarkdownTemplate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaypointApplicationTemplate) ResetVariableOptions() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetVariableOptions",
 		nil, // no parameters
 	)
 }

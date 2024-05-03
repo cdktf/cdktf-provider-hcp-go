@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTerraformCloudWorkspaceDetails", GoMethod: "PutTerraformCloudWorkspaceDetails"},
 			_jsii_.MemberMethod{JsiiMethod: "putTerraformNoCodeModule", GoMethod: "PutTerraformNoCodeModule"},
+			_jsii_.MemberMethod{JsiiMethod: "putVariableOptions", GoMethod: "PutVariableOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readmeMarkdownTemplate", GoGetter: "ReadmeMarkdownTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "readmeMarkdownTemplateInput", GoGetter: "ReadmeMarkdownTemplateInput"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProjectId", GoMethod: "ResetProjectId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReadmeMarkdownTemplate", GoMethod: "ResetReadmeMarkdownTemplate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVariableOptions", GoMethod: "ResetVariableOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "summary", GoGetter: "Summary"},
 			_jsii_.MemberProperty{JsiiProperty: "summaryInput", GoGetter: "SummaryInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -79,6 +81,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "variableOptions", GoGetter: "VariableOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "variableOptionsInput", GoGetter: "VariableOptionsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WaypointApplicationTemplate{}
@@ -166,6 +170,73 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WaypointApplicationTemplateTerraformNoCodeModuleOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateVariableOptions",
+		reflect.TypeOf((*WaypointApplicationTemplateVariableOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateVariableOptionsList",
+		reflect.TypeOf((*WaypointApplicationTemplateVariableOptionsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WaypointApplicationTemplateVariableOptionsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-hcp.waypointApplicationTemplate.WaypointApplicationTemplateVariableOptionsOutputReference",
+		reflect.TypeOf((*WaypointApplicationTemplateVariableOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "options", GoGetter: "Options"},
+			_jsii_.MemberProperty{JsiiProperty: "optionsInput", GoGetter: "OptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserEditable", GoMethod: "ResetUserEditable"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "userEditable", GoGetter: "UserEditable"},
+			_jsii_.MemberProperty{JsiiProperty: "userEditableInput", GoGetter: "UserEditableInput"},
+			_jsii_.MemberProperty{JsiiProperty: "variableType", GoGetter: "VariableType"},
+			_jsii_.MemberProperty{JsiiProperty: "variableTypeInput", GoGetter: "VariableTypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WaypointApplicationTemplateVariableOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
