@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
 type WaypointAddOnDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -85,6 +85,8 @@ type WaypointAddOnDefinition interface {
 	TerraformNoCodeModuleInput() interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VariableOptions() WaypointAddOnDefinitionVariableOptionsList
+	VariableOptionsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -130,12 +132,14 @@ type WaypointAddOnDefinition interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTerraformCloudWorkspaceDetails(value *WaypointAddOnDefinitionTerraformCloudWorkspaceDetails)
 	PutTerraformNoCodeModule(value *WaypointAddOnDefinitionTerraformNoCodeModule)
+	PutVariableOptions(value interface{})
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectId()
 	ResetReadmeMarkdownTemplate()
+	ResetVariableOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -494,8 +498,28 @@ func (j *jsiiProxy_WaypointAddOnDefinition) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WaypointAddOnDefinition) VariableOptions() WaypointAddOnDefinitionVariableOptionsList {
+	var returns WaypointAddOnDefinitionVariableOptionsList
+	_jsii_.Get(
+		j,
+		"variableOptions",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
+func (j *jsiiProxy_WaypointAddOnDefinition) VariableOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"variableOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
 func NewWaypointAddOnDefinition(scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) WaypointAddOnDefinition {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewWaypointAddOnDefinition(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
 func NewWaypointAddOnDefinition_Override(w WaypointAddOnDefinition, scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) {
 	_init_.Initialize()
 
@@ -1033,6 +1057,17 @@ func (w *jsiiProxy_WaypointAddOnDefinition) PutTerraformNoCodeModule(value *Wayp
 	)
 }
 
+func (w *jsiiProxy_WaypointAddOnDefinition) PutVariableOptions(value interface{}) {
+	if err := w.validatePutVariableOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putVariableOptions",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WaypointAddOnDefinition) ResetLabels() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1061,6 +1096,14 @@ func (w *jsiiProxy_WaypointAddOnDefinition) ResetReadmeMarkdownTemplate() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetReadmeMarkdownTemplate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaypointAddOnDefinition) ResetVariableOptions() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetVariableOptions",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
 type DataHcpWaypointAddOnDefinition interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -69,6 +69,7 @@ type DataHcpWaypointAddOnDefinition interface {
 	TerraformNoCodeModule() DataHcpWaypointAddOnDefinitionTerraformNoCodeModuleOutputReference
 	// Experimental.
 	TerraformResourceType() *string
+	VariableOptions() DataHcpWaypointAddOnDefinitionVariableOptionsList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -389,8 +390,18 @@ func (j *jsiiProxy_DataHcpWaypointAddOnDefinition) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpWaypointAddOnDefinition) VariableOptions() DataHcpWaypointAddOnDefinitionVariableOptionsList {
+	var returns DataHcpWaypointAddOnDefinitionVariableOptionsList
+	_jsii_.Get(
+		j,
+		"variableOptions",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Data Source.
 func NewDataHcpWaypointAddOnDefinition(scope constructs.Construct, id *string, config *DataHcpWaypointAddOnDefinitionConfig) DataHcpWaypointAddOnDefinition {
 	_init_.Initialize()
 
@@ -408,7 +419,7 @@ func NewDataHcpWaypointAddOnDefinition(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.88.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/data-sources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Data Source.
 func NewDataHcpWaypointAddOnDefinition_Override(d DataHcpWaypointAddOnDefinition, scope constructs.Construct, id *string, config *DataHcpWaypointAddOnDefinitionConfig) {
 	_init_.Initialize()
 

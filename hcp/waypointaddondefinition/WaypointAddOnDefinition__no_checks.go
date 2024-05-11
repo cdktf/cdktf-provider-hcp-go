@@ -83,6 +83,10 @@ func (w *jsiiProxy_WaypointAddOnDefinition) validatePutTerraformNoCodeModulePara
 	return nil
 }
 
+func (w *jsiiProxy_WaypointAddOnDefinition) validatePutVariableOptionsParameters(value interface{}) error {
+	return nil
+}
+
 func validateWaypointAddOnDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
