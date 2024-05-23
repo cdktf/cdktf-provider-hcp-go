@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/data-sources/waypoint_add_on hcp_waypoint_add_on}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/data-sources/waypoint_add_on hcp_waypoint_add_on}.
 type DataHcpWaypointAddOn interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -54,6 +54,7 @@ type DataHcpWaypointAddOn interface {
 	// The tree node.
 	Node() constructs.Node
 	OrganizationId() *string
+	OutputValues() DataHcpWaypointAddOnOutputValuesList
 	ProjectId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -320,6 +321,16 @@ func (j *jsiiProxy_DataHcpWaypointAddOn) OrganizationId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpWaypointAddOn) OutputValues() DataHcpWaypointAddOnOutputValuesList {
+	var returns DataHcpWaypointAddOnOutputValuesList
+	_jsii_.Get(
+		j,
+		"outputValues",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataHcpWaypointAddOn) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -421,7 +432,7 @@ func (j *jsiiProxy_DataHcpWaypointAddOn) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/data-sources/waypoint_add_on hcp_waypoint_add_on} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/data-sources/waypoint_add_on hcp_waypoint_add_on} Data Source.
 func NewDataHcpWaypointAddOn(scope constructs.Construct, id *string, config *DataHcpWaypointAddOnConfig) DataHcpWaypointAddOn {
 	_init_.Initialize()
 
@@ -439,7 +450,7 @@ func NewDataHcpWaypointAddOn(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.89.0/docs/data-sources/waypoint_add_on hcp_waypoint_add_on} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/data-sources/waypoint_add_on hcp_waypoint_add_on} Data Source.
 func NewDataHcpWaypointAddOn_Override(d DataHcpWaypointAddOn, scope constructs.Construct, id *string, config *DataHcpWaypointAddOnConfig) {
 	_init_.Initialize()
 
