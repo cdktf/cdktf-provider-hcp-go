@@ -76,6 +76,7 @@ type WaypointApplicationTemplateVariableOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetOptions()
 	ResetUserEditable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -553,6 +554,14 @@ func (w *jsiiProxy_WaypointApplicationTemplateVariableOptionsOutputReference) In
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WaypointApplicationTemplateVariableOptionsOutputReference) ResetOptions() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetOptions",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WaypointApplicationTemplateVariableOptionsOutputReference) ResetUserEditable() {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/data-sources/waypoint_application hcp_waypoint_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/waypoint_application hcp_waypoint_application}.
 type DataHcpWaypointApplication interface {
 	cdktf.TerraformDataSource
 	ApplicationTemplateId() *string
@@ -40,6 +40,8 @@ type DataHcpWaypointApplication interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InputVariables() DataHcpWaypointApplicationInputVariablesList
+	InputVariablesInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -92,7 +94,9 @@ type DataHcpWaypointApplication interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutInputVariables(value interface{})
 	ResetId()
+	ResetInputVariables()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -222,6 +226,26 @@ func (j *jsiiProxy_DataHcpWaypointApplication) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpWaypointApplication) InputVariables() DataHcpWaypointApplicationInputVariablesList {
+	var returns DataHcpWaypointApplicationInputVariablesList
+	_jsii_.Get(
+		j,
+		"inputVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpWaypointApplication) InputVariablesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inputVariablesInput",
 		&returns,
 	)
 	return returns
@@ -368,7 +392,7 @@ func (j *jsiiProxy_DataHcpWaypointApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source.
 func NewDataHcpWaypointApplication(scope constructs.Construct, id *string, config *DataHcpWaypointApplicationConfig) DataHcpWaypointApplication {
 	_init_.Initialize()
 
@@ -386,7 +410,7 @@ func NewDataHcpWaypointApplication(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.90.0/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.91.0/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source.
 func NewDataHcpWaypointApplication_Override(d DataHcpWaypointApplication, scope constructs.Construct, id *string, config *DataHcpWaypointApplicationConfig) {
 	_init_.Initialize()
 
@@ -761,10 +785,29 @@ func (d *jsiiProxy_DataHcpWaypointApplication) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (d *jsiiProxy_DataHcpWaypointApplication) PutInputVariables(value interface{}) {
+	if err := d.validatePutInputVariablesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putInputVariables",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataHcpWaypointApplication) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataHcpWaypointApplication) ResetInputVariables() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInputVariables",
 		nil, // no parameters
 	)
 }
