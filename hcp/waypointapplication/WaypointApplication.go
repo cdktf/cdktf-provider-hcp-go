@@ -12,15 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application hcp_waypoint_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application hcp_waypoint_application}.
 type WaypointApplication interface {
 	cdktf.TerraformResource
 	ApplicationInputVariables() WaypointApplicationApplicationInputVariablesList
 	ApplicationInputVariablesInput() interface{}
-	ApplicationTemplateId() *string
-	SetApplicationTemplateId(val *string)
-	ApplicationTemplateIdInput() *string
-	ApplicationTemplateName() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -73,7 +69,11 @@ type WaypointApplication interface {
 	ReadmeMarkdown() *string
 	SetReadmeMarkdown(val *string)
 	ReadmeMarkdownInput() *string
+	TemplateId() *string
+	SetTemplateId(val *string)
+	TemplateIdInput() *string
 	TemplateInputVariables() WaypointApplicationTemplateInputVariablesList
+	TemplateName() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -163,36 +163,6 @@ func (j *jsiiProxy_WaypointApplication) ApplicationInputVariablesInput() interfa
 	_jsii_.Get(
 		j,
 		"applicationInputVariablesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WaypointApplication) ApplicationTemplateId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationTemplateId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WaypointApplication) ApplicationTemplateIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationTemplateIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WaypointApplication) ApplicationTemplateName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationTemplateName",
 		&returns,
 	)
 	return returns
@@ -418,11 +388,41 @@ func (j *jsiiProxy_WaypointApplication) ReadmeMarkdownInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WaypointApplication) TemplateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointApplication) TemplateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaypointApplication) TemplateInputVariables() WaypointApplicationTemplateInputVariablesList {
 	var returns WaypointApplicationTemplateInputVariablesList
 	_jsii_.Get(
 		j,
 		"templateInputVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointApplication) TemplateName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateName",
 		&returns,
 	)
 	return returns
@@ -459,7 +459,7 @@ func (j *jsiiProxy_WaypointApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application hcp_waypoint_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application hcp_waypoint_application} Resource.
 func NewWaypointApplication(scope constructs.Construct, id *string, config *WaypointApplicationConfig) WaypointApplication {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewWaypointApplication(scope constructs.Construct, id *string, config *Wayp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/resources/waypoint_application hcp_waypoint_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_application hcp_waypoint_application} Resource.
 func NewWaypointApplication_Override(w WaypointApplication, scope constructs.Construct, id *string, config *WaypointApplicationConfig) {
 	_init_.Initialize()
 
@@ -485,17 +485,6 @@ func NewWaypointApplication_Override(w WaypointApplication, scope constructs.Con
 		"@cdktf/provider-hcp.waypointApplication.WaypointApplication",
 		[]interface{}{scope, id, config},
 		w,
-	)
-}
-
-func (j *jsiiProxy_WaypointApplication)SetApplicationTemplateId(val *string) {
-	if err := j.validateSetApplicationTemplateIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"applicationTemplateId",
-		val,
 	)
 }
 
@@ -596,6 +585,17 @@ func (j *jsiiProxy_WaypointApplication)SetReadmeMarkdown(val *string) {
 	_jsii_.Set(
 		j,
 		"readmeMarkdown",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaypointApplication)SetTemplateId(val *string) {
+	if err := j.validateSetTemplateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"templateId",
 		val,
 	)
 }

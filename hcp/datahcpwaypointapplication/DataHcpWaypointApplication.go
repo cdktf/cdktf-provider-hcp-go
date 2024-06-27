@@ -12,11 +12,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/waypoint_application hcp_waypoint_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/waypoint_application hcp_waypoint_application}.
 type DataHcpWaypointApplication interface {
 	cdktf.TerraformDataSource
-	ApplicationTemplateId() *string
-	ApplicationTemplateName() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -63,6 +61,8 @@ type DataHcpWaypointApplication interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReadmeMarkdown() *string
+	TemplateId() *string
+	TemplateName() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,26 +119,6 @@ type DataHcpWaypointApplication interface {
 // The jsii proxy struct for DataHcpWaypointApplication
 type jsiiProxy_DataHcpWaypointApplication struct {
 	internal.Type__cdktfTerraformDataSource
-}
-
-func (j *jsiiProxy_DataHcpWaypointApplication) ApplicationTemplateId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationTemplateId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataHcpWaypointApplication) ApplicationTemplateName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"applicationTemplateName",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataHcpWaypointApplication) CdktfStack() cdktf.TerraformStack {
@@ -361,6 +341,26 @@ func (j *jsiiProxy_DataHcpWaypointApplication) ReadmeMarkdown() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpWaypointApplication) TemplateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpWaypointApplication) TemplateName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataHcpWaypointApplication) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -392,7 +392,7 @@ func (j *jsiiProxy_DataHcpWaypointApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source.
 func NewDataHcpWaypointApplication(scope constructs.Construct, id *string, config *DataHcpWaypointApplicationConfig) DataHcpWaypointApplication {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewDataHcpWaypointApplication(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.92.0/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/data-sources/waypoint_application hcp_waypoint_application} Data Source.
 func NewDataHcpWaypointApplication_Override(d DataHcpWaypointApplication, scope constructs.Construct, id *string, config *DataHcpWaypointApplicationConfig) {
 	_init_.Initialize()
 

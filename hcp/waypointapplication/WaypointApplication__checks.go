@@ -278,14 +278,6 @@ func validateWaypointApplication_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_WaypointApplication) validateSetApplicationTemplateIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_WaypointApplication) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -447,6 +439,14 @@ func (j *jsiiProxy_WaypointApplication) validateSetProvisionersParameters(val *[
 }
 
 func (j *jsiiProxy_WaypointApplication) validateSetReadmeMarkdownParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WaypointApplication) validateSetTemplateIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
