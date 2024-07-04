@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataHcpWaypointAddOn) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (d *jsiiProxy_DataHcpWaypointAddOn) validatePutInputVariablesParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataHcpWaypointAddOn_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

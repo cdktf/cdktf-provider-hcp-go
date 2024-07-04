@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_add_on hcp_waypoint_add_on}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_add_on hcp_waypoint_add_on}.
 type WaypointAddOn interface {
 	cdktf.TerraformResource
+	AddOnDefinitionInputVariables() WaypointAddOnAddOnDefinitionInputVariablesList
+	AddOnInputVariables() WaypointAddOnAddOnInputVariablesList
+	AddOnInputVariablesInput() interface{}
 	ApplicationId() *string
 	SetApplicationId(val *string)
 	ApplicationIdInput() *string
@@ -127,6 +130,8 @@ type WaypointAddOn interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAddOnInputVariables(value interface{})
+	ResetAddOnInputVariables()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -147,6 +152,36 @@ type WaypointAddOn interface {
 // The jsii proxy struct for WaypointAddOn
 type jsiiProxy_WaypointAddOn struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WaypointAddOn) AddOnDefinitionInputVariables() WaypointAddOnAddOnDefinitionInputVariablesList {
+	var returns WaypointAddOnAddOnDefinitionInputVariablesList
+	_jsii_.Get(
+		j,
+		"addOnDefinitionInputVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointAddOn) AddOnInputVariables() WaypointAddOnAddOnInputVariablesList {
+	var returns WaypointAddOnAddOnInputVariablesList
+	_jsii_.Get(
+		j,
+		"addOnInputVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointAddOn) AddOnInputVariablesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addOnInputVariablesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WaypointAddOn) ApplicationId() *string {
@@ -500,7 +535,7 @@ func (j *jsiiProxy_WaypointAddOn) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_add_on hcp_waypoint_add_on} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_add_on hcp_waypoint_add_on} Resource.
 func NewWaypointAddOn(scope constructs.Construct, id *string, config *WaypointAddOnConfig) WaypointAddOn {
 	_init_.Initialize()
 
@@ -518,7 +553,7 @@ func NewWaypointAddOn(scope constructs.Construct, id *string, config *WaypointAd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.93.0/docs/resources/waypoint_add_on hcp_waypoint_add_on} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.0/docs/resources/waypoint_add_on hcp_waypoint_add_on} Resource.
 func NewWaypointAddOn_Override(w WaypointAddOn, scope constructs.Construct, id *string, config *WaypointAddOnConfig) {
 	_init_.Initialize()
 
@@ -991,6 +1026,25 @@ func (w *jsiiProxy_WaypointAddOn) OverrideLogicalId(newLogicalId *string) {
 		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (w *jsiiProxy_WaypointAddOn) PutAddOnInputVariables(value interface{}) {
+	if err := w.validatePutAddOnInputVariablesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putAddOnInputVariables",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WaypointAddOn) ResetAddOnInputVariables() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAddOnInputVariables",
+		nil, // no parameters
 	)
 }
 

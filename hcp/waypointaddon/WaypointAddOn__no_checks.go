@@ -75,6 +75,10 @@ func (w *jsiiProxy_WaypointAddOn) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (w *jsiiProxy_WaypointAddOn) validatePutAddOnInputVariablesParameters(value interface{}) error {
+	return nil
+}
+
 func validateWaypointAddOn_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

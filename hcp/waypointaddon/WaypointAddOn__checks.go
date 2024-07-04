@@ -207,6 +207,37 @@ func (w *jsiiProxy_WaypointAddOn) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (w *jsiiProxy_WaypointAddOn) validatePutAddOnInputVariablesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*WaypointAddOnAddOnInputVariables:
+		value := value.(*[]*WaypointAddOnAddOnInputVariables)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*WaypointAddOnAddOnInputVariables:
+		value_ := value.([]*WaypointAddOnAddOnInputVariables)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WaypointAddOnAddOnInputVariables; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateWaypointAddOn_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
