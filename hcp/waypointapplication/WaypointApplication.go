@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_application hcp_waypoint_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_application hcp_waypoint_application}.
 type WaypointApplication interface {
 	cdktf.TerraformResource
 	ApplicationInputVariables() WaypointApplicationApplicationInputVariablesList
@@ -53,6 +53,7 @@ type WaypointApplication interface {
 	// The tree node.
 	Node() constructs.Node
 	OrganizationId() *string
+	OutputValues() WaypointApplicationOutputValuesList
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -318,6 +319,16 @@ func (j *jsiiProxy_WaypointApplication) OrganizationId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WaypointApplication) OutputValues() WaypointApplicationOutputValuesList {
+	var returns WaypointApplicationOutputValuesList
+	_jsii_.Get(
+		j,
+		"outputValues",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaypointApplication) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -459,7 +470,7 @@ func (j *jsiiProxy_WaypointApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_application hcp_waypoint_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_application hcp_waypoint_application} Resource.
 func NewWaypointApplication(scope constructs.Construct, id *string, config *WaypointApplicationConfig) WaypointApplication {
 	_init_.Initialize()
 
@@ -477,7 +488,7 @@ func NewWaypointApplication(scope constructs.Construct, id *string, config *Wayp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_application hcp_waypoint_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_application hcp_waypoint_application} Resource.
 func NewWaypointApplication_Override(w WaypointApplication, scope constructs.Construct, id *string, config *WaypointApplicationConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_add_on hcp_waypoint_add_on}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on hcp_waypoint_add_on}.
 type WaypointAddOn interface {
 	cdktf.TerraformResource
 	AddOnDefinitionInputVariables() WaypointAddOnAddOnDefinitionInputVariablesList
@@ -84,7 +84,7 @@ type WaypointAddOn interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
-	TerraformNoCodeModule() WaypointAddOnTerraformNoCodeModuleOutputReference
+	TerraformNoCodeModuleSource() *string
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -514,11 +514,11 @@ func (j *jsiiProxy_WaypointAddOn) TerraformMetaArguments() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_WaypointAddOn) TerraformNoCodeModule() WaypointAddOnTerraformNoCodeModuleOutputReference {
-	var returns WaypointAddOnTerraformNoCodeModuleOutputReference
+func (j *jsiiProxy_WaypointAddOn) TerraformNoCodeModuleSource() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"terraformNoCodeModule",
+		"terraformNoCodeModuleSource",
 		&returns,
 	)
 	return returns
@@ -535,7 +535,7 @@ func (j *jsiiProxy_WaypointAddOn) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_add_on hcp_waypoint_add_on} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on hcp_waypoint_add_on} Resource.
 func NewWaypointAddOn(scope constructs.Construct, id *string, config *WaypointAddOnConfig) WaypointAddOn {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewWaypointAddOn(scope constructs.Construct, id *string, config *WaypointAd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_add_on hcp_waypoint_add_on} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on hcp_waypoint_add_on} Resource.
 func NewWaypointAddOn_Override(w WaypointAddOn, scope constructs.Construct, id *string, config *WaypointAddOnConfig) {
 	_init_.Initialize()
 

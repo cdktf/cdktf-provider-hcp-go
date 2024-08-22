@@ -3,7 +3,7 @@
 
 //go:build !no_runtime_type_checking
 
-package datahcpwaypointtemplate
+package datahcpwaypointapplication
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -21,7 +21,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -29,7 +29,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -37,7 +37,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -45,7 +45,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -53,7 +53,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -61,7 +61,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -69,7 +69,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -77,7 +77,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -85,7 +85,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -93,7 +93,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -101,7 +101,7 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -158,7 +158,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateSetInternalValueParameters(val *DataHcpWaypointTemplateTerraformNoCodeModule) error {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateSetInternalValueParameters(val *DataHcpWaypointApplicationOutputValues) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -190,13 +190,21 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference) 
 	return nil
 }
 
-func validateNewDataHcpWaypointTemplateTerraformNoCodeModuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataHcpWaypointApplicationOutputValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

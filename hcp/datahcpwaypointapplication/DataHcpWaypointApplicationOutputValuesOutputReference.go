@@ -1,17 +1,17 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package datahcpwaypointaddon
+package datahcpwaypointapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointaddon/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference interface {
+type DataHcpWaypointApplicationOutputValuesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -30,9 +30,10 @@ type DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataHcpWaypointAddOnTerraformNoCodeModule
-	SetInternalValue(val *DataHcpWaypointAddOnTerraformNoCodeModule)
-	Source() *string
+	InternalValue() *DataHcpWaypointApplicationOutputValues
+	SetInternalValue(val *DataHcpWaypointApplicationOutputValues)
+	Name() *string
+	Sensitive() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,7 +42,8 @@ type DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Version() *string
+	Type() *string
+	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,12 +78,12 @@ type DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference
-type jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference struct {
+// The jsii proxy struct for DataHcpWaypointApplicationOutputValuesOutputReference
+type jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -91,7 +93,7 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Com
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -101,7 +103,7 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Com
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -111,7 +113,7 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Cre
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Fqn() *string {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -121,8 +123,8 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) InternalValue() *DataHcpWaypointAddOnTerraformNoCodeModule {
-	var returns *DataHcpWaypointAddOnTerraformNoCodeModule
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) InternalValue() *DataHcpWaypointApplicationOutputValues {
+	var returns *DataHcpWaypointApplicationOutputValues
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -131,17 +133,27 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Int
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Source() *string {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"source",
+		"name",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) Sensitive() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sensitive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -151,7 +163,7 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -161,45 +173,55 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Version() *string {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) Type() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"version",
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"value",
 		&returns,
 	)
 	return returns
 }
 
 
-func NewDataHcpWaypointAddOnTerraformNoCodeModuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference {
+func NewDataHcpWaypointApplicationOutputValuesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataHcpWaypointApplicationOutputValuesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataHcpWaypointAddOnTerraformNoCodeModuleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataHcpWaypointApplicationOutputValuesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference{}
+	j := jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationOutputValuesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataHcpWaypointAddOnTerraformNoCodeModuleOutputReference_Override(d DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataHcpWaypointApplicationOutputValuesOutputReference_Override(d DataHcpWaypointApplicationOutputValuesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-hcp.dataHcpWaypointAddOn.DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"@cdktf/provider-hcp.dataHcpWaypointApplication.DataHcpWaypointApplicationOutputValuesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -210,7 +232,7 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -221,7 +243,7 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference)SetInternalValue(val *DataHcpWaypointAddOnTerraformNoCodeModule) {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference)SetInternalValue(val *DataHcpWaypointApplicationOutputValues) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +254,7 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +265,7 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +276,7 @@ func (j *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference)SetT
 	)
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -267,7 +289,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Com
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -283,7 +305,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -299,7 +321,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -315,7 +337,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -331,7 +353,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -347,7 +369,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -363,7 +385,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -379,7 +401,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -395,7 +417,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -411,7 +433,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -424,7 +446,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -440,7 +462,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -456,7 +478,7 @@ func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) Res
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointAddOnTerraformNoCodeModuleOutputReference) ToString() *string {
+func (d *jsiiProxy_DataHcpWaypointApplicationOutputValuesOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

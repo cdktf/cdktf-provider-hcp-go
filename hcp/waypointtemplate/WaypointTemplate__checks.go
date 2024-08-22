@@ -218,17 +218,6 @@ func (w *jsiiProxy_WaypointTemplate) validatePutTerraformCloudWorkspaceDetailsPa
 	return nil
 }
 
-func (w *jsiiProxy_WaypointTemplate) validatePutTerraformNoCodeModuleParameters(value *WaypointTemplateTerraformNoCodeModule) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (w *jsiiProxy_WaypointTemplate) validatePutVariableOptionsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -485,6 +474,14 @@ func (j *jsiiProxy_WaypointTemplate) validateSetReadmeMarkdownTemplateParameters
 }
 
 func (j *jsiiProxy_WaypointTemplate) validateSetSummaryParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WaypointTemplate) validateSetTerraformNoCodeModuleSourceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

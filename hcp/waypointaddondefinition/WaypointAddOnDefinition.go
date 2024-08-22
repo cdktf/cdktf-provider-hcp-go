@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
 type WaypointAddOnDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -81,8 +81,9 @@ type WaypointAddOnDefinition interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
-	TerraformNoCodeModule() WaypointAddOnDefinitionTerraformNoCodeModuleOutputReference
-	TerraformNoCodeModuleInput() interface{}
+	TerraformNoCodeModuleSource() *string
+	SetTerraformNoCodeModuleSource(val *string)
+	TerraformNoCodeModuleSourceInput() *string
 	// Experimental.
 	TerraformResourceType() *string
 	VariableOptions() WaypointAddOnDefinitionVariableOptionsList
@@ -131,7 +132,6 @@ type WaypointAddOnDefinition interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTerraformCloudWorkspaceDetails(value *WaypointAddOnDefinitionTerraformCloudWorkspaceDetails)
-	PutTerraformNoCodeModule(value *WaypointAddOnDefinitionTerraformNoCodeModule)
 	PutVariableOptions(value interface{})
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -139,6 +139,7 @@ type WaypointAddOnDefinition interface {
 	ResetOverrideLogicalId()
 	ResetProjectId()
 	ResetReadmeMarkdownTemplate()
+	ResetTerraformCloudWorkspaceDetails()
 	ResetVariableOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -468,21 +469,21 @@ func (j *jsiiProxy_WaypointAddOnDefinition) TerraformMetaArguments() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_WaypointAddOnDefinition) TerraformNoCodeModule() WaypointAddOnDefinitionTerraformNoCodeModuleOutputReference {
-	var returns WaypointAddOnDefinitionTerraformNoCodeModuleOutputReference
+func (j *jsiiProxy_WaypointAddOnDefinition) TerraformNoCodeModuleSource() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"terraformNoCodeModule",
+		"terraformNoCodeModuleSource",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_WaypointAddOnDefinition) TerraformNoCodeModuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaypointAddOnDefinition) TerraformNoCodeModuleSourceInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"terraformNoCodeModuleInput",
+		"terraformNoCodeModuleSourceInput",
 		&returns,
 	)
 	return returns
@@ -519,7 +520,7 @@ func (j *jsiiProxy_WaypointAddOnDefinition) VariableOptionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
 func NewWaypointAddOnDefinition(scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) WaypointAddOnDefinition {
 	_init_.Initialize()
 
@@ -537,7 +538,7 @@ func NewWaypointAddOnDefinition(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
 func NewWaypointAddOnDefinition_Override(w WaypointAddOnDefinition, scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) {
 	_init_.Initialize()
 
@@ -678,6 +679,17 @@ func (j *jsiiProxy_WaypointAddOnDefinition)SetSummary(val *string) {
 	_jsii_.Set(
 		j,
 		"summary",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaypointAddOnDefinition)SetTerraformNoCodeModuleSource(val *string) {
+	if err := j.validateSetTerraformNoCodeModuleSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformNoCodeModuleSource",
 		val,
 	)
 }
@@ -1046,17 +1058,6 @@ func (w *jsiiProxy_WaypointAddOnDefinition) PutTerraformCloudWorkspaceDetails(va
 	)
 }
 
-func (w *jsiiProxy_WaypointAddOnDefinition) PutTerraformNoCodeModule(value *WaypointAddOnDefinitionTerraformNoCodeModule) {
-	if err := w.validatePutTerraformNoCodeModuleParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putTerraformNoCodeModule",
-		[]interface{}{value},
-	)
-}
-
 func (w *jsiiProxy_WaypointAddOnDefinition) PutVariableOptions(value interface{}) {
 	if err := w.validatePutVariableOptionsParameters(value); err != nil {
 		panic(err)
@@ -1096,6 +1097,14 @@ func (w *jsiiProxy_WaypointAddOnDefinition) ResetReadmeMarkdownTemplate() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetReadmeMarkdownTemplate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaypointAddOnDefinition) ResetTerraformCloudWorkspaceDetails() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTerraformCloudWorkspaceDetails",
 		nil, // no parameters
 	)
 }

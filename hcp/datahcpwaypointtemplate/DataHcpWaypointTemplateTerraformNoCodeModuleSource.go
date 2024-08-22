@@ -4,6 +4,6 @@
 package datahcpwaypointtemplate
 
 
-type DataHcpWaypointTemplateTerraformNoCodeModule struct {
+type DataHcpWaypointTemplateTerraformNoCodeModuleSource struct {
 }
 

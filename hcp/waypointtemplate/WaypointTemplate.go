@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template hcp_waypoint_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template hcp_waypoint_template}.
 type WaypointTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -81,8 +81,9 @@ type WaypointTemplate interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
-	TerraformNoCodeModule() WaypointTemplateTerraformNoCodeModuleOutputReference
-	TerraformNoCodeModuleInput() interface{}
+	TerraformNoCodeModuleSource() *string
+	SetTerraformNoCodeModuleSource(val *string)
+	TerraformNoCodeModuleSourceInput() *string
 	// Experimental.
 	TerraformResourceType() *string
 	VariableOptions() WaypointTemplateVariableOptionsList
@@ -131,7 +132,6 @@ type WaypointTemplate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTerraformCloudWorkspaceDetails(value *WaypointTemplateTerraformCloudWorkspaceDetails)
-	PutTerraformNoCodeModule(value *WaypointTemplateTerraformNoCodeModule)
 	PutVariableOptions(value interface{})
 	ResetDescription()
 	ResetLabels()
@@ -469,21 +469,21 @@ func (j *jsiiProxy_WaypointTemplate) TerraformMetaArguments() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_WaypointTemplate) TerraformNoCodeModule() WaypointTemplateTerraformNoCodeModuleOutputReference {
-	var returns WaypointTemplateTerraformNoCodeModuleOutputReference
+func (j *jsiiProxy_WaypointTemplate) TerraformNoCodeModuleSource() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"terraformNoCodeModule",
+		"terraformNoCodeModuleSource",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_WaypointTemplate) TerraformNoCodeModuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WaypointTemplate) TerraformNoCodeModuleSourceInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"terraformNoCodeModuleInput",
+		"terraformNoCodeModuleSourceInput",
 		&returns,
 	)
 	return returns
@@ -520,7 +520,7 @@ func (j *jsiiProxy_WaypointTemplate) VariableOptionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template hcp_waypoint_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template hcp_waypoint_template} Resource.
 func NewWaypointTemplate(scope constructs.Construct, id *string, config *WaypointTemplateConfig) WaypointTemplate {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewWaypointTemplate(scope constructs.Construct, id *string, config *Waypoin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.94.1/docs/resources/waypoint_template hcp_waypoint_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template hcp_waypoint_template} Resource.
 func NewWaypointTemplate_Override(w WaypointTemplate, scope constructs.Construct, id *string, config *WaypointTemplateConfig) {
 	_init_.Initialize()
 
@@ -679,6 +679,17 @@ func (j *jsiiProxy_WaypointTemplate)SetSummary(val *string) {
 	_jsii_.Set(
 		j,
 		"summary",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaypointTemplate)SetTerraformNoCodeModuleSource(val *string) {
+	if err := j.validateSetTerraformNoCodeModuleSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformNoCodeModuleSource",
 		val,
 	)
 }
@@ -1043,17 +1054,6 @@ func (w *jsiiProxy_WaypointTemplate) PutTerraformCloudWorkspaceDetails(value *Wa
 	_jsii_.InvokeVoid(
 		w,
 		"putTerraformCloudWorkspaceDetails",
-		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_WaypointTemplate) PutTerraformNoCodeModule(value *WaypointTemplateTerraformNoCodeModule) {
-	if err := w.validatePutTerraformNoCodeModuleParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putTerraformNoCodeModule",
 		[]interface{}{value},
 	)
 }

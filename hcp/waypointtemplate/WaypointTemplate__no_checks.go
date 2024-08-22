@@ -79,10 +79,6 @@ func (w *jsiiProxy_WaypointTemplate) validatePutTerraformCloudWorkspaceDetailsPa
 	return nil
 }
 
-func (w *jsiiProxy_WaypointTemplate) validatePutTerraformNoCodeModuleParameters(value *WaypointTemplateTerraformNoCodeModule) error {
-	return nil
-}
-
 func (w *jsiiProxy_WaypointTemplate) validatePutVariableOptionsParameters(value interface{}) error {
 	return nil
 }
@@ -140,6 +136,10 @@ func (j *jsiiProxy_WaypointTemplate) validateSetReadmeMarkdownTemplateParameters
 }
 
 func (j *jsiiProxy_WaypointTemplate) validateSetSummaryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaypointTemplate) validateSetTerraformNoCodeModuleSourceParameters(val *string) error {
 	return nil
 }
 

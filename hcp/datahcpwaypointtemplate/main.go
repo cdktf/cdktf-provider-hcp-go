@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformCloudWorkspaceDetails", GoGetter: "TerraformCloudWorkspaceDetails"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformNoCodeModule", GoGetter: "TerraformNoCodeModule"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformNoCodeModuleSource", GoGetter: "TerraformNoCodeModuleSource"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
@@ -114,12 +114,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-hcp.dataHcpWaypointTemplate.DataHcpWaypointTemplateTerraformNoCodeModule",
-		reflect.TypeOf((*DataHcpWaypointTemplateTerraformNoCodeModule)(nil)).Elem(),
+		"@cdktf/provider-hcp.dataHcpWaypointTemplate.DataHcpWaypointTemplateTerraformNoCodeModuleSource",
+		reflect.TypeOf((*DataHcpWaypointTemplateTerraformNoCodeModuleSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-hcp.dataHcpWaypointTemplate.DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference",
-		reflect.TypeOf((*DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference)(nil)).Elem(),
+		"@cdktf/provider-hcp.dataHcpWaypointTemplate.DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference",
+		reflect.TypeOf((*DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,14 +139,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleOutputReference{}
+			j := jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
