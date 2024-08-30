@@ -75,6 +75,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformNoCodeModuleSource", GoGetter: "TerraformNoCodeModuleSource"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformNoCodeModuleSourceInput", GoGetter: "TerraformNoCodeModuleSourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformProjectId", GoGetter: "TerraformProjectId"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformProjectIdInput", GoGetter: "TerraformProjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},

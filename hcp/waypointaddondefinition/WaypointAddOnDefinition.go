@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
 type WaypointAddOnDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -84,6 +84,9 @@ type WaypointAddOnDefinition interface {
 	TerraformNoCodeModuleSource() *string
 	SetTerraformNoCodeModuleSource(val *string)
 	TerraformNoCodeModuleSourceInput() *string
+	TerraformProjectId() *string
+	SetTerraformProjectId(val *string)
+	TerraformProjectIdInput() *string
 	// Experimental.
 	TerraformResourceType() *string
 	VariableOptions() WaypointAddOnDefinitionVariableOptionsList
@@ -489,6 +492,26 @@ func (j *jsiiProxy_WaypointAddOnDefinition) TerraformNoCodeModuleSourceInput() *
 	return returns
 }
 
+func (j *jsiiProxy_WaypointAddOnDefinition) TerraformProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointAddOnDefinition) TerraformProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformProjectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaypointAddOnDefinition) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -520,7 +543,7 @@ func (j *jsiiProxy_WaypointAddOnDefinition) VariableOptionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
 func NewWaypointAddOnDefinition(scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) WaypointAddOnDefinition {
 	_init_.Initialize()
 
@@ -538,7 +561,7 @@ func NewWaypointAddOnDefinition(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
 func NewWaypointAddOnDefinition_Override(w WaypointAddOnDefinition, scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) {
 	_init_.Initialize()
 
@@ -690,6 +713,17 @@ func (j *jsiiProxy_WaypointAddOnDefinition)SetTerraformNoCodeModuleSource(val *s
 	_jsii_.Set(
 		j,
 		"terraformNoCodeModuleSource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaypointAddOnDefinition)SetTerraformProjectId(val *string) {
+	if err := j.validateSetTerraformProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformProjectId",
 		val,
 	)
 }

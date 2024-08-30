@@ -143,6 +143,10 @@ func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformNoCodeModuleSour
 	return nil
 }
 
+func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformProjectIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewWaypointAddOnDefinitionParameters(scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) error {
 	return nil
 }

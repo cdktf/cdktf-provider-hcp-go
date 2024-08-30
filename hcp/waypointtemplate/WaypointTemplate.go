@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template hcp_waypoint_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_template hcp_waypoint_template}.
 type WaypointTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -84,6 +84,9 @@ type WaypointTemplate interface {
 	TerraformNoCodeModuleSource() *string
 	SetTerraformNoCodeModuleSource(val *string)
 	TerraformNoCodeModuleSourceInput() *string
+	TerraformProjectId() *string
+	SetTerraformProjectId(val *string)
+	TerraformProjectIdInput() *string
 	// Experimental.
 	TerraformResourceType() *string
 	VariableOptions() WaypointTemplateVariableOptionsList
@@ -140,6 +143,7 @@ type WaypointTemplate interface {
 	ResetOverrideLogicalId()
 	ResetProjectId()
 	ResetReadmeMarkdownTemplate()
+	ResetTerraformCloudWorkspaceDetails()
 	ResetVariableOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -489,6 +493,26 @@ func (j *jsiiProxy_WaypointTemplate) TerraformNoCodeModuleSourceInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_WaypointTemplate) TerraformProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointTemplate) TerraformProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformProjectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaypointTemplate) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -520,7 +544,7 @@ func (j *jsiiProxy_WaypointTemplate) VariableOptionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template hcp_waypoint_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_template hcp_waypoint_template} Resource.
 func NewWaypointTemplate(scope constructs.Construct, id *string, config *WaypointTemplateConfig) WaypointTemplate {
 	_init_.Initialize()
 
@@ -538,7 +562,7 @@ func NewWaypointTemplate(scope constructs.Construct, id *string, config *Waypoin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.0/docs/resources/waypoint_template hcp_waypoint_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.95.1/docs/resources/waypoint_template hcp_waypoint_template} Resource.
 func NewWaypointTemplate_Override(w WaypointTemplate, scope constructs.Construct, id *string, config *WaypointTemplateConfig) {
 	_init_.Initialize()
 
@@ -690,6 +714,17 @@ func (j *jsiiProxy_WaypointTemplate)SetTerraformNoCodeModuleSource(val *string) 
 	_jsii_.Set(
 		j,
 		"terraformNoCodeModuleSource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaypointTemplate)SetTerraformProjectId(val *string) {
+	if err := j.validateSetTerraformProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformProjectId",
 		val,
 	)
 }
@@ -1105,6 +1140,14 @@ func (w *jsiiProxy_WaypointTemplate) ResetReadmeMarkdownTemplate() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetReadmeMarkdownTemplate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaypointTemplate) ResetTerraformCloudWorkspaceDetails() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTerraformCloudWorkspaceDetails",
 		nil, // no parameters
 	)
 }
