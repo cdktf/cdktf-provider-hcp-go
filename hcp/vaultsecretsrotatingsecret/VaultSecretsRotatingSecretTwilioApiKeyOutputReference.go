@@ -1,17 +1,17 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package datahcpwaypointtemplate
+package vaultsecretsrotatingsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointtemplate/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultsecretsrotatingsecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference interface {
+type VaultSecretsRotatingSecretTwilioApiKeyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -30,8 +30,8 @@ type DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference interface
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataHcpWaypointTemplateTerraformNoCodeModuleSource
-	SetInternalValue(val *DataHcpWaypointTemplateTerraformNoCodeModuleSource)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,12 +74,12 @@ type DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference interface
 	ToString() *string
 }
 
-// The jsii proxy struct for DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference
-type jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference struct {
+// The jsii proxy struct for VaultSecretsRotatingSecretTwilioApiKeyOutputReference
+type jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -89,7 +89,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -99,7 +99,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -109,7 +109,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) Fqn() *string {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) InternalValue() *DataHcpWaypointTemplateTerraformNoCodeModuleSource {
-	var returns *DataHcpWaypointTemplateTerraformNoCodeModuleSource
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -129,7 +129,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -139,7 +139,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -150,16 +150,16 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 }
 
 
-func NewDataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference {
+func NewVaultSecretsRotatingSecretTwilioApiKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VaultSecretsRotatingSecretTwilioApiKeyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewVaultSecretsRotatingSecretTwilioApiKeyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference{}
+	j := jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-hcp.dataHcpWaypointTemplate.DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference",
+		"@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretTwilioApiKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -167,17 +167,17 @@ func NewDataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference(terraf
 	return &j
 }
 
-func NewDataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference_Override(d DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVaultSecretsRotatingSecretTwilioApiKeyOutputReference_Override(v VaultSecretsRotatingSecretTwilioApiKeyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-hcp.dataHcpWaypointTemplate.DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference",
+		"@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretTwilioApiKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
-		d,
+		v,
 	)
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -188,7 +188,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference)SetInternalValue(val *DataHcpWaypointTemplateTerraformNoCodeModuleSource) {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -210,7 +210,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -221,7 +221,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,11 +232,11 @@ func (j *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	)
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) ComputeFqn() *string {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"computeFqn",
 		nil, // no parameters
 		&returns,
@@ -245,14 +245,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -261,14 +261,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -277,14 +277,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := v.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -293,14 +293,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := v.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -309,14 +309,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := v.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -325,14 +325,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := v.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -341,14 +341,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := v.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -357,14 +357,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
-	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := v.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -373,14 +373,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := v.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -389,11 +389,11 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"interpolationAsList",
 		nil, // no parameters
 		&returns,
@@ -402,14 +402,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"interpolationForAttribute",
 		[]interface{}{property},
 		&returns,
@@ -418,14 +418,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"resolve",
 		[]interface{}{_context},
 		&returns,
@@ -434,11 +434,11 @@ func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputRefer
 	return returns
 }
 
-func (d *jsiiProxy_DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference) ToString() *string {
+func (v *jsiiProxy_VaultSecretsRotatingSecretTwilioApiKeyOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		v,
 		"toString",
 		nil, // no parameters
 		&returns,

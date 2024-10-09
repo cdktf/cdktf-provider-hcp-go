@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/data-sources/waypoint_template hcp_waypoint_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/waypoint_template hcp_waypoint_template}.
 type DataHcpWaypointTemplate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -61,12 +61,14 @@ type DataHcpWaypointTemplate interface {
 	RawOverrides() interface{}
 	ReadmeMarkdownTemplate() *string
 	Summary() *string
+	TerraformAgentPoolId() *string
 	TerraformCloudWorkspaceDetails() DataHcpWaypointTemplateTerraformCloudWorkspaceDetailsOutputReference
+	TerraformExecutionMode() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
-	TerraformNoCodeModuleSource() DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference
+	TerraformNoCodeModuleSource() *string
 	// Experimental.
 	TerraformResourceType() *string
 	VariableOptions() DataHcpWaypointTemplateVariableOptionsList
@@ -340,11 +342,31 @@ func (j *jsiiProxy_DataHcpWaypointTemplate) Summary() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataHcpWaypointTemplate) TerraformAgentPoolId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAgentPoolId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataHcpWaypointTemplate) TerraformCloudWorkspaceDetails() DataHcpWaypointTemplateTerraformCloudWorkspaceDetailsOutputReference {
 	var returns DataHcpWaypointTemplateTerraformCloudWorkspaceDetailsOutputReference
 	_jsii_.Get(
 		j,
 		"terraformCloudWorkspaceDetails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpWaypointTemplate) TerraformExecutionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformExecutionMode",
 		&returns,
 	)
 	return returns
@@ -370,8 +392,8 @@ func (j *jsiiProxy_DataHcpWaypointTemplate) TerraformMetaArguments() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataHcpWaypointTemplate) TerraformNoCodeModuleSource() DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference {
-	var returns DataHcpWaypointTemplateTerraformNoCodeModuleSourceOutputReference
+func (j *jsiiProxy_DataHcpWaypointTemplate) TerraformNoCodeModuleSource() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"terraformNoCodeModuleSource",
@@ -401,7 +423,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplate) VariableOptions() DataHcpWaypointTem
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source.
 func NewDataHcpWaypointTemplate(scope constructs.Construct, id *string, config *DataHcpWaypointTemplateConfig) DataHcpWaypointTemplate {
 	_init_.Initialize()
 
@@ -419,7 +441,7 @@ func NewDataHcpWaypointTemplate(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source.
 func NewDataHcpWaypointTemplate_Override(d DataHcpWaypointTemplate, scope constructs.Construct, id *string, config *DataHcpWaypointTemplateConfig) {
 	_init_.Initialize()
 

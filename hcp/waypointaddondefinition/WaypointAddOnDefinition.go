@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
 type WaypointAddOnDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -75,8 +75,14 @@ type WaypointAddOnDefinition interface {
 	Summary() *string
 	SetSummary(val *string)
 	SummaryInput() *string
+	TerraformAgentPoolId() *string
+	SetTerraformAgentPoolId(val *string)
+	TerraformAgentPoolIdInput() *string
 	TerraformCloudWorkspaceDetails() WaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReference
 	TerraformCloudWorkspaceDetailsInput() interface{}
+	TerraformExecutionMode() *string
+	SetTerraformExecutionMode(val *string)
+	TerraformExecutionModeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -142,7 +148,9 @@ type WaypointAddOnDefinition interface {
 	ResetOverrideLogicalId()
 	ResetProjectId()
 	ResetReadmeMarkdownTemplate()
+	ResetTerraformAgentPoolId()
 	ResetTerraformCloudWorkspaceDetails()
+	ResetTerraformExecutionMode()
 	ResetVariableOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -432,6 +440,26 @@ func (j *jsiiProxy_WaypointAddOnDefinition) SummaryInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WaypointAddOnDefinition) TerraformAgentPoolId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAgentPoolId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointAddOnDefinition) TerraformAgentPoolIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAgentPoolIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaypointAddOnDefinition) TerraformCloudWorkspaceDetails() WaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReference {
 	var returns WaypointAddOnDefinitionTerraformCloudWorkspaceDetailsOutputReference
 	_jsii_.Get(
@@ -447,6 +475,26 @@ func (j *jsiiProxy_WaypointAddOnDefinition) TerraformCloudWorkspaceDetailsInput(
 	_jsii_.Get(
 		j,
 		"terraformCloudWorkspaceDetailsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointAddOnDefinition) TerraformExecutionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformExecutionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointAddOnDefinition) TerraformExecutionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformExecutionModeInput",
 		&returns,
 	)
 	return returns
@@ -543,7 +591,7 @@ func (j *jsiiProxy_WaypointAddOnDefinition) VariableOptionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
 func NewWaypointAddOnDefinition(scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) WaypointAddOnDefinition {
 	_init_.Initialize()
 
@@ -561,7 +609,7 @@ func NewWaypointAddOnDefinition(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
 func NewWaypointAddOnDefinition_Override(w WaypointAddOnDefinition, scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) {
 	_init_.Initialize()
 
@@ -702,6 +750,28 @@ func (j *jsiiProxy_WaypointAddOnDefinition)SetSummary(val *string) {
 	_jsii_.Set(
 		j,
 		"summary",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaypointAddOnDefinition)SetTerraformAgentPoolId(val *string) {
+	if err := j.validateSetTerraformAgentPoolIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformAgentPoolId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaypointAddOnDefinition)SetTerraformExecutionMode(val *string) {
+	if err := j.validateSetTerraformExecutionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformExecutionMode",
 		val,
 	)
 }
@@ -1135,10 +1205,26 @@ func (w *jsiiProxy_WaypointAddOnDefinition) ResetReadmeMarkdownTemplate() {
 	)
 }
 
+func (w *jsiiProxy_WaypointAddOnDefinition) ResetTerraformAgentPoolId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTerraformAgentPoolId",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WaypointAddOnDefinition) ResetTerraformCloudWorkspaceDetails() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTerraformCloudWorkspaceDetails",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaypointAddOnDefinition) ResetTerraformExecutionMode() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTerraformExecutionMode",
 		nil, // no parameters
 	)
 }

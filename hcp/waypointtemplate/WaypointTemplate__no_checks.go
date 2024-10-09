@@ -139,11 +139,23 @@ func (j *jsiiProxy_WaypointTemplate) validateSetSummaryParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_WaypointTemplate) validateSetTerraformAgentPoolIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaypointTemplate) validateSetTerraformExecutionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WaypointTemplate) validateSetTerraformNoCodeModuleSourceParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_WaypointTemplate) validateSetTerraformProjectIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaypointTemplate) validateSetUseModuleReadmeParameters(val interface{}) error {
 	return nil
 }
 

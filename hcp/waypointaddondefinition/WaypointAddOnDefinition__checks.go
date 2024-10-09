@@ -481,6 +481,22 @@ func (j *jsiiProxy_WaypointAddOnDefinition) validateSetSummaryParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformAgentPoolIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformExecutionModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformNoCodeModuleSourceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

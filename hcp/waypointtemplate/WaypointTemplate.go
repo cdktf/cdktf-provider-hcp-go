@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template hcp_waypoint_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template hcp_waypoint_template}.
 type WaypointTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -75,8 +75,14 @@ type WaypointTemplate interface {
 	Summary() *string
 	SetSummary(val *string)
 	SummaryInput() *string
+	TerraformAgentPoolId() *string
+	SetTerraformAgentPoolId(val *string)
+	TerraformAgentPoolIdInput() *string
 	TerraformCloudWorkspaceDetails() WaypointTemplateTerraformCloudWorkspaceDetailsOutputReference
 	TerraformCloudWorkspaceDetailsInput() interface{}
+	TerraformExecutionMode() *string
+	SetTerraformExecutionMode(val *string)
+	TerraformExecutionModeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -89,6 +95,9 @@ type WaypointTemplate interface {
 	TerraformProjectIdInput() *string
 	// Experimental.
 	TerraformResourceType() *string
+	UseModuleReadme() interface{}
+	SetUseModuleReadme(val interface{})
+	UseModuleReadmeInput() interface{}
 	VariableOptions() WaypointTemplateVariableOptionsList
 	VariableOptionsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -143,7 +152,10 @@ type WaypointTemplate interface {
 	ResetOverrideLogicalId()
 	ResetProjectId()
 	ResetReadmeMarkdownTemplate()
+	ResetTerraformAgentPoolId()
 	ResetTerraformCloudWorkspaceDetails()
+	ResetTerraformExecutionMode()
+	ResetUseModuleReadme()
 	ResetVariableOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -433,6 +445,26 @@ func (j *jsiiProxy_WaypointTemplate) SummaryInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WaypointTemplate) TerraformAgentPoolId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAgentPoolId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointTemplate) TerraformAgentPoolIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAgentPoolIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaypointTemplate) TerraformCloudWorkspaceDetails() WaypointTemplateTerraformCloudWorkspaceDetailsOutputReference {
 	var returns WaypointTemplateTerraformCloudWorkspaceDetailsOutputReference
 	_jsii_.Get(
@@ -448,6 +480,26 @@ func (j *jsiiProxy_WaypointTemplate) TerraformCloudWorkspaceDetailsInput() inter
 	_jsii_.Get(
 		j,
 		"terraformCloudWorkspaceDetailsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointTemplate) TerraformExecutionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformExecutionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointTemplate) TerraformExecutionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformExecutionModeInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +575,26 @@ func (j *jsiiProxy_WaypointTemplate) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WaypointTemplate) UseModuleReadme() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useModuleReadme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointTemplate) UseModuleReadmeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useModuleReadmeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WaypointTemplate) VariableOptions() WaypointTemplateVariableOptionsList {
 	var returns WaypointTemplateVariableOptionsList
 	_jsii_.Get(
@@ -544,7 +616,7 @@ func (j *jsiiProxy_WaypointTemplate) VariableOptionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template hcp_waypoint_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template hcp_waypoint_template} Resource.
 func NewWaypointTemplate(scope constructs.Construct, id *string, config *WaypointTemplateConfig) WaypointTemplate {
 	_init_.Initialize()
 
@@ -562,7 +634,7 @@ func NewWaypointTemplate(scope constructs.Construct, id *string, config *Waypoin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.96.0/docs/resources/waypoint_template hcp_waypoint_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/waypoint_template hcp_waypoint_template} Resource.
 func NewWaypointTemplate_Override(w WaypointTemplate, scope constructs.Construct, id *string, config *WaypointTemplateConfig) {
 	_init_.Initialize()
 
@@ -707,6 +779,28 @@ func (j *jsiiProxy_WaypointTemplate)SetSummary(val *string) {
 	)
 }
 
+func (j *jsiiProxy_WaypointTemplate)SetTerraformAgentPoolId(val *string) {
+	if err := j.validateSetTerraformAgentPoolIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformAgentPoolId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaypointTemplate)SetTerraformExecutionMode(val *string) {
+	if err := j.validateSetTerraformExecutionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformExecutionMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_WaypointTemplate)SetTerraformNoCodeModuleSource(val *string) {
 	if err := j.validateSetTerraformNoCodeModuleSourceParameters(val); err != nil {
 		panic(err)
@@ -725,6 +819,17 @@ func (j *jsiiProxy_WaypointTemplate)SetTerraformProjectId(val *string) {
 	_jsii_.Set(
 		j,
 		"terraformProjectId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WaypointTemplate)SetUseModuleReadme(val interface{}) {
+	if err := j.validateSetUseModuleReadmeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useModuleReadme",
 		val,
 	)
 }
@@ -1144,10 +1249,34 @@ func (w *jsiiProxy_WaypointTemplate) ResetReadmeMarkdownTemplate() {
 	)
 }
 
+func (w *jsiiProxy_WaypointTemplate) ResetTerraformAgentPoolId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTerraformAgentPoolId",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WaypointTemplate) ResetTerraformCloudWorkspaceDetails() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTerraformCloudWorkspaceDetails",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaypointTemplate) ResetTerraformExecutionMode() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTerraformExecutionMode",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WaypointTemplate) ResetUseModuleReadme() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetUseModuleReadme",
 		nil, // no parameters
 	)
 }

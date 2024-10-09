@@ -139,6 +139,14 @@ func (j *jsiiProxy_WaypointAddOnDefinition) validateSetSummaryParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformAgentPoolIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformExecutionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformNoCodeModuleSourceParameters(val *string) error {
 	return nil
 }
