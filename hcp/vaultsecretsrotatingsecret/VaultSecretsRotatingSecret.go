@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret}.
 type VaultSecretsRotatingSecret interface {
 	cdktf.TerraformResource
 	AppName() *string
@@ -22,6 +22,8 @@ type VaultSecretsRotatingSecret interface {
 	AwsAccessKeysInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfluentServiceAccount() VaultSecretsRotatingSecretConfluentServiceAccountOutputReference
+	ConfluentServiceAccountInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -132,10 +134,12 @@ type VaultSecretsRotatingSecret interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAwsAccessKeys(value *VaultSecretsRotatingSecretAwsAccessKeys)
+	PutConfluentServiceAccount(value *VaultSecretsRotatingSecretConfluentServiceAccount)
 	PutGcpServiceAccountKey(value *VaultSecretsRotatingSecretGcpServiceAccountKey)
 	PutMongodbAtlasUser(value *VaultSecretsRotatingSecretMongodbAtlasUser)
 	PutTwilioApiKey(value *VaultSecretsRotatingSecretTwilioApiKey)
 	ResetAwsAccessKeys()
+	ResetConfluentServiceAccount()
 	ResetGcpServiceAccountKey()
 	ResetMongodbAtlasUser()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -206,6 +210,26 @@ func (j *jsiiProxy_VaultSecretsRotatingSecret) CdktfStack() cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultSecretsRotatingSecret) ConfluentServiceAccount() VaultSecretsRotatingSecretConfluentServiceAccountOutputReference {
+	var returns VaultSecretsRotatingSecretConfluentServiceAccountOutputReference
+	_jsii_.Get(
+		j,
+		"confluentServiceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultSecretsRotatingSecret) ConfluentServiceAccountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"confluentServiceAccountInput",
 		&returns,
 	)
 	return returns
@@ -532,7 +556,7 @@ func (j *jsiiProxy_VaultSecretsRotatingSecret) TwilioApiKeyInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret} Resource.
 func NewVaultSecretsRotatingSecret(scope constructs.Construct, id *string, config *VaultSecretsRotatingSecretConfig) VaultSecretsRotatingSecret {
 	_init_.Initialize()
 
@@ -550,7 +574,7 @@ func NewVaultSecretsRotatingSecret(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.97.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret} Resource.
 func NewVaultSecretsRotatingSecret_Override(v VaultSecretsRotatingSecret, scope constructs.Construct, id *string, config *VaultSecretsRotatingSecretConfig) {
 	_init_.Initialize()
 
@@ -1059,6 +1083,17 @@ func (v *jsiiProxy_VaultSecretsRotatingSecret) PutAwsAccessKeys(value *VaultSecr
 	)
 }
 
+func (v *jsiiProxy_VaultSecretsRotatingSecret) PutConfluentServiceAccount(value *VaultSecretsRotatingSecretConfluentServiceAccount) {
+	if err := v.validatePutConfluentServiceAccountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putConfluentServiceAccount",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VaultSecretsRotatingSecret) PutGcpServiceAccountKey(value *VaultSecretsRotatingSecretGcpServiceAccountKey) {
 	if err := v.validatePutGcpServiceAccountKeyParameters(value); err != nil {
 		panic(err)
@@ -1096,6 +1131,14 @@ func (v *jsiiProxy_VaultSecretsRotatingSecret) ResetAwsAccessKeys() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetAwsAccessKeys",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultSecretsRotatingSecret) ResetConfluentServiceAccount() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetConfluentServiceAccount",
 		nil, // no parameters
 	)
 }
