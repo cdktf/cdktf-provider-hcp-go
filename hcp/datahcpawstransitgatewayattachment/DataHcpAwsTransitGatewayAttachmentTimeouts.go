@@ -5,7 +5,7 @@ package datahcpawstransitgatewayattachment
 
 
 type DataHcpAwsTransitGatewayAttachmentTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.98.1/docs/data-sources/aws_transit_gateway_attachment#default DataHcpAwsTransitGatewayAttachment#default}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.99.0/docs/data-sources/aws_transit_gateway_attachment#default DataHcpAwsTransitGatewayAttachment#default}.
 	Default *string `field:"optional" json:"default" yaml:"default"`
 }
 
