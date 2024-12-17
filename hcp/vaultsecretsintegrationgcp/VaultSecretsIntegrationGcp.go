@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp hcp_vault_secrets_integration_gcp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp hcp_vault_secrets_integration_gcp}.
 type VaultSecretsIntegrationGcp interface {
 	cdktf.TerraformResource
 	Capabilities() *[]*string
@@ -34,7 +34,7 @@ type VaultSecretsIntegrationGcp interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	FederatedWorkloadIdentity() VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference
+	FederatedWorkloadIdentity() VaultSecretsIntegrationGcpFederatedWorkloadIdentityAOutputReference
 	FederatedWorkloadIdentityInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -69,7 +69,7 @@ type VaultSecretsIntegrationGcp interface {
 	RawOverrides() interface{}
 	ResourceId() *string
 	ResourceName() *string
-	ServiceAccountKey() VaultSecretsIntegrationGcpServiceAccountKeyOutputReference
+	ServiceAccountKey() VaultSecretsIntegrationGcpServiceAccountKeyAOutputReference
 	ServiceAccountKeyInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -120,8 +120,8 @@ type VaultSecretsIntegrationGcp interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFederatedWorkloadIdentity(value *VaultSecretsIntegrationGcpFederatedWorkloadIdentity)
-	PutServiceAccountKey(value *VaultSecretsIntegrationGcpServiceAccountKey)
+	PutFederatedWorkloadIdentity(value *VaultSecretsIntegrationGcpFederatedWorkloadIdentityA)
+	PutServiceAccountKey(value *VaultSecretsIntegrationGcpServiceAccountKeyA)
 	ResetFederatedWorkloadIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -216,8 +216,8 @@ func (j *jsiiProxy_VaultSecretsIntegrationGcp) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_VaultSecretsIntegrationGcp) FederatedWorkloadIdentity() VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference {
-	var returns VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference
+func (j *jsiiProxy_VaultSecretsIntegrationGcp) FederatedWorkloadIdentity() VaultSecretsIntegrationGcpFederatedWorkloadIdentityAOutputReference {
+	var returns VaultSecretsIntegrationGcpFederatedWorkloadIdentityAOutputReference
 	_jsii_.Get(
 		j,
 		"federatedWorkloadIdentity",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_VaultSecretsIntegrationGcp) ResourceName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VaultSecretsIntegrationGcp) ServiceAccountKey() VaultSecretsIntegrationGcpServiceAccountKeyOutputReference {
-	var returns VaultSecretsIntegrationGcpServiceAccountKeyOutputReference
+func (j *jsiiProxy_VaultSecretsIntegrationGcp) ServiceAccountKey() VaultSecretsIntegrationGcpServiceAccountKeyAOutputReference {
+	var returns VaultSecretsIntegrationGcpServiceAccountKeyAOutputReference
 	_jsii_.Get(
 		j,
 		"serviceAccountKey",
@@ -437,7 +437,7 @@ func (j *jsiiProxy_VaultSecretsIntegrationGcp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp hcp_vault_secrets_integration_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp hcp_vault_secrets_integration_gcp} Resource.
 func NewVaultSecretsIntegrationGcp(scope constructs.Construct, id *string, config *VaultSecretsIntegrationGcpConfig) VaultSecretsIntegrationGcp {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewVaultSecretsIntegrationGcp(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_gcp hcp_vault_secrets_integration_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_gcp hcp_vault_secrets_integration_gcp} Resource.
 func NewVaultSecretsIntegrationGcp_Override(v VaultSecretsIntegrationGcp, scope constructs.Construct, id *string, config *VaultSecretsIntegrationGcpConfig) {
 	_init_.Initialize()
 
@@ -920,7 +920,7 @@ func (v *jsiiProxy_VaultSecretsIntegrationGcp) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationGcp) PutFederatedWorkloadIdentity(value *VaultSecretsIntegrationGcpFederatedWorkloadIdentity) {
+func (v *jsiiProxy_VaultSecretsIntegrationGcp) PutFederatedWorkloadIdentity(value *VaultSecretsIntegrationGcpFederatedWorkloadIdentityA) {
 	if err := v.validatePutFederatedWorkloadIdentityParameters(value); err != nil {
 		panic(err)
 	}
@@ -931,7 +931,7 @@ func (v *jsiiProxy_VaultSecretsIntegrationGcp) PutFederatedWorkloadIdentity(valu
 	)
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationGcp) PutServiceAccountKey(value *VaultSecretsIntegrationGcpServiceAccountKey) {
+func (v *jsiiProxy_VaultSecretsIntegrationGcp) PutServiceAccountKey(value *VaultSecretsIntegrationGcpServiceAccountKeyA) {
 	if err := v.validatePutServiceAccountKeyParameters(value); err != nil {
 		panic(err)
 	}

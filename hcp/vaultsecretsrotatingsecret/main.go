@@ -20,6 +20,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "appNameInput", GoGetter: "AppNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAccessKeys", GoGetter: "AwsAccessKeys"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAccessKeysInput", GoGetter: "AwsAccessKeysInput"},
+			_jsii_.MemberProperty{JsiiProperty: "azureApplicationPassword", GoGetter: "AzureApplicationPassword"},
+			_jsii_.MemberProperty{JsiiProperty: "azureApplicationPasswordInput", GoGetter: "AzureApplicationPasswordInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "confluentServiceAccount", GoGetter: "ConfluentServiceAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "confluentServiceAccountInput", GoGetter: "ConfluentServiceAccountInput"},
@@ -62,12 +64,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsAccessKeys", GoMethod: "PutAwsAccessKeys"},
+			_jsii_.MemberMethod{JsiiMethod: "putAzureApplicationPassword", GoMethod: "PutAzureApplicationPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfluentServiceAccount", GoMethod: "PutConfluentServiceAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpServiceAccountKey", GoMethod: "PutGcpServiceAccountKey"},
 			_jsii_.MemberMethod{JsiiMethod: "putMongodbAtlasUser", GoMethod: "PutMongodbAtlasUser"},
 			_jsii_.MemberMethod{JsiiMethod: "putTwilioApiKey", GoMethod: "PutTwilioApiKey"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAccessKeys", GoMethod: "ResetAwsAccessKeys"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureApplicationPassword", GoMethod: "ResetAzureApplicationPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfluentServiceAccount", GoMethod: "ResetConfluentServiceAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcpServiceAccountKey", GoMethod: "ResetGcpServiceAccountKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMongodbAtlasUser", GoMethod: "ResetMongodbAtlasUser"},
@@ -130,6 +134,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VaultSecretsRotatingSecretAwsAccessKeysOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAzureApplicationPassword",
+		reflect.TypeOf((*VaultSecretsRotatingSecretAzureApplicationPassword)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-hcp.vaultSecretsRotatingSecret.VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference",
+		reflect.TypeOf((*VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "appClientId", GoGetter: "AppClientId"},
+			_jsii_.MemberProperty{JsiiProperty: "appClientIdInput", GoGetter: "AppClientIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "appObjectId", GoGetter: "AppObjectId"},
+			_jsii_.MemberProperty{JsiiProperty: "appObjectIdInput", GoGetter: "AppObjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -5,7 +5,7 @@ package datahcpboundarycluster
 
 
 type DataHcpBoundaryClusterTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/data-sources/boundary_cluster#default DataHcpBoundaryCluster#default}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/data-sources/boundary_cluster#default DataHcpBoundaryCluster#default}.
 	Default *string `field:"optional" json:"default" yaml:"default"`
 }
 

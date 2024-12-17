@@ -85,12 +85,12 @@ func init() {
 		reflect.TypeOf((*VaultSecretsIntegrationGcpConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-hcp.vaultSecretsIntegrationGcp.VaultSecretsIntegrationGcpFederatedWorkloadIdentity",
-		reflect.TypeOf((*VaultSecretsIntegrationGcpFederatedWorkloadIdentity)(nil)).Elem(),
+		"@cdktf/provider-hcp.vaultSecretsIntegrationGcp.VaultSecretsIntegrationGcpFederatedWorkloadIdentityA",
+		reflect.TypeOf((*VaultSecretsIntegrationGcpFederatedWorkloadIdentityA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-hcp.vaultSecretsIntegrationGcp.VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference",
-		reflect.TypeOf((*VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference)(nil)).Elem(),
+		"@cdktf/provider-hcp.vaultSecretsIntegrationGcp.VaultSecretsIntegrationGcpFederatedWorkloadIdentityAOutputReference",
+		reflect.TypeOf((*VaultSecretsIntegrationGcpFederatedWorkloadIdentityAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
 			_jsii_.MemberProperty{JsiiProperty: "audienceInput", GoGetter: "AudienceInput"},
@@ -119,18 +119,18 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_VaultSecretsIntegrationGcpFederatedWorkloadIdentityOutputReference{}
+			j := jsiiProxy_VaultSecretsIntegrationGcpFederatedWorkloadIdentityAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-hcp.vaultSecretsIntegrationGcp.VaultSecretsIntegrationGcpServiceAccountKey",
-		reflect.TypeOf((*VaultSecretsIntegrationGcpServiceAccountKey)(nil)).Elem(),
+		"@cdktf/provider-hcp.vaultSecretsIntegrationGcp.VaultSecretsIntegrationGcpServiceAccountKeyA",
+		reflect.TypeOf((*VaultSecretsIntegrationGcpServiceAccountKeyA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-hcp.vaultSecretsIntegrationGcp.VaultSecretsIntegrationGcpServiceAccountKeyOutputReference",
-		reflect.TypeOf((*VaultSecretsIntegrationGcpServiceAccountKeyOutputReference)(nil)).Elem(),
+		"@cdktf/provider-hcp.vaultSecretsIntegrationGcp.VaultSecretsIntegrationGcpServiceAccountKeyAOutputReference",
+		reflect.TypeOf((*VaultSecretsIntegrationGcpServiceAccountKeyAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientEmail", GoGetter: "ClientEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_VaultSecretsIntegrationGcpServiceAccountKeyOutputReference{}
+			j := jsiiProxy_VaultSecretsIntegrationGcpServiceAccountKeyAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

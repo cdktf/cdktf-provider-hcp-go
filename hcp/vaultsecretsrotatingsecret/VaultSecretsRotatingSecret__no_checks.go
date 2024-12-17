@@ -79,6 +79,10 @@ func (v *jsiiProxy_VaultSecretsRotatingSecret) validatePutAwsAccessKeysParameter
 	return nil
 }
 
+func (v *jsiiProxy_VaultSecretsRotatingSecret) validatePutAzureApplicationPasswordParameters(value *VaultSecretsRotatingSecretAzureApplicationPassword) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultSecretsRotatingSecret) validatePutConfluentServiceAccountParameters(value *VaultSecretsRotatingSecretConfluentServiceAccount) error {
 	return nil
 }

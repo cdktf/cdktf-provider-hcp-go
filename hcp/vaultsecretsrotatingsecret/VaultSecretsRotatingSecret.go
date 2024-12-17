@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret}.
 type VaultSecretsRotatingSecret interface {
 	cdktf.TerraformResource
 	AppName() *string
@@ -20,6 +20,8 @@ type VaultSecretsRotatingSecret interface {
 	AppNameInput() *string
 	AwsAccessKeys() VaultSecretsRotatingSecretAwsAccessKeysOutputReference
 	AwsAccessKeysInput() interface{}
+	AzureApplicationPassword() VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference
+	AzureApplicationPasswordInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ConfluentServiceAccount() VaultSecretsRotatingSecretConfluentServiceAccountOutputReference
@@ -134,11 +136,13 @@ type VaultSecretsRotatingSecret interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAwsAccessKeys(value *VaultSecretsRotatingSecretAwsAccessKeys)
+	PutAzureApplicationPassword(value *VaultSecretsRotatingSecretAzureApplicationPassword)
 	PutConfluentServiceAccount(value *VaultSecretsRotatingSecretConfluentServiceAccount)
 	PutGcpServiceAccountKey(value *VaultSecretsRotatingSecretGcpServiceAccountKey)
 	PutMongodbAtlasUser(value *VaultSecretsRotatingSecretMongodbAtlasUser)
 	PutTwilioApiKey(value *VaultSecretsRotatingSecretTwilioApiKey)
 	ResetAwsAccessKeys()
+	ResetAzureApplicationPassword()
 	ResetConfluentServiceAccount()
 	ResetGcpServiceAccountKey()
 	ResetMongodbAtlasUser()
@@ -200,6 +204,26 @@ func (j *jsiiProxy_VaultSecretsRotatingSecret) AwsAccessKeysInput() interface{} 
 	_jsii_.Get(
 		j,
 		"awsAccessKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultSecretsRotatingSecret) AzureApplicationPassword() VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference {
+	var returns VaultSecretsRotatingSecretAzureApplicationPasswordOutputReference
+	_jsii_.Get(
+		j,
+		"azureApplicationPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultSecretsRotatingSecret) AzureApplicationPasswordInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"azureApplicationPasswordInput",
 		&returns,
 	)
 	return returns
@@ -556,7 +580,7 @@ func (j *jsiiProxy_VaultSecretsRotatingSecret) TwilioApiKeyInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret} Resource.
 func NewVaultSecretsRotatingSecret(scope constructs.Construct, id *string, config *VaultSecretsRotatingSecretConfig) VaultSecretsRotatingSecret {
 	_init_.Initialize()
 
@@ -574,7 +598,7 @@ func NewVaultSecretsRotatingSecret(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_rotating_secret hcp_vault_secrets_rotating_secret} Resource.
 func NewVaultSecretsRotatingSecret_Override(v VaultSecretsRotatingSecret, scope constructs.Construct, id *string, config *VaultSecretsRotatingSecretConfig) {
 	_init_.Initialize()
 
@@ -1083,6 +1107,17 @@ func (v *jsiiProxy_VaultSecretsRotatingSecret) PutAwsAccessKeys(value *VaultSecr
 	)
 }
 
+func (v *jsiiProxy_VaultSecretsRotatingSecret) PutAzureApplicationPassword(value *VaultSecretsRotatingSecretAzureApplicationPassword) {
+	if err := v.validatePutAzureApplicationPasswordParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putAzureApplicationPassword",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VaultSecretsRotatingSecret) PutConfluentServiceAccount(value *VaultSecretsRotatingSecretConfluentServiceAccount) {
 	if err := v.validatePutConfluentServiceAccountParameters(value); err != nil {
 		panic(err)
@@ -1131,6 +1166,14 @@ func (v *jsiiProxy_VaultSecretsRotatingSecret) ResetAwsAccessKeys() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetAwsAccessKeys",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultSecretsRotatingSecret) ResetAzureApplicationPassword() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetAzureApplicationPassword",
 		nil, // no parameters
 	)
 }

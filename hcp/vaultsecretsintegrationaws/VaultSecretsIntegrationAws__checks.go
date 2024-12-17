@@ -207,7 +207,7 @@ func (v *jsiiProxy_VaultSecretsIntegrationAws) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationAws) validatePutAccessKeysParameters(value *VaultSecretsIntegrationAwsAccessKeys) error {
+func (v *jsiiProxy_VaultSecretsIntegrationAws) validatePutAccessKeysParameters(value *VaultSecretsIntegrationAwsAccessKeysA) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (v *jsiiProxy_VaultSecretsIntegrationAws) validatePutAccessKeysParameters(v
 	return nil
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationAws) validatePutFederatedWorkloadIdentityParameters(value *VaultSecretsIntegrationAwsFederatedWorkloadIdentity) error {
+func (v *jsiiProxy_VaultSecretsIntegrationAws) validatePutFederatedWorkloadIdentityParameters(value *VaultSecretsIntegrationAwsFederatedWorkloadIdentityA) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

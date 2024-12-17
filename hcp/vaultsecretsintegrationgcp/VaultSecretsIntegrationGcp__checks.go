@@ -207,7 +207,7 @@ func (v *jsiiProxy_VaultSecretsIntegrationGcp) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationGcp) validatePutFederatedWorkloadIdentityParameters(value *VaultSecretsIntegrationGcpFederatedWorkloadIdentity) error {
+func (v *jsiiProxy_VaultSecretsIntegrationGcp) validatePutFederatedWorkloadIdentityParameters(value *VaultSecretsIntegrationGcpFederatedWorkloadIdentityA) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (v *jsiiProxy_VaultSecretsIntegrationGcp) validatePutFederatedWorkloadIdent
 	return nil
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationGcp) validatePutServiceAccountKeyParameters(value *VaultSecretsIntegrationGcpServiceAccountKey) error {
+func (v *jsiiProxy_VaultSecretsIntegrationGcp) validatePutServiceAccountKeyParameters(value *VaultSecretsIntegrationGcpServiceAccountKeyA) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

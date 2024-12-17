@@ -81,12 +81,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsAccessKeys",
-		reflect.TypeOf((*VaultSecretsIntegrationAwsAccessKeys)(nil)).Elem(),
+		"@cdktf/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsAccessKeysA",
+		reflect.TypeOf((*VaultSecretsIntegrationAwsAccessKeysA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsAccessKeysOutputReference",
-		reflect.TypeOf((*VaultSecretsIntegrationAwsAccessKeysOutputReference)(nil)).Elem(),
+		"@cdktf/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsAccessKeysAOutputReference",
+		reflect.TypeOf((*VaultSecretsIntegrationAwsAccessKeysAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyIdInput", GoGetter: "AccessKeyIdInput"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_VaultSecretsIntegrationAwsAccessKeysOutputReference{}
+			j := jsiiProxy_VaultSecretsIntegrationAwsAccessKeysAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -125,12 +125,12 @@ func init() {
 		reflect.TypeOf((*VaultSecretsIntegrationAwsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsFederatedWorkloadIdentity",
-		reflect.TypeOf((*VaultSecretsIntegrationAwsFederatedWorkloadIdentity)(nil)).Elem(),
+		"@cdktf/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsFederatedWorkloadIdentityA",
+		reflect.TypeOf((*VaultSecretsIntegrationAwsFederatedWorkloadIdentityA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsFederatedWorkloadIdentityOutputReference",
-		reflect.TypeOf((*VaultSecretsIntegrationAwsFederatedWorkloadIdentityOutputReference)(nil)).Elem(),
+		"@cdktf/provider-hcp.vaultSecretsIntegrationAws.VaultSecretsIntegrationAwsFederatedWorkloadIdentityAOutputReference",
+		reflect.TypeOf((*VaultSecretsIntegrationAwsFederatedWorkloadIdentityAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
 			_jsii_.MemberProperty{JsiiProperty: "audienceInput", GoGetter: "AudienceInput"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_VaultSecretsIntegrationAwsFederatedWorkloadIdentityOutputReference{}
+			j := jsiiProxy_VaultSecretsIntegrationAwsFederatedWorkloadIdentityAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

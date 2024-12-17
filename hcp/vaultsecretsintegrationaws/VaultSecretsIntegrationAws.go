@@ -12,10 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_aws hcp_vault_secrets_integration_aws}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_aws hcp_vault_secrets_integration_aws}.
 type VaultSecretsIntegrationAws interface {
 	cdktf.TerraformResource
-	AccessKeys() VaultSecretsIntegrationAwsAccessKeysOutputReference
+	AccessKeys() VaultSecretsIntegrationAwsAccessKeysAOutputReference
 	AccessKeysInput() interface{}
 	Capabilities() *[]*string
 	SetCapabilities(val *[]*string)
@@ -36,7 +36,7 @@ type VaultSecretsIntegrationAws interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	FederatedWorkloadIdentity() VaultSecretsIntegrationAwsFederatedWorkloadIdentityOutputReference
+	FederatedWorkloadIdentity() VaultSecretsIntegrationAwsFederatedWorkloadIdentityAOutputReference
 	FederatedWorkloadIdentityInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -120,8 +120,8 @@ type VaultSecretsIntegrationAws interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAccessKeys(value *VaultSecretsIntegrationAwsAccessKeys)
-	PutFederatedWorkloadIdentity(value *VaultSecretsIntegrationAwsFederatedWorkloadIdentity)
+	PutAccessKeys(value *VaultSecretsIntegrationAwsAccessKeysA)
+	PutFederatedWorkloadIdentity(value *VaultSecretsIntegrationAwsFederatedWorkloadIdentityA)
 	ResetAccessKeys()
 	ResetFederatedWorkloadIdentity()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -146,8 +146,8 @@ type jsiiProxy_VaultSecretsIntegrationAws struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_VaultSecretsIntegrationAws) AccessKeys() VaultSecretsIntegrationAwsAccessKeysOutputReference {
-	var returns VaultSecretsIntegrationAwsAccessKeysOutputReference
+func (j *jsiiProxy_VaultSecretsIntegrationAws) AccessKeys() VaultSecretsIntegrationAwsAccessKeysAOutputReference {
+	var returns VaultSecretsIntegrationAwsAccessKeysAOutputReference
 	_jsii_.Get(
 		j,
 		"accessKeys",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_VaultSecretsIntegrationAws) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_VaultSecretsIntegrationAws) FederatedWorkloadIdentity() VaultSecretsIntegrationAwsFederatedWorkloadIdentityOutputReference {
-	var returns VaultSecretsIntegrationAwsFederatedWorkloadIdentityOutputReference
+func (j *jsiiProxy_VaultSecretsIntegrationAws) FederatedWorkloadIdentity() VaultSecretsIntegrationAwsFederatedWorkloadIdentityAOutputReference {
+	var returns VaultSecretsIntegrationAwsFederatedWorkloadIdentityAOutputReference
 	_jsii_.Get(
 		j,
 		"federatedWorkloadIdentity",
@@ -437,7 +437,7 @@ func (j *jsiiProxy_VaultSecretsIntegrationAws) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_aws hcp_vault_secrets_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_aws hcp_vault_secrets_integration_aws} Resource.
 func NewVaultSecretsIntegrationAws(scope constructs.Construct, id *string, config *VaultSecretsIntegrationAwsConfig) VaultSecretsIntegrationAws {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewVaultSecretsIntegrationAws(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/vault_secrets_integration_aws hcp_vault_secrets_integration_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/vault_secrets_integration_aws hcp_vault_secrets_integration_aws} Resource.
 func NewVaultSecretsIntegrationAws_Override(v VaultSecretsIntegrationAws, scope constructs.Construct, id *string, config *VaultSecretsIntegrationAwsConfig) {
 	_init_.Initialize()
 
@@ -920,7 +920,7 @@ func (v *jsiiProxy_VaultSecretsIntegrationAws) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationAws) PutAccessKeys(value *VaultSecretsIntegrationAwsAccessKeys) {
+func (v *jsiiProxy_VaultSecretsIntegrationAws) PutAccessKeys(value *VaultSecretsIntegrationAwsAccessKeysA) {
 	if err := v.validatePutAccessKeysParameters(value); err != nil {
 		panic(err)
 	}
@@ -931,7 +931,7 @@ func (v *jsiiProxy_VaultSecretsIntegrationAws) PutAccessKeys(value *VaultSecrets
 	)
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationAws) PutFederatedWorkloadIdentity(value *VaultSecretsIntegrationAwsFederatedWorkloadIdentity) {
+func (v *jsiiProxy_VaultSecretsIntegrationAws) PutFederatedWorkloadIdentity(value *VaultSecretsIntegrationAwsFederatedWorkloadIdentityA) {
 	if err := v.validatePutFederatedWorkloadIdentityParameters(value); err != nil {
 		panic(err)
 	}

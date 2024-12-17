@@ -75,11 +75,11 @@ func (v *jsiiProxy_VaultSecretsIntegrationAws) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationAws) validatePutAccessKeysParameters(value *VaultSecretsIntegrationAwsAccessKeys) error {
+func (v *jsiiProxy_VaultSecretsIntegrationAws) validatePutAccessKeysParameters(value *VaultSecretsIntegrationAwsAccessKeysA) error {
 	return nil
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationAws) validatePutFederatedWorkloadIdentityParameters(value *VaultSecretsIntegrationAwsFederatedWorkloadIdentity) error {
+func (v *jsiiProxy_VaultSecretsIntegrationAws) validatePutFederatedWorkloadIdentityParameters(value *VaultSecretsIntegrationAwsFederatedWorkloadIdentityA) error {
 	return nil
 }
 

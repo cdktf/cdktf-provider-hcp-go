@@ -75,11 +75,11 @@ func (v *jsiiProxy_VaultSecretsIntegrationGcp) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationGcp) validatePutFederatedWorkloadIdentityParameters(value *VaultSecretsIntegrationGcpFederatedWorkloadIdentity) error {
+func (v *jsiiProxy_VaultSecretsIntegrationGcp) validatePutFederatedWorkloadIdentityParameters(value *VaultSecretsIntegrationGcpFederatedWorkloadIdentityA) error {
 	return nil
 }
 
-func (v *jsiiProxy_VaultSecretsIntegrationGcp) validatePutServiceAccountKeyParameters(value *VaultSecretsIntegrationGcpServiceAccountKey) error {
+func (v *jsiiProxy_VaultSecretsIntegrationGcp) validatePutServiceAccountKeyParameters(value *VaultSecretsIntegrationGcpServiceAccountKeyA) error {
 	return nil
 }
 

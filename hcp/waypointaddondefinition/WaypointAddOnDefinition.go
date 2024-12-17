@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition}.
 type WaypointAddOnDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -591,7 +591,7 @@ func (j *jsiiProxy_WaypointAddOnDefinition) VariableOptionsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
 func NewWaypointAddOnDefinition(scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) WaypointAddOnDefinition {
 	_init_.Initialize()
 
@@ -609,7 +609,7 @@ func NewWaypointAddOnDefinition(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.100.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.101.0/docs/resources/waypoint_add_on_definition hcp_waypoint_add_on_definition} Resource.
 func NewWaypointAddOnDefinition_Override(w WaypointAddOnDefinition, scope constructs.Construct, id *string, config *WaypointAddOnDefinitionConfig) {
 	_init_.Initialize()
 
