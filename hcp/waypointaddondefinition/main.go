@@ -79,6 +79,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformExecutionModeInput", GoGetter: "TerraformExecutionModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformNoCodeModuleId", GoGetter: "TerraformNoCodeModuleId"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformNoCodeModuleIdInput", GoGetter: "TerraformNoCodeModuleIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformNoCodeModuleSource", GoGetter: "TerraformNoCodeModuleSource"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformNoCodeModuleSourceInput", GoGetter: "TerraformNoCodeModuleSourceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformProjectId", GoGetter: "TerraformProjectId"},

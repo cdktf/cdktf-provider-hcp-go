@@ -147,6 +147,10 @@ func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformExecutionModePar
 	return nil
 }
 
+func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformNoCodeModuleIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WaypointAddOnDefinition) validateSetTerraformNoCodeModuleSourceParameters(val *string) error {
 	return nil
 }
