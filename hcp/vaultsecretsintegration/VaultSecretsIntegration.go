@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration hcp_vault_secrets_integration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration hcp_vault_secrets_integration}.
 type VaultSecretsIntegration interface {
 	cdktf.TerraformResource
 	AwsAccessKeys() VaultSecretsIntegrationAwsAccessKeysOutputReference
@@ -56,6 +56,8 @@ type VaultSecretsIntegration interface {
 	GcpFederatedWorkloadIdentityInput() interface{}
 	GcpServiceAccountKey() VaultSecretsIntegrationGcpServiceAccountKeyOutputReference
 	GcpServiceAccountKeyInput() interface{}
+	GitlabAccess() VaultSecretsIntegrationGitlabAccessOutputReference
+	GitlabAccessInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -144,6 +146,7 @@ type VaultSecretsIntegration interface {
 	PutConfluentStaticCredentials(value *VaultSecretsIntegrationConfluentStaticCredentials)
 	PutGcpFederatedWorkloadIdentity(value *VaultSecretsIntegrationGcpFederatedWorkloadIdentity)
 	PutGcpServiceAccountKey(value *VaultSecretsIntegrationGcpServiceAccountKey)
+	PutGitlabAccess(value *VaultSecretsIntegrationGitlabAccess)
 	PutMongodbAtlasStaticCredentials(value *VaultSecretsIntegrationMongodbAtlasStaticCredentials)
 	PutTwilioStaticCredentials(value *VaultSecretsIntegrationTwilioStaticCredentials)
 	ResetAwsAccessKeys()
@@ -153,6 +156,7 @@ type VaultSecretsIntegration interface {
 	ResetConfluentStaticCredentials()
 	ResetGcpFederatedWorkloadIdentity()
 	ResetGcpServiceAccountKey()
+	ResetGitlabAccess()
 	ResetMongodbAtlasStaticCredentials()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -417,6 +421,26 @@ func (j *jsiiProxy_VaultSecretsIntegration) GcpServiceAccountKeyInput() interfac
 	return returns
 }
 
+func (j *jsiiProxy_VaultSecretsIntegration) GitlabAccess() VaultSecretsIntegrationGitlabAccessOutputReference {
+	var returns VaultSecretsIntegrationGitlabAccessOutputReference
+	_jsii_.Get(
+		j,
+		"gitlabAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultSecretsIntegration) GitlabAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gitlabAccessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VaultSecretsIntegration) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -628,7 +652,7 @@ func (j *jsiiProxy_VaultSecretsIntegration) TwilioStaticCredentialsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration hcp_vault_secrets_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration hcp_vault_secrets_integration} Resource.
 func NewVaultSecretsIntegration(scope constructs.Construct, id *string, config *VaultSecretsIntegrationConfig) VaultSecretsIntegration {
 	_init_.Initialize()
 
@@ -646,7 +670,7 @@ func NewVaultSecretsIntegration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/vault_secrets_integration hcp_vault_secrets_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration hcp_vault_secrets_integration} Resource.
 func NewVaultSecretsIntegration_Override(v VaultSecretsIntegration, scope constructs.Construct, id *string, config *VaultSecretsIntegrationConfig) {
 	_init_.Initialize()
 
@@ -1199,6 +1223,17 @@ func (v *jsiiProxy_VaultSecretsIntegration) PutGcpServiceAccountKey(value *Vault
 	)
 }
 
+func (v *jsiiProxy_VaultSecretsIntegration) PutGitlabAccess(value *VaultSecretsIntegrationGitlabAccess) {
+	if err := v.validatePutGitlabAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putGitlabAccess",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VaultSecretsIntegration) PutMongodbAtlasStaticCredentials(value *VaultSecretsIntegrationMongodbAtlasStaticCredentials) {
 	if err := v.validatePutMongodbAtlasStaticCredentialsParameters(value); err != nil {
 		panic(err)
@@ -1273,6 +1308,14 @@ func (v *jsiiProxy_VaultSecretsIntegration) ResetGcpServiceAccountKey() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetGcpServiceAccountKey",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultSecretsIntegration) ResetGitlabAccess() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetGitlabAccess",
 		nil, // no parameters
 	)
 }

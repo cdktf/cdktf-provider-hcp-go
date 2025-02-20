@@ -12,9 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster hcp_boundary_cluster}.
 type BoundaryCluster interface {
 	cdktf.TerraformResource
+	AuthTokenTimeToLive() *string
+	SetAuthTokenTimeToLive(val *string)
+	AuthTokenTimeToLiveInput() *string
+	AuthTokenTimeToStale() *string
+	SetAuthTokenTimeToStale(val *string)
+	AuthTokenTimeToStaleInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterId() *string
@@ -132,6 +138,8 @@ type BoundaryCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMaintenanceWindowConfig(value *BoundaryClusterMaintenanceWindowConfig)
 	PutTimeouts(value *BoundaryClusterTimeouts)
+	ResetAuthTokenTimeToLive()
+	ResetAuthTokenTimeToStale()
 	ResetId()
 	ResetMaintenanceWindowConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -155,6 +163,46 @@ type BoundaryCluster interface {
 // The jsii proxy struct for BoundaryCluster
 type jsiiProxy_BoundaryCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BoundaryCluster) AuthTokenTimeToLive() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTokenTimeToLive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryCluster) AuthTokenTimeToLiveInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTokenTimeToLiveInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryCluster) AuthTokenTimeToStale() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTokenTimeToStale",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryCluster) AuthTokenTimeToStaleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTokenTimeToStaleInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BoundaryCluster) CdktfStack() cdktf.TerraformStack {
@@ -518,7 +566,7 @@ func (j *jsiiProxy_BoundaryCluster) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
 func NewBoundaryCluster(scope constructs.Construct, id *string, config *BoundaryClusterConfig) BoundaryCluster {
 	_init_.Initialize()
 
@@ -536,7 +584,7 @@ func NewBoundaryCluster(scope constructs.Construct, id *string, config *Boundary
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.102.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/boundary_cluster hcp_boundary_cluster} Resource.
 func NewBoundaryCluster_Override(b BoundaryCluster, scope constructs.Construct, id *string, config *BoundaryClusterConfig) {
 	_init_.Initialize()
 
@@ -544,6 +592,28 @@ func NewBoundaryCluster_Override(b BoundaryCluster, scope constructs.Construct, 
 		"@cdktf/provider-hcp.boundaryCluster.BoundaryCluster",
 		[]interface{}{scope, id, config},
 		b,
+	)
+}
+
+func (j *jsiiProxy_BoundaryCluster)SetAuthTokenTimeToLive(val *string) {
+	if err := j.validateSetAuthTokenTimeToLiveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authTokenTimeToLive",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BoundaryCluster)SetAuthTokenTimeToStale(val *string) {
+	if err := j.validateSetAuthTokenTimeToStaleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authTokenTimeToStale",
+		val,
 	)
 }
 
@@ -1053,6 +1123,22 @@ func (b *jsiiProxy_BoundaryCluster) PutTimeouts(value *BoundaryClusterTimeouts) 
 		b,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BoundaryCluster) ResetAuthTokenTimeToLive() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAuthTokenTimeToLive",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BoundaryCluster) ResetAuthTokenTimeToStale() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAuthTokenTimeToStale",
+		nil, // no parameters
 	)
 }
 

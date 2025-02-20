@@ -103,6 +103,10 @@ func (v *jsiiProxy_VaultSecretsIntegration) validatePutGcpServiceAccountKeyParam
 	return nil
 }
 
+func (v *jsiiProxy_VaultSecretsIntegration) validatePutGitlabAccessParameters(value *VaultSecretsIntegrationGitlabAccess) error {
+	return nil
+}
+
 func (v *jsiiProxy_VaultSecretsIntegration) validatePutMongodbAtlasStaticCredentialsParameters(value *VaultSecretsIntegrationMongodbAtlasStaticCredentials) error {
 	return nil
 }

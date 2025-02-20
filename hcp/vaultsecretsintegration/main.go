@@ -49,6 +49,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "gitlabAccess", GoGetter: "GitlabAccess"},
+			_jsii_.MemberProperty{JsiiProperty: "gitlabAccessInput", GoGetter: "GitlabAccessInput"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -76,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putConfluentStaticCredentials", GoMethod: "PutConfluentStaticCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpFederatedWorkloadIdentity", GoMethod: "PutGcpFederatedWorkloadIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcpServiceAccountKey", GoMethod: "PutGcpServiceAccountKey"},
+			_jsii_.MemberMethod{JsiiMethod: "putGitlabAccess", GoMethod: "PutGitlabAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "putMongodbAtlasStaticCredentials", GoMethod: "PutMongodbAtlasStaticCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "putTwilioStaticCredentials", GoMethod: "PutTwilioStaticCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -86,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetConfluentStaticCredentials", GoMethod: "ResetConfluentStaticCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcpFederatedWorkloadIdentity", GoMethod: "ResetGcpFederatedWorkloadIdentity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcpServiceAccountKey", GoMethod: "ResetGcpServiceAccountKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGitlabAccess", GoMethod: "ResetGitlabAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMongodbAtlasStaticCredentials", GoMethod: "ResetMongodbAtlasStaticCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProjectId", GoMethod: "ResetProjectId"},
@@ -394,6 +398,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VaultSecretsIntegrationGcpServiceAccountKeyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationGitlabAccess",
+		reflect.TypeOf((*VaultSecretsIntegrationGitlabAccess)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-hcp.vaultSecretsIntegration.VaultSecretsIntegrationGitlabAccessOutputReference",
+		reflect.TypeOf((*VaultSecretsIntegrationGitlabAccessOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "token", GoGetter: "Token"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenInput", GoGetter: "TokenInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VaultSecretsIntegrationGitlabAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -15,6 +15,8 @@ func init() {
 		reflect.TypeOf((*DataHcpBoundaryCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "authTokenTimeToLive", GoGetter: "AuthTokenTimeToLive"},
+			_jsii_.MemberProperty{JsiiProperty: "authTokenTimeToStale", GoGetter: "AuthTokenTimeToStale"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},

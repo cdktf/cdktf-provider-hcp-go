@@ -99,6 +99,14 @@ func validateBoundaryCluster_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_BoundaryCluster) validateSetAuthTokenTimeToLiveParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BoundaryCluster) validateSetAuthTokenTimeToStaleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BoundaryCluster) validateSetClusterIdParameters(val *string) error {
 	return nil
 }
