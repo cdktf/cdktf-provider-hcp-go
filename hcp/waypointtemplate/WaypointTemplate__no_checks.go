@@ -99,6 +99,10 @@ func validateWaypointTemplate_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_WaypointTemplate) validateSetActionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WaypointTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

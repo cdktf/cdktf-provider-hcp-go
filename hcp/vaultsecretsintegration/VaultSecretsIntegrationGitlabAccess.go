@@ -7,7 +7,7 @@ package vaultsecretsintegration
 type VaultSecretsIntegrationGitlabAccess struct {
 	// Access token used to authenticate against the target GitLab account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/vault_secrets_integration#token VaultSecretsIntegration#token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_integration#token VaultSecretsIntegration#token}
 	Token *string `field:"required" json:"token" yaml:"token"`
 }
 

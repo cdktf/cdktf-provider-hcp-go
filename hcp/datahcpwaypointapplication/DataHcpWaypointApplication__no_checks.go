@@ -75,6 +75,10 @@ func validateDataHcpWaypointApplication_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataHcpWaypointApplication) validateSetActionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataHcpWaypointApplication) validateSetCountParameters(val interface{}) error {
 	return nil
 }

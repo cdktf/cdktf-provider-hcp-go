@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_template hcp_waypoint_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template hcp_waypoint_template}.
 type DataHcpWaypointTemplate interface {
 	cdktf.TerraformDataSource
+	Actions() *[]*string
+	SetActions(val *[]*string)
+	ActionsInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -98,6 +101,7 @@ type DataHcpWaypointTemplate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetActions()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -121,6 +125,26 @@ type DataHcpWaypointTemplate interface {
 // The jsii proxy struct for DataHcpWaypointTemplate
 type jsiiProxy_DataHcpWaypointTemplate struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataHcpWaypointTemplate) Actions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"actions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataHcpWaypointTemplate) ActionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"actionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataHcpWaypointTemplate) CdktfStack() cdktf.TerraformStack {
@@ -434,7 +458,7 @@ func (j *jsiiProxy_DataHcpWaypointTemplate) VariableOptions() DataHcpWaypointTem
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source.
 func NewDataHcpWaypointTemplate(scope constructs.Construct, id *string, config *DataHcpWaypointTemplateConfig) DataHcpWaypointTemplate {
 	_init_.Initialize()
 
@@ -452,7 +476,7 @@ func NewDataHcpWaypointTemplate(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/data-sources/waypoint_template hcp_waypoint_template} Data Source.
 func NewDataHcpWaypointTemplate_Override(d DataHcpWaypointTemplate, scope constructs.Construct, id *string, config *DataHcpWaypointTemplateConfig) {
 	_init_.Initialize()
 
@@ -460,6 +484,17 @@ func NewDataHcpWaypointTemplate_Override(d DataHcpWaypointTemplate, scope constr
 		"@cdktf/provider-hcp.dataHcpWaypointTemplate.DataHcpWaypointTemplate",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataHcpWaypointTemplate)SetActions(val *[]*string) {
+	if err := j.validateSetActionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"actions",
+		val,
 	)
 }
 
@@ -824,6 +859,14 @@ func (d *jsiiProxy_DataHcpWaypointTemplate) OverrideLogicalId(newLogicalId *stri
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataHcpWaypointTemplate) ResetActions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetActions",
+		nil, // no parameters
 	)
 }
 

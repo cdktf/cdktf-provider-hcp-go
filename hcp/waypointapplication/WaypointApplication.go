@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_application hcp_waypoint_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/waypoint_application hcp_waypoint_application}.
 type WaypointApplication interface {
 	cdktf.TerraformResource
+	Actions() *[]*string
+	SetActions(val *[]*string)
+	ActionsInput() *[]*string
 	ApplicationInputVariables() WaypointApplicationApplicationInputVariablesList
 	ApplicationInputVariablesInput() interface{}
 	// Experimental.
@@ -125,6 +128,7 @@ type WaypointApplication interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutApplicationInputVariables(value interface{})
+	ResetActions()
 	ResetApplicationInputVariables()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -147,6 +151,26 @@ type WaypointApplication interface {
 // The jsii proxy struct for WaypointApplication
 type jsiiProxy_WaypointApplication struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WaypointApplication) Actions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"actions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WaypointApplication) ActionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"actionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WaypointApplication) ApplicationInputVariables() WaypointApplicationApplicationInputVariablesList {
@@ -470,7 +494,7 @@ func (j *jsiiProxy_WaypointApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_application hcp_waypoint_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/waypoint_application hcp_waypoint_application} Resource.
 func NewWaypointApplication(scope constructs.Construct, id *string, config *WaypointApplicationConfig) WaypointApplication {
 	_init_.Initialize()
 
@@ -488,7 +512,7 @@ func NewWaypointApplication(scope constructs.Construct, id *string, config *Wayp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.103.0/docs/resources/waypoint_application hcp_waypoint_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/waypoint_application hcp_waypoint_application} Resource.
 func NewWaypointApplication_Override(w WaypointApplication, scope constructs.Construct, id *string, config *WaypointApplicationConfig) {
 	_init_.Initialize()
 
@@ -496,6 +520,17 @@ func NewWaypointApplication_Override(w WaypointApplication, scope constructs.Con
 		"@cdktf/provider-hcp.waypointApplication.WaypointApplication",
 		[]interface{}{scope, id, config},
 		w,
+	)
+}
+
+func (j *jsiiProxy_WaypointApplication)SetActions(val *[]*string) {
+	if err := j.validateSetActionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"actions",
+		val,
 	)
 }
 
@@ -972,6 +1007,14 @@ func (w *jsiiProxy_WaypointApplication) PutApplicationInputVariables(value inter
 		w,
 		"putApplicationInputVariables",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WaypointApplication) ResetActions() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetActions",
+		nil, // no parameters
 	)
 }
 
