@@ -119,6 +119,10 @@ func (j *jsiiProxy_VaultSecretsApp) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_VaultSecretsApp) validateSetSyncNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewVaultSecretsAppParameters(scope constructs.Construct, id *string, config *VaultSecretsAppConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app hcp_vault_secrets_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app hcp_vault_secrets_app}.
 type VaultSecretsApp interface {
 	cdktf.TerraformResource
 	AppName() *string
@@ -67,6 +67,9 @@ type VaultSecretsApp interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceName() *string
+	SyncNames() *[]*string
+	SetSyncNames(val *[]*string)
+	SyncNamesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -121,6 +124,7 @@ type VaultSecretsApp interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectId()
+	ResetSyncNames()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -359,6 +363,26 @@ func (j *jsiiProxy_VaultSecretsApp) ResourceName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VaultSecretsApp) SyncNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syncNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultSecretsApp) SyncNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syncNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VaultSecretsApp) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -390,7 +414,7 @@ func (j *jsiiProxy_VaultSecretsApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app hcp_vault_secrets_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app hcp_vault_secrets_app} Resource.
 func NewVaultSecretsApp(scope constructs.Construct, id *string, config *VaultSecretsAppConfig) VaultSecretsApp {
 	_init_.Initialize()
 
@@ -408,7 +432,7 @@ func NewVaultSecretsApp(scope constructs.Construct, id *string, config *VaultSec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.104.0/docs/resources/vault_secrets_app hcp_vault_secrets_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.105.0/docs/resources/vault_secrets_app hcp_vault_secrets_app} Resource.
 func NewVaultSecretsApp_Override(v VaultSecretsApp, scope constructs.Construct, id *string, config *VaultSecretsAppConfig) {
 	_init_.Initialize()
 
@@ -516,6 +540,17 @@ func (j *jsiiProxy_VaultSecretsApp)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultSecretsApp)SetSyncNames(val *[]*string) {
+	if err := j.validateSetSyncNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"syncNames",
 		val,
 	)
 }
@@ -893,6 +928,14 @@ func (v *jsiiProxy_VaultSecretsApp) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultSecretsApp) ResetSyncNames() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSyncNames",
 		nil, // no parameters
 	)
 }
