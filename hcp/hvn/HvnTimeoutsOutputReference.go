@@ -5,9 +5,9 @@ package hvn
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/hvn/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/hvn/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

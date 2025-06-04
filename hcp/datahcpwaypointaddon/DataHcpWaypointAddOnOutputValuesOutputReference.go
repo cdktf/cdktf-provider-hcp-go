@@ -5,9 +5,9 @@ package datahcpwaypointaddon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/datahcpwaypointaddon/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/datahcpwaypointaddon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

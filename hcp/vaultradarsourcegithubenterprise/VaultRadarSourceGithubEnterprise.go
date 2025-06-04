@@ -5,10 +5,10 @@ package vaultradarsourcegithubenterprise
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v9/vaultradarsourcegithubenterprise/internal"
+	"github.com/cdktf/cdktf-provider-hcp-go/hcp/v10/vaultradarsourcegithubenterprise/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
