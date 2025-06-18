@@ -31,6 +31,10 @@ func validateHcpProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_HcpProvider) validateSetSkipStatusCheckParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HcpProvider) validateSetWorkloadIdentityParameters(val interface{}) error {
 	return nil
 }

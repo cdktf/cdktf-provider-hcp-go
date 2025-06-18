@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs hcp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs hcp}.
 type HcpProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -44,6 +44,9 @@ type HcpProvider interface {
 	ProjectIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	SkipStatusCheck() interface{}
+	SetSkipStatusCheck(val interface{})
+	SkipStatusCheckInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -66,6 +69,7 @@ type HcpProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectId()
+	ResetSkipStatusCheck()
 	ResetWorkloadIdentity()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -255,6 +259,26 @@ func (j *jsiiProxy_HcpProvider) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_HcpProvider) SkipStatusCheck() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStatusCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HcpProvider) SkipStatusCheckInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStatusCheckInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HcpProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -306,7 +330,7 @@ func (j *jsiiProxy_HcpProvider) WorkloadIdentityInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs hcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs hcp} Resource.
 func NewHcpProvider(scope constructs.Construct, id *string, config *HcpProviderConfig) HcpProvider {
 	_init_.Initialize()
 
@@ -324,7 +348,7 @@ func NewHcpProvider(scope constructs.Construct, id *string, config *HcpProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.106.0/docs hcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/hcp/0.107.0/docs hcp} Resource.
 func NewHcpProvider_Override(h HcpProvider, scope constructs.Construct, id *string, config *HcpProviderConfig) {
 	_init_.Initialize()
 
@@ -371,6 +395,17 @@ func (j *jsiiProxy_HcpProvider)SetProjectId(val *string) {
 	_jsii_.Set(
 		j,
 		"projectId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HcpProvider)SetSkipStatusCheck(val interface{}) {
+	if err := j.validateSetSkipStatusCheckParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStatusCheck",
 		val,
 	)
 }
@@ -555,6 +590,14 @@ func (h *jsiiProxy_HcpProvider) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HcpProvider) ResetSkipStatusCheck() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetSkipStatusCheck",
 		nil, // no parameters
 	)
 }
